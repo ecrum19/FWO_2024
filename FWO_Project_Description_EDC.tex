@@ -110,54 +110,56 @@ My project described here will aim to establish the feasibility of using decentr
 \section{2. Scientific research objective(s)}
 \textit{Describe explicitly the scientific objective(s) and the research hypothesis. Explain whether and how the research is specifically challenging and inventive, describing in particular the innovative aspects of the envisaged results. Discuss in detail the results (or partial results) that you aim to achieve, such as specific knowledge, the solution to particular problems and academic breakthroughs.}
 
-The core research question that motivates my project is: can a citizen-centric PGS data storage framework, developed using a decentralized technology, offer improved data sharing potential while maintaining privacy safeguards for sensitive data? 
-To address this central question, I will investigate the use of Solid data pods to store PGS data in a decentralized and privacy-oriented ecosystem while addressing technical challenges associated with data policies, selective discoverability through querying, and data formatting that encourages connection to existing clinical workflows. 
+The core research question that motivates my project is: can a citizen-centric PGS data storage framework, developed using a decentralized storage technology, offer data sharing infrastructure while maintaining privacy safeguards for sensitive data? 
+To address this central question, I will investigate the use of individual scale data pods, implemented using Solid protocol, to store PGS data in a decentralized and privacy-oriented ecosystem while addressing technical challenges associated with data policies, selective discoverability through querying, and data formatting that encourages connection to existing clinical workflows. 
 My hypothesis is that such a framework can be developed and would offer significant advantages over the existing state-of-the-art institution-centric PGS data storage standards. 
 The following objectives will be undertaken to test my hyposthesis and assess the viability of such a PGS data storage and sharing framework for clinical practice.
 
 (1) \textbf{Assess the current technology gap ??? thnk more on this}
 _What: Establish the current state-of-the-art in the field of clinical PGS data storage and sharing. Describe existing methods used for PGS storage, PGS data sharing, and active research emerging technologies that could provide improvements for this field. 
-_Result: ... 
-_Challenging: ??
+_Result: Establish the necessity for a new system for PGS data storage and sharing. 
+_Challenging: There is no current publication that establishes the state-of-the-art for clinical PGS data storage and/or data sharing.
+
 
 \rt{I would not recommend having this as a WP on its own. It should be a task in another WP to serve a specific purpose.}
 
-(2) \textbf{Solid Pod Data Storage.} 
-_What: Develop methods and a workflow for the creation, hosting, and data ingestion of PGS data, primarily in vcf file format, into Solid data pods. 
-_Result: The result will establish that the Solid decentralized data storage ecosystem can be implemented and host PGS data in a citizen-centric architecture.
-_Challenging: Such a framework for genome data has not been undertaken before ...
+(2) \textbf{Solid Pod Data Storage.} (Maybe think here about storing other PGS data files -- VCF + CRAM/BAM??)
+_What: Develop methods and a workflow for the creation and hosting of individual patient Solid pods as well as the transfer of PGS data, primarily in vcf file format, into those Solid data pods. 
+_Result: The result will offer a proof-of-concept demo that exhibits the Solid decentralized data storage ecosystem can be implemented and host PGS data in a citizen-centric architecture.
+_Challenging: Such a framework for genome data has not been undertaken before in the literature and most past implementations of Solid data pod use cases have not been designed to handle the large data files that are present with PGS data. 
 
 
 (3) \textbf{Data formatting and interoperability.} 
-_What: I will experiment with the conversion of PGS data in native vcf files to RDF serialized in ttl file format. 
-To investigate the viability of representing PGS data as Linked Data, mapping from the most clinically relevant PGS data format, vcf, to RDF will first need to be accomplished. 
-_Result: I aim to make such a mapping process work in both directions because most existing clinical workflows prefer input files in vcf format. 
-I also aim to make stored PGS data representable using format standards of widely used initiatives such as HL7 FHIR and OHDSI OMOP. 
-_Challenging: 
-[PGS data interoperability for human users, web applications, bioinformatics pipelines, and medical softwares is of paramount importance for practical translation of such a framework to clinical practice. 
-Thus, starting with specific use cases, and extrapolating to more generalizable compatibility, format conversions that allow for data flow compatibility will be important to project success.]
+_What: I will experiment with the conversion of PGS data from vcf files to RDF serialized in ttl file format. 
+We intend to investigate the viability of representing VCF file data as Linked Data which necesssitates the mapping from this biological file format, vcf, to RDF will first be addressed. 
+_Result: I aim to make such a mapping process bi-directional because most existing clinical workflows necessitate input files in vcf format, thereby making reverse compatability important. 
+I also aim to make stored PGS data representable using format standards of widely used initiatives such as HL7 FHIR and ... . 
+_Challenging: The conversion between vcf and rdf will require the use of an ontology and computation. 
+I will assess the computational demands of such a process ... 
+
 
 \rt{If I understand correctly, you want to look into user interface design? Are you sure you want to get into that? Because then you need to prove you have the qualifications for it, and understand the research problems surrounding UI/UX. Maybe we want to avoid that.}
-\ec{Response: Not quite, it is not the user interface I am referring to here, instead the data formatting conversions that are required to connect the PGS data to existing and future tools and pipelines...}
+\ec{Response: Not quite, it is not the user interface I am referring to here, instead the data formatting conversions that are required to connect the PGS data to existing and future tools / pipelines...}
 
 (4) \textbf{Data policy and accessing.} 
 _What: A fundamental goal of any PGS data storage system is mainting the privacy of that data. 
-I will investigate the ways in which data access requests, data usage consent, and granularization of consent to particular pieces of data can be applied to PGS data.
-_Result:
-
-_Challenging: 
+I will investigate the ways in which data access requests, data usage consent, and granularization of consent to particular pieces of data can be applied to PGS data using Solid sprecifications.
+_Result: I will illustrate the ways in which data can be accessed by authorized users, restrictions for access can be changed, authorization for access can be requested by clinical professionals, and ... (granularization something here)
+_Challenging: The trade-off between privacy and accessibility is ----- ??
 [...]
 
 (5) \textbf{Data querying}
-_What: Investigate query processing techniques for handling the large scale of personal genomic data stored within and across Solid data vaults. 
-Specifically, by researching efficient Linked Data querying algorithms, and strategies for improving the performance and run-time of Linked Data traversal querying algorithms for efficient querying of PGS data for clinical and personal use. 
-_Result:
+_What: Investigate query processing techniques for handling the large scale of PGS data stored within and across Solid pods. 
+_Result: Assess the efficacy of existing querying algorithms applied to PGS data in both RDF and vcf formats and compare results to common vcf parsing tools publicly available.
+_Challenging: vcf files are 100-1000s MBs in size, thus, performant querying can present a challenge.
 
-_Challenging: 
 [Using an existing query engine implementation, such as Comunica, experiment with performing and optimizing basic SPARQL queries on PGS data stored in a Solid pod.]
 \rt{What are the problems you want to solve here? What is lacking in existing query algos that necessitate you to build new ones?}
+\ec{I have no idea... I have only been told that this will be a probelm that will require solving... I dont know how or in what ways solving it could be achieved...}
 
-Finish this section with explaining how the new research findings fit into a broader context.
+Together, these objectives are to be combined into an operational framework that instantiates workflows necessary for setting up and using the system. 
+Additionally, advantages, disadvantages, and .... compared to the current state-of-the-art will be presented for future implementations to draw from for future innovation.
+
 
 
 
