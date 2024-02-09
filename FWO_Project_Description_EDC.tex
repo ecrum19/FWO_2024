@@ -202,10 +202,10 @@ My project described here will aim to establish the feasibility of using decentr
 \section{2. Scientific research objective(s)}
 \textit{Describe explicitly the scientific objective(s) and the research hypothesis. Explain whether and how the research is specifically challenging and inventive, describing in particular the innovative aspects of the envisaged results. Discuss in detail the results (or partial results) that you aim to achieve, such as specific knowledge, the solution to particular problems and academic breakthroughs.}
 
-The core research question that motivates my project is: can a citizen-centric PGS data storage framework, developed using a decentralized storage technology, offer data sharing infrastructure while maintaining privacy safeguards for sensitive data? 
+My research project is situated to provide a proof-of-concept PGS data storage and sharing framework that can be adapted to use for clinical practice. In this pursuit, my core research question is: can a citizen-centric PGS data storage framework, developed using a decentralized storage technology, offer data sharing infrastructure while maintaining privacy safeguards for sensitive data? 
 To address this central question, I will investigate the use of data pods, implemented using Solid protocol, to store PGS data in a decentralized and privacy-oriented ecosystem while addressing technical challenges associated with data policies, representation of PGD data as Linked Data, discoverability through querying, and infrastructure that connects data pods to existing clinical workflows and tools. 
 My hypothesis is that such a framework can be developed and would offer unique advantages over the existing state-of-the-art institution-centric PGS data storage solutions. 
-The following objectives will be undertaken to test my hyposthesis through the production and testing of such a PGS data storage and sharing framework for clinical practice.
+The following objectives six objectives will be undertaken to test my hyposthesis through the production and testing of these different modules of the proposed framework.
 
 (1) \textbf{Identify the workflows, tools, and data networks that utilize PGS data for framework connection.}
 _What: Assess the current state-of-the-art in the field of clinical PGS data formatting, usage, and sharing. 
@@ -225,9 +225,9 @@ _why me: ???
 (3) \textbf{Data formatting and interoperability.} 
 _What: I will experiment with the conversion of PGS data from vcf files to RDF serialized in ttl file format. 
 We intend to investigate the viability of representing VCF file data as Linked Data which necesssitates the mapping from this biological file format, vcf, to RDF. 
-_Result: I aim to make such a mapping process bi-directional because most existing clinical workflows necessitate input files in vcf format, thereby making a returnable vcf file on request necessary. 
-I also aim to make stored PGS data representable using format standards of widely used initiatives such as HL7 FHIR and ... . 
-_Challenging: The conversion between vcf and rdf will require the use of an ontology and computation. 
+_Result: I aim to make such a mapping process bi-directional because most existing clinical workflows necessitate input files in VCF, thereby making a returnable VCF file on request necessary. 
+Thus, an index file will be maintained for VCF to RDF conversion bidirectionally.
+_Challenging: The conversion between VCF and RDF will require the use of an ontology and computation. 
 Decisions regarding how the computation will be done, when the computation will be done, and what exact computation will be performed are all open questions.
 I will assess the computational demands of the conversion process as well as the storage costs of the RDF files produced to optimize the storage and conversion strategies.
 
