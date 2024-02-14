@@ -73,7 +73,7 @@ PROJECT OUTLINE (max. 12 A4 pages)\\
 \end{mdframed}
 \vspace{-.5\baselineskip}
 
-\author[1,2]{Elias Crum}[
+\author{Elias Crum}[
 orcid=0009-0005-3991-754X,
 email=elias.crum@ugent.be
 ]
@@ -84,19 +84,19 @@ email=elias.crum@ugent.be
 \textit{Elaborate the scientific motivation for the project proposal based on scientific knowledge gaps, and the issues and problems that you want to solve with this project. Concisely describe the related international state of the art, with reference to scientific literature. Indicate why the execution of the proposed strategic basic research is important. Position your project in relation to ongoing national and international research.} 
 
 
-\textbf{Introduction}
+\subsection{Introduction}
 As our understanding of genomics deepens, the role of Personal Genome Sequencing (PGS) in healthcare becomes increasingly vital. 
-At the time of writing, there are multiple domains of clinical practice where patient personal genomic sequence (PGS) data is used to inform medical decision making \cite{souche_recommendations_2022, gil_analysis_2015}. 
+At the time of writing, there are multiple domains of clinical practice where patient PGS data is used to inform medical decision making \cite{souche_recommendations_2022, gil_analysis_2015}. 
 For over a decade, PGS data has been poised to be scaled to generalized clinical practice, but at present this is largely not the case \cite{alzubi_personal_2014}. 
-There are many problems ... like ... (a couple here)
-My project aims to address one group of challenges inhibiting widespread clinical usage of PGS data -- the digital storage and access of the data itself. 
+While there are many documented challenges to wider clinical implementation of personalized medicine \cite{stefanicka-wojtas_barriers_2023}, one major challenge is presented by the digital representation, storage, and access to the PGS data that underlies all personalized medicine workflows.
+Through this project, I aim to address the challenges presented by PGS data usage in clinical practice through the use of emerging decentralized storage and querying technologies.  
 
-\textbf{Medical Motivations for PGS data in Cinical Practice}
+\subsection{Medical Motivations for PGS data in Cinical Practice}
 At present, there are three major medical fields that preliminarily show readiness for and benefit from greater use of PGS data, these being drug development and prescription, cancer diagnosis and treatment, and rare genetic disease identification and treatment.
 
 Genomic variation has been shown to impact many aspects of drug prescription and treatment efficacy \cite{feero_genomics_2011}. 
 More recently, genomics has also become informative for new drug development \cite{ko_new_2022}. 
-In relation to clinical practice, many studies have documented genotype correlation with unintended drug responses for commonly prescribed drugs such as warfarin, ..., ..., etc. 
+In relation to clinical practice, many studies have documented genotype correlation with unintended drug responses for commonly prescribed drugs such as warfarin \cite{linder_genetic_2001}, ..., ..., etc. 
 Clinically testing for patient genetic predisposition to non-responsiveness or heightened risk of side effects could encourage optimal treatment planning and dosing leading to improved clinical outcomes. 
 Furthermore, PGS has the potential to help predict, better understand, and inform optimal drug treatment plans for patients with various diseases, and represents significant improvement over the one-size-fits-all, trial and error approach popularly practiced \cite{hens_return_2011}. 
 For cancer patients, the use of PGS data has been shown to similarly augment existing strategies of diagnosis and treatment. Studies have established that PGS data analysis can improve tumor diagnosis capabilities, development of targeted, personalized therapies, and allow for the development of more effective treatments \cite{mcleod_cancer_2013}. 
@@ -107,7 +107,7 @@ As with other cutting-edge technologies, there is much governance and technologi
 With advancements being made consistently, such large scale adoption is not too distant.
 
 
-\textbf{Current State of the Art -- Clinical data storage}
+\subsection{Current State of the Art -- Clinical data storage}
 Presently, most clinically relevant health data is stored using an \underline{institution-centric approach}, including PGS data. 
 This strategy is characterized by the hospital or hospital system isolating all of its stored data into one or more centralized databases that are governed and maintained solely by the owner institution. 
 Here, centralized storage is defined as the structural organization of a data store, establishing that a single node, the system that hosts the physical data storage, has control over managing database content, access, and permissions. 
@@ -365,7 +365,7 @@ As of yet, there have been few documented investigations into representing PGS d
 This relatively novel formatting would allow for a number of possibly advantageous data properties. 
 First, any particular part of a patient\textquotesingle s genome that is represented in the vcf file could be linked to other data such as a perviuos test result, a documented protein folding error, a published pharmacogenomics directive, or a known rare genetic disease marker, among many other examples.
 The power of linking the vcf data to other clinically relevant data is then realized when these semantic links can be discovered during querying. 
-Second, queries across multiple patient pods can be performed and results can be obtained despite these data being stored in separate, secure locations (<-- not the right word).
+Second, queries across multiple patient pods can be performed and results can be obtained despite these data being stored in separate, secure data stores.
 While Linked Data and Linked Data Query Traversal algorithms are state-of-the-art, these appraoches have not as of yet been applied to genomics data or healthcare.
 
 To achieve the representation of PGS data, in vcf files, as RDF, we will investigate a format conversion process using the SPHN RDF ontology to serialize PGS data in turtle (ttl) format. 
@@ -376,8 +376,7 @@ Furthermore, I will compare the performance of the proposed mapping strategies i
 Because representation of VCF files in RDF have not be heavily studied, these will be the first experiments of their kind.
 
 
-
-
+Don't know If this fits --->
 Additionally, there is promise in representing genomic data as a graph as is reflected in recent advances in reference pangenome representations[c]. 
 
 \textbf{Milestones:} 
