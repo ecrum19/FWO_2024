@@ -1,77 +1,12 @@
 \documentclass[a4paper,11pt]{article}
-\input{reviewing.tex}
-
-% Page setup
-\usepackage[a4paper,margin=3cm,right=2.5cm]{geometry}
-\usepackage{changepage}
-
-% Typography
-\usepackage{fontspec}
 \setmainfont{Calibri}
-\usepackage{microtype}
-\usepackage{csquotes}
 
-% Sections
-\usepackage[noindentafter]{titlesec}
-\titleformat\section{\bfseries}{}{0em}{}
-\titlespacing\section{0em}{1em}{0em}
-\titleformat\subsection{\fontsize{13pt}{13pt}\selectfont\bfseries}{}{0em}{}
-\titlespacing\subsection{0em}{1em}{.5em}
-\titleformat\subsubsection{\color{black!65}\bfseries}{}{0em}{}
-\titlespacing\subsubsection{0em}{0.66em}{0.13em}
-\titleformat\paragraph[runin]{\bfseries\itshape\color{black!60}}{}{0em}{}
-\titlespacing\paragraph{0em}{.5em}{.66em}
 
-% Lists
-\usepackage[inline]{enumitem}
-\setlist{nosep}
-
-% References
-\usepackage[hidelinks]{hyperref}
-\usepackage[capitalize,nameinlink,noabbrev]{cleveref}
-
-\usepackage[
-  backend=biber,
-  bibstyle=trad-plain, % Was trad-abbrv, but that does not compile
-  abbreviate=false,
-  doi=false,
-  isbn=false,
-  giveninits=true,
-  sorting=none,
-  sortcites=true,
-  citestyle=numeric-comp,
-]{biblatex}
-\renewcommand\multicitedelim{\addcomma}
-% Custom author list length
-\addbibresource{references.bib}
-\renewcommand*\bibfont{\fontsize{10pt}{13pt}\selectfont}
-\bibitemsep 1pt plus 1pt minus 1pt
-% Slanted "et al."
-\usepackage{xpatch}
-\xpatchbibmacro{name:andothers}{%
-  \bibstring{andothers}%
-}{%
-  \bibstring[\textsl]{andothers}%
-}{}{}
-% Underline my name
-\usepackage[normalem]{ulem}
-\def\firstname{Elias}
-\def\lastname{Crum}
-\renewcommand\mkbibnamegiven[1]{%
-  \ifboolexpr{test {\ifdefequal\firstname\namepartgiven} and
-              test {\ifdefequal\lastname\namepartfamily}}
-  {\uline{\namepartgiveni~\namepartfamily}}
-  {\namepartgiveni~\namepartfamily}%
-}
-\renewcommand\mkbibnamefamily[1]{}
+\usepackage{comment}
 
 \begin{document}
-\begin{mdframed}[backgroundcolor=black!17,linecolor=black!0,font=\bfseries]
-\centering
-PHD FELLOWSHIP STRATEGIC BASIC RESEARCH\\
-PROJECT OUTLINE (max. 12 A4 pages)\\
-\end{mdframed}
-\vspace{-.5\baselineskip}
+
+\title{PHD FELLOWSHIP STRATEGIC BASIC RESEARCH PROJECT OUTLINE}
 
 \author{Elias Crum}[
 orcid=0009-0005-3991-754X,
@@ -81,414 +16,206 @@ email=elias.crum@ugent.be
 \maketitle
 
 \section{1. Rationale and positioning with regard to the state-of-the-art}
-\textit{Elaborate the scientific motivation for the project proposal based on scientific knowledge gaps, and the issues and problems that you want to solve with this project. Concisely describe the related international state of the art, with reference to scientific literature. Indicate why the execution of the proposed strategic basic research is important. Position your project in relation to ongoing national and international research.} 
+\begin{comment}
+Elaborate the scientific motivation for the project proposal based on scientific knowledge gaps, and the issues and problems that you want to solve with this project. Concisely describe the related international state of the art, with reference to scientific literature. Indicate why the execution of the proposed strategic basic research is important. Position your project in relation to ongoing national and international research.
+\end{comment}
+
+\subsubsection{Decentralized Landscape}
+Data decentralization initiatives [c] are working to reduce the data siloing caused by data centralization on the Web.
+A leading decentralized storage strategy are personal data vaults that offer user moderated access controls[c], data linking across vaults using the Resource Description Framework[c], and information extraction via querying using the SPARCL query language[c].
+The goals of this initiative is to give individual people control over their data, while increasing data sharability and reusability.
+
+Implementations of this data storage and usage approach include [c].
 
 
-\subsection{Introduction}
-As our understanding of genomics deepens, the role of Personal Genome Sequencing (PGS) in healthcare becomes increasingly vital. 
-At the time of writing, there are multiple domains of clinical practice where patient PGS data is used to inform medical decision making \cite{souche_recommendations_2022, gil_analysis_2015}. 
-For over a decade, PGS data has been poised to be scaled to generalized clinical practice, but at present this is largely not the case \cite{alzubi_personal_2014}. 
-While there are many documented challenges to wider clinical implementation of personalized medicine \cite{stefanicka-wojtas_barriers_2023}, one major challenge is presented by the digital representation, storage, and access to the PGS data that underlies all personalized medicine workflows.
-Through this project, I aim to address the challenges presented by PGS data usage in clinical practice through the use of emerging decentralized storage and querying technologies.  
+\subsubsection{Personal Genome Sequencing in Healthcare}
+Something to connect DNA sequencing and the Web...
+At the time of writing, there are multiple domains of clinical practice where patient PGS data is now used to inform medical decision making. 
+Examples include in drug development \cite{ko_new_2022}, cancer diagnosis and treatment \cite{mcleod_cancer_2013}, and rare genetic disease identification and treatment \cite{souche_recommendations_2022}.
+How this integration is deployed varies by clinical domain, but improved outcomes have generally been observed \cite{mathur_personalized_2017}.
+Despite great promise presented by various use cases, barriers to widespread adoption remain \cite{stefanicka-wojtas_barriers_2023}.
 
-\subsection{Medical Motivations for PGS data in Cinical Practice}
-At present, there are three major medical fields that preliminarily show readiness for and benefit from greater use of PGS data, these being drug development and prescription, cancer diagnosis and treatment, and rare genetic disease identification and treatment.
+One major barrier to scalability is presented by the costs of data generation and storage[c].
+The average human genome is slightly over 3 billion base pairs in length and during a whole genome sequencing workflow, various sequence formats that offer different sets of information are produced \cite{bagger_whole_2024}.
+Of these, Variant Call Format (VCF) files \cite{danecek_variant_2011} serve as the state-of-the-art for most clinical genomic applications and are typically between 100-1000s MB (0.1-1 GB) within computer memory. 
 
-Genomic variation has been shown to impact many aspects of drug prescription and treatment efficacy \cite{feero_genomics_2011}. 
-More recently, genomics has also become informative for new drug development \cite{ko_new_2022}. 
-In relation to clinical practice, many studies have documented genotype correlation with unintended drug responses for commonly prescribed drugs such as warfarin \cite{linder_genetic_2001}, ..., ..., etc. 
-Clinically testing for patient genetic predisposition to non-responsiveness or heightened risk of side effects could encourage optimal treatment planning and dosing leading to improved clinical outcomes. 
-Furthermore, PGS has the potential to help predict, better understand, and inform optimal drug treatment plans for patients with various diseases, and represents significant improvement over the one-size-fits-all, trial and error approach popularly practiced \cite{hens_return_2011}. 
-For cancer patients, the use of PGS data has been shown to similarly augment existing strategies of diagnosis and treatment. Studies have established that PGS data analysis can improve tumor diagnosis capabilities, development of targeted, personalized therapies, and allow for the development of more effective treatments \cite{mcleod_cancer_2013}. 
-Rare genetic diseases are one of the most established areas of medicine that PGS data has proved particularly useful in improving disease identification and treatment. 
-Because an estimated 80\% of rare diseases are of genetic origin \cite{zhu_whole-exome_2015}, and patients searching for diagnosis and proper treatment commonly undergo years of testing at more than one institution \cite{marwaha_guide_2022}, new approaches for using and sharing PGS data are merited. 
-PGS applications in clinical practice are not devoid of challenges, including the potential overinterpretation of results due to a limited understanding of contextual information and the risk of genetic discrimination \cite{alzubi_personal_2014}. 
-As with other cutting-edge technologies, there is much governance and technological development still needed for widespread use of PGS data for clinical care. 
-With advancements being made consistently, such large scale adoption is not too distant.
+Another is the computational costs of regenerating results and sequences because of little to no data sharing potential in the current system.
 
+The costs of producing and maintaining these data are additioanlly increased by the privacy protections needed for PGS data[GDPR].
+With the enlarged threat of hacking, phishing, and login credential compromisation that seems to only be increasing \cite{noauthor_ransomware_nodate}, hospitals and institutions are forced to enact tighter regulation over data access within their institution, severely limit outside institution access, and increase their cyber security budget to handle security audits.
 
-\subsection{Current State of the Art -- Clinical data storage}
-Presently, most clinically relevant health data is stored using an \underline{institution-centric approach}, including PGS data. 
-This strategy is characterized by the hospital or hospital system isolating all of its stored data into one or more centralized databases that are governed and maintained solely by the owner institution. 
-Here, centralized storage is defined as the structural organization of a data store, establishing that a single node, the system that hosts the physical data storage, has control over managing database content, access, and permissions. 
-With this system, healthcare institutions prioritize patient data privacy over all other digital data storage considerations. 
-By prioritizing patient data privacy, access is commonly only allowed for authorized users within the institution\textquotesingle s internal network. 
-Crucially, this institution-centric data storage architecture, by design, allows for little to no accessibility for users or data usage requests that originate outside of the institution\textquotesingle s network, largely due to the organizational design of such centralized data storage systems. 
-With the enlarged threat of hacking, phishing, and login credential compromisation that seems to only be increasing \cite{noauthor_ransomware_nodate}, hospitals and institutions that maintain patient PGS data are forced to enact tighter regulation over data access within their institution, severely limit outside institution access, and increase the in-house cyber security staff or pay for external companies to handle such security audits.  
-Due to this isolation of patient PGS data to a single institution, data duplication leading to increased storage and data generation costs, severely limited patient data usage transparency, and severely limited potential for data sharing are observed. 
-Collectively, these state-of-the-art approaches to PGS data storage inhibit the scalability of PGS data usage in the above discussed clinical applications due to raising PGS usage costs.
+\textbf{PGS data sharing in academic research.}
+In the realm of academic research, the development of infrastructure that allows for sharing of genome data between institutions, creating federated centralized databases, has gained traction recently. 
+Initiatives such as GA4GH Beacons \cite{rambla_beacon_2022} and others are building infrastructure for this between institution data sharing. 
+Despite this step towards increased sharing and cost reduction, advancements in state-of-the-art infrastructure and standards are not directly translatable to clinical practice. 
 
 
-\textbf{Considerations for improvements}
-Within clinical practice, the key concerns related to PGS data storage and sharing are presented by three major constituents of the clinical ecosystem, those of the \textbf{patient, clinician, and healthcare administration}. 
+\subsubsection{Decentralized PGS data storage}
+A possible solution to the challenges faced is through reorganization of how data is stored and discovered. 
+The citizen-centric model places the patient at the center, and is not an entirely novel concept \cite{brands_patient-centered_2022}.
+Within the current system, a citizen-centric model is difficult to implement due to technological challenges presented by centralized databases.
+The Solid protocol \cite{capadisli_solid_nodate}, a decentralized data storage approach, is composed of specifications more conducive to construction of a citizen-centrica data storage strategy for clinical data.
+Specifically, Solid offers the ability to granularize data privacy, allow authorized data access over the web, and represent stored data as Linked Data, all features that can work to remove some of the antagonism between cost reduction and privacy preservation.
+In recent years, there have been initiatives for representing biological data as RDF \cite{sib_swiss_institute_of_bioinformatics_rdf_group_members_sib_2024}, specifically extending into clinical biology recently \cite{van_der_horst_bridging_2023}. 
+While there is little research into the benefits of representing genomics data as RDF, past experiments have shown that linked data integration into clinical practice results in improved outcomes \cite{farinelli_linked_2015}.
 
-From \textbf{all three perspectives}, privacy is of the utmost importance. 
-While there is open debate about the degree to which patients should be able to control their own personal medical data \cite{blumenthal_giving_2015,damen_patients_2022}, legally, within the European Union, a core tenant of current personal data usage is transparency \cite{spagnuelo_qualifying_2020}. 
-Protections for citizens relating to sensitive personal data are codified in the European Union\textquotesingle s General Data Protection Regulation (GDPR) law, since 2018 \cite{noauthor_regulation_2016}. 
-PGS data, along with other health-related data, is categorized as “sensitive” data in the GDPR, carrying with it the strictest privacy safeguards. 
+Furthermore, using Solid pods for data storage also makes it possible for non-linked data stored in the pod, such as test result files, to be linked to RDF data, improving data connectivity.
+As of yet, decentralized storage technologies have not meaningfully expanded to use in clinical practice.
+but if they did, things like data sharing, reduced data duplication, increased data privacy controls, could contribute to the PGS cost reductions and improved scalability.
+On the other side of the coin, the size and sensitive nature of PGS data provide a relatively unstudied frontier of decentalized web technology.
 
-From the perspective of \textbf{the patient}, 
-awareness and control over their personal data usage is a consideration that the current system does not much address. 
-As established by the GDPR, technical infrastructure designed for the storage and accessing of PGS data requires special attention to methodologies that address patient control and/or transparency over usage of their data. 
-Because of the architecture of centralized databases, granular permissions for specific subsets of sensitive data are challenging to implement yet could allow for a patient to view their own PGS data, thus improving their connection to their own personal data. 
-Additionally, policy implementations such as patient ability to view and/or approve or deny consent to PGS data usage for specific instances, rather than a blanket consent at time of collection, will improve the patient\textquotesingle s involvement in how their data is used. 
+\textbf{Link Traversal Query Processing (LTQP)}
+To make sense of linked genomic and clinical data, approaches to parsing and querying that data must also be investigated, especially to encourage greater data discoverability and usage in clinical practice.
+Recent work has established that the querying of Linked Data in decentralized environments is possible \cite{taelman_evaluation_2023}, but these results were obtained with assumptions different than those presented by patient genome pods.
+Here, querying will be performed over a potentially large number of data pods containing large amounts of linked data, a situation not extensively investigated. In this context, it is likely that existing LTQP algorithms and approaches will require innovation. 
 
-From the perspective of \textbf{the clinician}, being able to access patient data, share patient data with providers outside one medical institution\textquotesingle s system, and not need to worry about data interoperability with biomedical tools, applications, or user interfaces is crucial. 
-Data interoperability challenges emerge from the complex process of generating and storing PGS data as well as the large size of these datasets. 
-The average human genome is slightly over 3 billion base pairs in length (3 Gbp). 
-During a whole genome sequencing workflow, various sequence formats, that offer different sets of information, such as FASTQ \cite{cock_sanger_2010}, SAM/BAM/CRAM \cite{li_sequence_2009, bonfield_cram_2022}, VCF \cite{danecek_variant_2011}, and others are produced. 
-With respect to clinical practice, the VCF file offers genomic information most useful to most current clinical applications. <-- bad sentence
-VCF files are typically between 100-1000s MB (0.1-1 GB) in size within computer memory when compressed and represent ~10^6 nucleotide positions of an individual\textquotesingle s PGS. 
-While these data formats are widely considered the state-of-the-art for most genomic data applicaitons, often the organization-specific directory structure and file naming protocol makes PGS data non-interoperable between databases.
+It is documented how many personal data vaults of small amounts of data can be queried, but little has been done to investigate how many data vaults of large amounts of relatively similar data could be queried.
 
-From the perspective of \textbf{healthcare administration}, the cost of generating, storing, and maintaining patient PGS data, with the necessary privacy protections and monitoring, is nontrivial. 
-The result is little data sharing between institutions, or even within divisions of the same institution.
-Therefore, institutions are responsible for re-generating PGS data for patients from out-of-network regardless of whether they may have an already generated genome sequence at another institution. 
-Such data duplication represents unnecessary inefficiency that costs both the patient and institution, especially due to the heavy computational demands in generating PGS data and the high storage demands for the large PGS data files produced. 
-During the life of that data, the hospital system that maintains the storage is also responsible for preserving the privacy of that information. 
+At present, the current state-of-the-art methods for data storage are centralized in nature, following an institution-centric model. 
+This data storage strategy has posed great challenges to the scaling of personalized medicine, the use of patient genomic information to inform clinical decision-making.
 
 
-\textbf{Current State of the Art -- Academic Reserach and Consumer Market}
-Apart from the current practices within healthcare institutions, other approaches for consumer access to their PGS data by private companies, PGS data sharing between research institutions, and general health data interoperability initiatives by multi-institution consortiums have been innovating the ways PGS data is stored and shared. 
+\textbf{Project Motivation.}
+Despite there being no real solutions to the current antagonism between privacy and cost reduction for PGS data usage in healthcare, there is also a conspicuous gap in the current scientific discourse around the development and implementation of a proposed solution. 
+This gap underscores the necessity of my Ph.D.
+I aim to improve the connectedness and shareability of genomic data storage(s), while preserving data privacy, through the integration of various domains of semantic web research into a novel, holistic framework designed for use in clinical practice. 
+My Ph.D. will also aim to demonstrate the limitations of current state-of-the-art semantic web technologies in this novel application domain with the intention of driving innovation and discovering future research pursuits.
 
-Private companies, such as 23andMe, Ancestry.com, Sequencing.com, and others, offer consumption-centered genomic products such as ancestry profiles, health risk screenings, and rare-disease management guidelines among other emerging services. 
-Such services have highlighted a public interest in being able to see and access their PGS data as well as learn useful things about themselves from it.
-This emerging market reflects that consumers are keen to be able to access their PGS data, or at least use such data to know more about themselves. 
-At the same time, innovation in this niche is not situated to handle the challenges presented by PGS data in clinical practice. 
-Between similar centralized data storage approaches to hospital systems and large data leaks for companies like 23andMe in recent years, the prospect of existing companies offering solutions attractive enough to convince consumers or hospital systems to adopt a new system is unlikely. 
-
-In the realm of academic reserach, the development of infrastructure that allows for sharing of genome data between institutions has gained traction recently. 
-Due to reasons related to patient data privacy preservation, data is predominantly anonymized for sharing to be admissible. 
-Initiatives such as OHDSI OMOP, HL7 FHIR, GA4GH Beacons, and others are building the infrastructure and establishing the interoperability standards necessary for between institution data sharing in this manner. 
-The major drawbacks of these proposed solutions are, (a) the requirement that data must be anonymized for true sharing or, (b) control of data analysis is relinquished to the data\textquotesingle s home institution, thereby establishing federated networks of hospital data for data discoverability, but restricting actual access to such data for privacy reasons.
-
-Despite great progress in research and consumer domains, advancements in state-of-the-art infrastructure and standards are not directly translatable to clinical practice due to various cinically unique demands detailed in the introduction. 
-
-
-\textbf{Non-institution-centric Solutions}
-A conceptual approach that offers a solution for the current challenges in data privacy, accessibility, and interoperability is moving away from an institution-centric model for PGS data storage and toward a citizen-centric one. 
-More broadly, initiatives that exist in the health data domain are advocating for a similar change in technological philosophy. 
-While this movement is still in its early stages, calls for leveraging decentralized storage technologies such as Solid, ..., ..., or Block Chain, have been proposed[c]. 
-While there is still much work to be done before these fledgling technologies can be applied in practice, these strategies offer citizen-centric storage while also hosting the building blocks for features such as consent-driven data sharing, granularized data policy enforcement, stored data representation as Linked Data, and authorized data access over the web to just name some possibilities, making them an attractive pursuit. 
-
-\textbf{Resource Description Format (RDF) and Linked Data}
-To fully harness the advantages offered by decentralized storage technologies, other forms of data representation and storage also provide additional advantages.
-RDF is a way of semantically representing data that also allows for semantic data linking across documents and datastores.
-Some large public biological databases, such as UniProt \cite{theuniprotconsortium_uniprot_2017}, have been fully converted to RDF and initiatives exist for further expansion of biological data storage as RDF \cite{sib_swiss_institute_of_bioinformatics_rdf_group_members_sib_2024}.
-There are also other tools that exist for the conversion of existing relational database data to RDF \cite{jupp_ebi_2014}.
-RDF holds promise within healthcare for connecting clinically-relevant data and has been proposed for use in Electronic Patient Records in the past \cite{lindemann_resource_2008}.
-More modernly, initiatives for improving the interoperability of health data through integrating semantic layers of information into data stores, primarly through the representation of data as RDF, have been undertake in Europe \cite{van_der_horst_bridging_2023}.
-With more and mroe data being represented in RDF, the advantages of such a data formatting strategy are now becoming increasinly possible.
-
-\textbf{Link Traversal Query Processing}
-With the representation of PGS data as RDF, approaches to parsing and querying that data must also be investigated, especially to encourage leveraging the greatest utility from the linked nature of representing PGS data as Linked Data.
-The querying of Linked Data is a well established challenge, especially for large data \cite{taelman_evaluation_2023}.
-I forsee the main challenges posed by link traversal in general contexts as less daunting within our proposed framework because most work where significant challenges were observed were with generalized, web-scale querying \cite{taelman_evaluation_2023}. 
-Here, I am proposing a relatively small number of links within a large, known dataset. 
-Query processessing over a large dataset is made more performant through following strategies such as query planning.
-Query planning involves the maximization of query performance based on cost estimations based on data and query type. 
-Additional underlying strategies such as the use of MapReduce frameworks for query execution optimization can also improve query performance through the use of query decomposition and parallel processing \cite{shim_mapreduce_2013}.  
-
-
-
-\textbf{Project Motivation}
-Despite there being no real options for clinical PGS data sharing or representation as RDF at present, there is also a conspicuous gap in the current scientific discourse around the development and implementation of such a infrastructure for personal genome data sharing for clinical use. 
-This gap underscores the necessity of the proposed doctoral research project.
-Our aim is to develop Personal Genome Pods using the Solid protocol \cite{capadisli_solid_nodate}, a set of technical specifications that enables decentralized data storage and infrastructure for data privacy preservation alongside increased sharing capabilities.  
-I envisage that this project will significantly contribute to the field of personalized medicine and clinical genomic research by empowering individuals to utilize their personal genomes in healthcare and clinical practice in a manner that reinforces their autonomy and privacy. 
-My project described here will aim to establish the feasibility of using decentralized storage technologies for PGS data storage and sharing with the hope that it results in direct translation into a product and/or acts as the schematic upon which future products are based. 
 
 
 \section{2. Scientific research objective(s)}
-\textit{Describe explicitly the scientific objective(s) and the research hypothesis. Explain whether and how the research is specifically challenging and inventive, describing in particular the innovative aspects of the envisaged results. Discuss in detail the results (or partial results) that you aim to achieve, such as specific knowledge, the solution to particular problems and academic breakthroughs.}
+\begin{comment}
+Describe explicitly the scientific objective(s) and the research hypothesis. Explain whether and how the research is specifically challenging and inventive, describing in particular the innovative aspects of the envisaged results. Discuss in detail the results (or partial results) that you aim to achieve, such as specific knowledge, the solution to particular problems and academic breakthroughs.
+\end{comment}
 
-My research project is situated to provide a proof-of-concept PGS data storage and sharing framework that can be adapted to use for clinical practice. In this pursuit, my core research question is: can a citizen-centric PGS data storage framework, developed using a decentralized storage technology, offer data sharing infrastructure while maintaining privacy safeguards for sensitive data? 
-To address this central question, I will investigate the use of data pods, implemented using Solid protocol, to store PGS data in a decentralized and privacy-oriented ecosystem while addressing technical challenges associated with data policies, representation of PGD data as Linked Data, discoverability through querying, and infrastructure that connects data pods to existing clinical workflows and tools. 
+My research project is situated to provide a proof-of-concept PGS data storage and sharing framework for use in clinical practice. 
+In this pursuit, my core research questions are: 
+(A) Can a citizen-centric PGS data storage framework, developed using a decentralized storage technology, offer data sharing infrastructure while maintaining privacy safeguards for sensitive data? 
+(B) Can PGS data be stored as RDF, be linked to other medically-relevant data, and be queried over in a ways that would be useful to clinical practice?
+To address these central questions, I will investigate the use of data pods, implemented using Solid protocol, to store PGS data in a decentralized and privacy-oriented ecosystem while addressing technical challenges associated with data policies, representation of PGS data as Linked Data, discoverability through querying, and infrastructure that connects data pods to existing genomic data sharing initiatives. 
 My hypothesis is that such a framework can be developed and would offer unique advantages over the existing state-of-the-art institution-centric PGS data storage solutions. 
-The following objectives six objectives will be undertaken to test my hyposthesis through the production and testing of these different modules of the proposed framework.
 
-(1) \textbf{Identify the workflows, tools, and data networks that utilize PGS data for framework connection.}
-_What: Assess the current state-of-the-art in the field of clinical PGS data formatting, usage, and sharing. 
-Describe existing methods used for PGS storage, PGS data sharing, and PGS data integration into clinical workflows.
-_Result: Establish tangible goals for how my framework can be implemented into existing workflows and initiatives. These goals will inform the architecture of the framework and how future implementations are deployed. 
-_Challenging: There are many initiatives, standards, and potenital clinical workflow applications that have different data formatting standards, technical requirements, and implementation specifications. 
-_Why me: My education in bioinformatics, past research in genomics, and work experience in clinical settings has provided me with the tools and skills necessary to parse the many options and select those that will offer high impact and fit most seamlessly with the proposed framework.
+The following five objectives will be undertaken to test my hypotheses through experimental production and testing of the listed components of the proposed framework.
+(1) Solid Pod PGS Data Storage, 
+(2) Genomic data as Linked Data,
+(3) Data policies,
+(4) Data querying,
+(5) Framework deployment.
 
-
-(2) \textbf{Solid Pod PGS Data Storage.}
-_What: Develop methods and a workflow for the creation and hosting of individual patient Solid pods as well as the transfer of PGS data, primarily in vcf file format, into those Solid data pods. 
-_Result: I will produce a proof-of-concept demo that exhibits that the Solid decentralized data storage ecosystem can be implemented and host PGS data in a citizen-centric architecture.
-_Challenging: Such a framework for genome data has not been undertaken before in the literature and most past implementations of Solid data pod use cases have not been designed to handle the large data files that are presented by PGS data. 
-_why me: ???
-
-
-(3) \textbf{Data formatting and interoperability.} 
-_What: I will experiment with the conversion of PGS data from vcf files to RDF serialized in ttl file format. 
-We intend to investigate the viability of representing VCF file data as Linked Data which necesssitates the mapping from this biological file format, vcf, to RDF. 
-_Result: I aim to make such a mapping process bi-directional because most existing clinical workflows necessitate input files in VCF, thereby making a returnable VCF file on request necessary. 
-Thus, an index file will be maintained for VCF to RDF conversion bidirectionally.
-_Challenging: The conversion between VCF and RDF will require the use of an ontology and computation. 
-Decisions regarding how the computation will be done, when the computation will be done, and what exact computation will be performed are all open questions.
-I will assess the computational demands of the conversion process as well as the storage costs of the RDF files produced to optimize the storage and conversion strategies.
-
-
-(4) \textbf{Data policy and accessing.} 
-_What: A fundamental goal of any PGS data storage system is mainting the privacy of the stored PGS data. 
-I will investigate the ways in which data access requests, data usage consent, and granularization of consent to particular pieces of data can be applied to PGS data stored in Solid pods.
-_Result: I will develop methods within the larger framework for data to be accessed by authorized users, adding and changing restrictions for access, requests for access by clinical professionals or researchers, and access controls that function at a level lower that the pod owner's whole pod.
-_Challenging: There are trade-offs between privacy and accessibility, and ultimately, the addition of privacy considerations to data will have the most impact on quering the data within a pod...
-_why me: I have direct experience with health care systems in the USA and am familiar with challenges associated with privacy protection strategies used for sensitive health data. 
-I plan to apply this knowledge in the design of a system for privacy protections that is intuitive to users and provides more granular privacy options than the current systems available. 
-
-(5) \textbf{Data querying}
-_What: Investigate query processing techniques for a single and across multiple Solid pods containing PGS data. 
-Assess the efficacy of existing querying algorithms applied to PGS data in both RDF and vcf formats and compare results to common vcf parsing tools publicly available.
-_Result: Develop performant query strategies for Solid pods containing PGS data.
-_Challenging: PGS data is large, in particular, vcf files are 100-1000s MBs in size, thus, performant querying can present a challenge. Additional complexity will be introduced to querying PGS data formatted as Linked Data.
-_why me: My background in genomics and bioiformatics can help me both assess and innovate existing approaches to RDF and Linked Data querying approaches.
-
-\ec{This is a question I do not know how to answer right now --> What is lacking in existing query algos that necessitate you to build new ones?}
-
-
-(6) \textbf{Framework unification and deployment}
-Together, these objectives will be combined into an operational framework that uses the proposed methods for storing, protecting, sharing, and querying PGS data for clinical use. The framework, once produced, will be comapred to existing strategies for storing and sharing PGS data to assess the efficacy of transitioning toward product production and marketing.
+Together, these objectives will serve as the components of an operational framework. 
+The framework, once produced, will be compared to existing strategies for storing and sharing PGS data to assess the efficacy of transitioning toward product production and specific clinical use case adaptation.
+The proposed scientific approach also aims to test the application of numerous fields of semantic web research to a clinical knowledge domain. 
+Explicitly, an approach to how decentralized storage specifications can be applied to sensitive medical data storage, how genomic and medical data can be represented and queried as Linked Data, how existing Linked Data querying algorithms perform over genomic and health data, how granularized data policies impact querying and linking data in a medical context, and how the combination of these semantic technologies could provide an improvement over existing state-of-the-art clinical PGS data storage and usage strategies, are specific questions my Ph.D. aims to answer.
 
 
 \section{3. Research methodology and work plan}
+\begin{comment}
 \textit{Elaborate the different envisaged steps (experiments/activities) in your research, and motivate strategic choices in view of reaching the objectives. Describe the set-up and cohesion of the work packages including intermediate goals (milestones).
 Show where the proposed methodology (research approach) is according to the state of the art and where it is novel. Discuss risks that might endanger reaching project objectives and the contingency plans to be put in place should this risk occur.
 Use a table or graphic representation of the planned course of activities (timing work packages, milestones, critical path) over the 4-years grant period.}
+\end{comment}
 
-My project will be split into five different component work packages and a final sixth work package where the components will be deployed as a cohesive framework. The workpackages will be worked on relatively linearly and specific milestones are outlined below.
+My Ph.D. will be split into four component work packages (WPs) with a fifth work package where the components will be unified into a cohesive framework with an accompanying web application. This workflow is reflected in Fig. 1.
 
+\begin{figure}
+\includegraphics[width=\textwidth]{fig1.eps}
+\caption{\textbf{PENGQUIN Ph.D. workflow.}
+White circles represent locations within the workflow where milestones will be achieved. 
+For each of the steps in the workflow, the applicable work packages also shown in parentheses. 
+The small blue "WWW" box seen next to some objectives represents integration of that item into the framework\textquotesingle s web application.
+} \label{fig1}
+\end{figure}
 
-[remake project overview figure]
-[figure 1 description]
-\textbf{Figure 1 PENGQUIN project workflow.} 
-White circles represent locations within the workflow where objectives will be achieved. 
-For each of the steps in the workflow, the work packages affecting this step are also shown in parentheses (if applicable). 
-This workflow is slightly oversimplified for ease of understanding the project.
+\subsection{Work Package 1: Storing and publishing personal genomic data in a decentralized environment} 
 
+I will test the viability of Solid data pods as storage infrastructure for patient PGS data, thus, testing my hypothesis that Solid can support PGS data storage. 
 
-\textbf{Work Package 1: Establishing the practical connection goals that encourage clinical use}
+A test dataset will be constructed using publicly available Illumina platinum genome files \cite{noauthor_platinum_nodate}. 
+These files will be used as representative "patient" PGS data for experimentation. 
 
-- Scoping review (storage / sharing approaches that exist)
-- File types (WGS and clinically relevant file types)
-- Practical use cases (what types of input data do they require / how are results reported)
-- What technological foundations will be necessary?
-
-To establish the practical use cases upon which to design my project, I will begin my Ph.D. project by writing a scoping review paper that details the ways in which PGS data are currently used in clinical practice as well as the tools and systems currently in place to facilitate the storage and sharing of these PGS data. 
-Along with assessing the current use cases for PGS data in clinical practice, I will also investigate the input file and data formats necessary for these pipelines and tools. I will specifically focus on whole genome sequencing file types, as these are the most promising for future applications. 
-Finally, I will determine the viablility of decentralized storage systems for use in PGS data storage and sharing as well as ...
-
-I will conduct a literature review of: the Solid decentralized data storage framework, secure/confidential data storage in decentralized environments, existing human genome single nucleotide polymorphism summary file (.vcf files) parsing approaches. A review of these aims has not been performed before and is aimed at representing the state-of-the-art of various areas within the field of PGS data sharing.
-
-Importantly, I aim to for this framework to facilitate the greater access of PGS data to both existing and future applications and clinical tools. 
-To accomplish this generalizability, I will investigate popular ongoing health data initiatives aimed at standardizing genomic data formats and directory structures, establishing queryable, federated networks of health and genomic data, and (another thing here?)
-
-In an effort to improve data flows for research purposes, I intend to connect the proposed framework to the international Beacon initiative[c,c] to increase the availability and ease of access of genomic data for researchers globally. 
-In this aim we will make patient PGS data beacon endpoints that can be discoverable abd queried via the Beacon API.
-This option to contribute personal genomic data to the greater Beacon data network, thereby making it discoverable to researchers, will be controllable on an individual basis as an opt-in option. 
-The connection of a decentralized storage framework to the Beacon network is novel in nature as all other existing endpoints are relational databases maintained by hospitals or research institutions.
-
-
-not sure if this fits -------->
-To avoid privacy issues and improve the communicability of sensitive medical data findings, the Observational Medical Observations Partnership (OMOP)[c] initiative has established methods and data sharing standards that allow for the distribution of medical data findings without the fear of infringing on the privacy of sensitive medical data. 
-Within the OMOP initiative, the genomic common data model (G-CDM)[c] has been proposed as a method of improving the circulation and discoverability of genomic research results for researchers. 
-Similarly, the HL7 FHIR Genomics Implementation initiative[c] attempts to solve similar issues with genomic data sharing and discoverability without infringing on medical data privacy through the establishment of a modular data ontology. 
-These, along with other data standard organizations such as ISO[c] or consortia such as GA4GH[c] are all viable considerations for data representation formats. 
-We aim to integrate these data structures and discoverability standards into our PENGQUIN project architecture to encourage improved data and result sharing among the greater research and clinical community. 
-
-
-\textbf{Milestones:} 
-\begin{enumerate}
-	\item Literature review of existing genome storage implementations
-	\item Scoping review paper composition
-	\item Submission for paper publication in a peer-reviewed journal
-	\item Determination of preliminary use case goals
-	\item Format standards for initial implementations
-\end{enumerate}
-
-\textbf{Risks and Mitigation:}  
-\begin{itemize}
-	\item \textbf{Paper is not accepted:} if the scoping review paper is not accepted for publication for a journal article, I will investigate alternative methods of publication such as conferences, paper recomposition for a different purpose, or some other alternative that allows for communication of results.
-	\item \textbf{Approach and/or underlying goals change:} under close advisement of my Ph.D. promoters, we will formulate a new apprach that addresses barriers to progress or success that arise from unforseen circumstances or changes in current field of scientific investigation.
-\end{itemize}
-
-\textbf{Work Package 2: Storing and publishing personal genomic data in a decentralized environment} 
-
-- Set up solid pods using the CSS
-- Create an interface for data management and uploading
-- Make a test dataset of PGS data for future experimentation
-
-In this work package, I will set up the technical foundations for experimentation that will continue in later work packages. 
-A test dataset will be constructed using publicly available Illumina platinum genome files[c]. 
-These files will be used as representative "patient" PGS data for early stages of the project. 
-There are 13 individuals\textquotesingle  PGS data represented in this dataset. 
-All data described here is publicly available and can be found here[c]. 
-In later stages of the project, additional publicly available and/or AI generated PGS data may be utilized to test the performance of the framework when scaled to hundreds or thousands of pods, but this will be assessed later in the Ph.D. project. 
-
-Within this work package, I will also create server-hosted Solid pods that are representative of individual patient Solid pods using the Community Solid Server (CSS) specifications. 
+I will also create server-hosted Solid pods using the Community Solid Server (CSS) implementation of Solid \cite{css}. 
 Each pod will be a storage container for a single individual\textquotesingle s PGS data. 
-The pods will be first hosted on a local machine as a server to establish a proof of concept.
-After initial hosting locally, a dedicated server will be set up for hosting a large number of pods for the duration of the project. 
-We thus create a representative patient\textquotesingle s pod and upload a single PGS file, a vcf file to start, into that pod to test basic functionality of a Solid pod for hosting patient data. Once this is demonstrated for a single pod, the process will be testing for many pods, all using unique publicly available PGS data. Data will be uploaded and viewed using scripts that utilize HTTP requests.  
-The use of the CSS for Solid pod hosting is state-of-the-art, but there have been no published experiments documenting the use of Solid pods for storing PGS data. 
+We will upload a single PGS file, a VCF file, into one "patient\textquotesingle s" pod to test basic functionality of a Solid pod for hosting large patient genomic data. 
+All tasks within WP1, including test data set assembly, Solid pod creation and hosting using the CSS, and test data uploading to Solid pods will be evaluated only for functionality.
+
+The use of the CSS for Solid pod hosting for research purposes is state-of-the-art, but the there have been no published experiments documenting the use of Solid pods for storing PGS data, which are much larger than in past Solid experimentation. 
 
 
-\textbf{Milestones:}  
-\begin{enumerate}
-	\item Assemble a test dataset consisting of publicly available PGS data
-	\item Create and host Solid pod(s) using the CSS specifications
-	\item Develop a simple user interface for PGS data uploading and viewing for Solid Pods
-\end{enumerate}
+\subsection{Work Package 2:  Storing PGS data in RDF and as Linked Data}
 
-\textbf{Risks and Mitigation:} 
-\begin{itemize}
-	\item \textbf{Software Dependencies:} Various software will be used for this project. Generally, software is known to exhibit issues concerning quality, versioning, and documentation. If such problems are encountered troubleshooting will include utilizing other, comparable software to accomplish the task or contacting the producer of said software for troubleshooting.
-	\item \textbf{The Solid protocol or CSS specifications are insufficient for envisioned development:} There are various colleagues at UGent who are involved in the active Solid community as well as maintain services such as the CSS. These colleagues will be utilized if such challenges are encountered. Additionally, CSS is an open source project that allows for personal modifications for instances where alternations must be made to satisfy particular demands. 
-\end{itemize}
+I hypothesize that the conversion from VCF to RDF is possible, and the resulting RDF representation will allow for linking of other medically relevant data within the patient\textquotesingle s pod and outside of it.
+The conversion process will be made reversible to enable connection to existing clinical workflows that request VCF format. 
 
+To convert PGS data from VCF to RDF, we will investigate a format translation process using the SPHN RDF ontology \cite{van_der_horst_bridging_2023}. 
+During this translation process, we will experiment with different approaches, such as a bidirectional mapping index, for efficient reversal of conversion.
+Because representation of VCF files in RDF has not been heavily studied, these will be the first experiments of their kind.
 
-\textbf{Work Package 3:  Storing PGS data as RDF}
+I then intend to demonstrate the linking of part of a patient\textquotesingle s genome to
+(A) other data within the patient\textquotesingle s pod, 
+(B) data in a public database outside of a patient\textquotesingle s pod, and
+(C) data from another patient\textquotesingle s pod.
 
-- choose an ontology for the conversion of VCF formatted PGS data to RDF
-- benchmark the computational costs of this conversion
-- develop strategies to efficiently convert between these two formats
-- begin experimentation with linking *other* (what kinds??) patient data to PGS data
+Direct conversion between VCF and RDF will be evaluated in terms of computational overhead, conversion time, and memory usage, both in the Solid pod and during conversion.
+The same evaluations will also be performed on the process when an intermediate mapping index file is used. 
+These comparisons will be documented in a formal benchmarking study.
+Functionality of data linkage aims will be assessed by querying over the data in WP4.
 
-methods of ingesting non-rdf data into rdf data for storage in Solid pods
-
-PGS data represented in vcf file format, is the most commonly used PGS data format for clinical pipeline and tool inputs. 
-Therefore, I intend on making a patient\textquotesingle s PGS data discoverable in this state-of-the-art vcf format to enable connection to these existing workflows. 
-As of yet, there have been few documented investigations into representing PGS data, particularly vcf files, in RDF. 
-This relatively novel formatting would allow for a number of possibly advantageous data properties. 
-First, any particular part of a patient\textquotesingle s genome that is represented in the vcf file could be linked to other data such as a perviuos test result, a documented protein folding error, a published pharmacogenomics directive, or a known rare genetic disease marker, among many other examples.
-The power of linking the vcf data to other clinically relevant data is then realized when these semantic links can be discovered during querying. 
-Second, queries across multiple patient pods can be performed and results can be obtained despite these data being stored in separate, secure data stores.
-While Linked Data and Linked Data Query Traversal algorithms are state-of-the-art, these appraoches have not as of yet been applied to genomics data or healthcare.
-
-To achieve the representation of PGS data, in vcf files, as RDF, we will investigate a format conversion process using the SPHN RDF ontology to serialize PGS data in turtle (ttl) format. 
-During this translation process, we will experiment with different approaches for maintaining the ability map between the vcf and RDF to maintain maximum compatability while experimenting with representing PGS data as RDF. 
-This experimentation may include storing a bidirectional mapping index, both RDF and vcf files, or on-the-fly conversion of vcf to RDF during query execution. 
-Additional optimization may also look into different fragmentation strategies for seralizing PGS data in separate files or other organizations that could help improve performance of RDF storage and querying.
-Furthermore, I will compare the performance of the proposed mapping strategies in terms of ingestion speed, storage size, and query performance. 
-Because representation of VCF files in RDF have not be heavily studied, these will be the first experiments of their kind.
+While Linked Data is state-of-the-art, these concepts have not yet been applied to clinical genomic data.
+The power of linking the VCF data to other clinically relevant data will be especially realized when these semantic links are discovered during querying, which will be investigated in WP5. 
 
 
-Don't know If this fits --->
-Additionally, there is promise in representing genomic data as a graph as is reflected in recent advances in reference pangenome representations[c]. 
+\subsection{Work Package 3: PGS data privacy policies}
 
-\textbf{Milestones:} 
-\begin{enumerate}
-	\item Create and document data format conversion method (first from VCF to RDF)
-	\item Benchmark the computational and storage requirements of format conversion
-	\item Experiment with the various methods of backwards conversion
-	\item Benchmark the computational, time, and storage costs of various methods
-	\item Integrate a method for users or applications to request a vcf file into the framework
-\end{enumerate}
+In this work package, I will experiment with the design and implementation of multiple levels of authorization as well as methods that allow for dynamic control over data discoverability, read/write access, and data access consent requests within a patient\textquotesingle s Solid pod. 
+I hypothesize that various levels of authorization can be implemented and provide protections for maintaining the privacy of PGS data stored in Solid pods.
 
-\textbf{Risks and Mitigation:} 
-\begin{itemize}
-	\item \textbf{Evolving PGS Technological Advances:} 
-	Long read sequencing has been decreasing in price in recent years and offers many advantages over the currently most common form of short-read shotgun genome sequencing. 
-	With a widespread transition to long read sequencing, the way downstream genomic files, such as VCF files, are created and formatted may change. 
-	It is unlikely that such a drastic change will take place during this Ph.D. project, but if such a breakthrough occurs, the Ph.D. candidate and advisors will assess altering the input genomic files to align with the project\textquotesingle s goal of creating a framework useful for advancing personalized healthcare.
-	\item \textbf{Existing ontology descriptions are insufficient for conversion to RDF:} If the SPHN RDF ontology is unfit for converting VCF to RDF or it becomes no longer publicly available, I will look for other published ontologies that could be used for conversion.
-	If a suitable ontology cannot be found, I will work with colleagues to define and publish my own genomic ontology for use in conversting VCF to RDF.
-	\item \textbf{Software Dependencies:} Various software will be used for this project. Generally, software is known to exhibit issues concerning quality, versioning, and documentation. 
-	If such problems are encountered troubleshooting will include utilizing other, comparable software to accomplish the task or contacting the producer of said software for troubleshooting.
-\end{itemize}
+I will develop and test three functionalities for privacy modifications.
+(1) registration of a pod to an individual patient,
+(2) submission of a request to access stored data from a data requester, the notification of the patient, and the consent or denial by the patient, and
+(3) permission revoking capabilities as well as an opt-in option to share their data with researchers. 
+All of these methods will be integrated into the framework\textquotesingle s web application.
+To utilize these methods, various levels of access to pod read and write privileges will be created to fill the needs and roles of participants of a PGS clinical workflow. 
+
+Attaching differing levels of authorization to data will be assessed by creating various profiles that reflect clinical roles and access levels and attempting to access data via user-mediated, application requesting, and querying approaches. 
+
+Assigning the above permissions within Solid is an open area of research and there are currently state-of-the-art protocols implemented in the CSS that allow their implementation.
+The described access schema has not been attempted in the presented level of detail for clinical genomic data.
 
 
-\textbf{Work Package 4: The policies for preserving PGS data privacy}
+\subsection{Work Package 4: Querying over PGS data in one and many pods}
 
-PGS data intended to be used in clinical practice is highly private and protected by legal guidelines like the GDPR. 
-I will experiment with the design and implemention of methods that allow for dynamic control over data discoverability, read/write access, and requesting consent for data access stored in Solid pods.
-There are three methods that are crucial to my citizen-centric PGS data storage framework.
-First, a method that allows for registering the pod to an individual patient, thereby giving them read-only access to their raw PGS data through registration of an account.
-Second, a method that allows for physicians or researchers to see what data is present within a patient\textquotesingle s pod, without being able to access the data itself. 
-Then a method for them to request patient consent to access the actual PGS data. 
-This method involves the submission of the request from the provider, the notification of the patient, and the consent or denial by the patient.
-Third, a method where the patient can rescind permission for access to their data as well as an opt-in option to share their data with researchers. 
-All of these methods should be accessible to the patient and provider within a simple, intuitive user interface.
+This work package will establish a querying mechanism for data in the patient Solid pods that takes into account patient pod data, user permissions, and data linkages. 
+I hypothesize that a querying functionality that utilizes a query engine computational strategy will be able to query over patient Solid pods and return query results.
 
-Additionally, there should be additional nuances added that offer various levels of access to data read and write privelages which reflect the needs and roles of various contributers to a PGS clinical workflow. 
-The data producer (sequencing facility or health data officer at a hospital) should be given the privelages to edit and add all data. 
-The physician should be given privelages to add data, edit any data they have added, and view all data for their patient.
-The patient should have view access for all data within their pods but no edit access.
-The patient should also be given the privelage to edit permissions (other than some cases) as well as be able to transparently view all users who have access to each stored piece of data.
-Any auxillary provider should have the ability to see what data is present in a patient's pod, the ability to request data access, but not default data access.
-A registered reseracher should have limited access to stored data, when patients opt in to allow it, in a format that does not reflect the personal information of the patient (maybe? --> will need to play with card#me publicity)
-It should be noted that these privacy restrictions are only to represent the nuanced ways in which permissions can be controlled and reflected within the framework schema.
-For any product, governance over who can access and edit which data will require expert review and legal consultation. 
+I will executing queries across PGS data contained in patient pod(s) through the use of the query language SPARQL \cite{noauthor_sparql_nodate}.
+Query execution requires a source for computation which is not currently provided by the Solid pods themselves.
+I will investigate the use of a query engine, such as that offered by Comunica \cite{comunica}, to perform the queries apart from the data stores.
 
-Assigning the above permissions within Solid is an open area of research and there are currently some state-of-the-art protocols for similar implementations. The described access schema has not been attempted in the presented level of detail for genomic data.
+For PGS data querying, I will benchmark and potentially build upon the link traversal query processing (LTQP) paradigm \cite{taelman_evaluation_2023}, which has been shown to be an effective method for querying within Solid.  
+I will look to innovate and improve performance by combining existing algorithms with strategies that leverage the unique structure of PGS data such as the use of pre-computed indexes, like the one generated for RDF-VCF conversion, as a guide for faster query processing.
+
+Query engine functionality will be evaluated using query execution time and computational load metrics as well as query results assessment. 
+Query results will establish the functionality of data linkages from WP2.
+
+Benchmarking will be done for existing LTQP algorithms and altered query algorithms that utilize genomic index files and results will be compared.
+Ideally, success will be determined by queries that return correct results in under 10 minutes for users and potentially longer for applications.
+In a clinical setting, time constraints are not as important as accuracy and reliability of results although excessive query times decrease the usefulness of such a tool for physicians in clinical practice.
+
+LTQP algorithms are an active area of active research, but most of the work done has been with generalized algorithms and ,amy datastores with small amounts of data.
+I aim to adapt this querying approach to the specific domain of genomic and health data which has not been attempted before. 
 
 
-\textbf{Tasks:} 
-\begin{enumerate}
-	\item Develop documentation for patient Pod registration
-	\item Define roles of Patient, Medical Professional (direct), Medical Professional (aux), Data Officer, Researcher, etc.
-	\item Assign permissions to the various roles
-	\item Create method for requesting consent for data access, notification of patient, and form for patient to give or deny access
-	\item Create method for patient to opt-in to data sharing with researchers (with anonymization?)
-	\item Implement simple interface for the patient to rescind data access
-\end{enumerate}
+\subsection{Work Package 5: Component consolidation and framework deployment}
 
-\textbf{Risks and Mitigation:} 
-\begin{itemize}
-	\item \textbf{Unsure...:}
-\end{itemize}
+In an effort to improve data flows for research purposes, I intend to connect the proposed framework to the international Beacon initiative \cite{rambla_beacon_2022} to increase the availability of genomic data for researchers. 
+In this aim we will investigate the necessary requirements and infrastructure necessary to connect patient Solid pods, containing PGS data, as beacon endpoints that can be discoverable and queried via the Beacon API. 
+The connection of a decentralized, citizen-centric storage framework to the Beacon network is novel in nature as all other existing endpoints are institution-centric relational databases maintained by hospitals or research institutions.
 
+All other functionalities will also be packaged into a web application with supporting documentation for final deployment and exhibition of how such a framework could function in clinical practice.
+This framework would be the first of its kind.
 
-\textbf{Work Package 5: Querying over PGS data in one and many pods}
-
-- how is data discovered in a pod?
-- benchmarking with different linked data fragment traversal algorithms
-- experimentation with client vs server computation for query performance
-- compare performance to existing VCF parsing algorithms
-
-This work package will build upon the storage, RDF representation, and access controls of PGS data in patient Solid data pods from the previous work packages. 
-I aim to execute queries across PGS data contained within a single data pod or spread over multiple data pods through the use of the query protocol SPARQL[c]. 
-PGS data serialized as RDF are essentially represented as a collection of nodes interlinked directly or indirectly as a knowledge graph which allows unique query approaches for fetching specific information. 
-For this querying, a source of computation is required because Solid pods do not have any computation instrinsically attached to the stored data.
-I intend to utilize a query engine approach to query execution, such as is presented by Comunica[c], for executing queries over patient Solid pods. 
-For usability accross various future implemetations of the framework, I will experiment with the use of sever-side computation offered by a high performance computing center at VITO NV as well as client side browser computation for these queries.
-
-For PGS data querying, we will benchmark and potentially build upon the link traversal query processing (LTQP) paradigm, which has been shown to be an effective method for querying within a decentralized environment such as Solid[c]. 
-LTQP is known to currently perform sub-optimally for larger dataset sizes and complex queries. 
-We expect that some use cases may present challenges within the PGS data space in which this will be the case. 
-As such, we will look to innovate and improve performance by combining existing algorithms with strategies that leverage the unique structure of PGS data.
-One strategy that I may be investigate is the use of pre-computed indexes, that are also used for RDF to VCF conversion, as a guide for faster query processing.
-Various approaches will be developed and assessed on a population of PGS data pods through benchmarking to compare query performance. 
-
-\textbf{Tasks:} 
-\begin{enumerate}
-	\item Establish that PGS data within a Solid pod can be queried using SPARQL via a query engine
-	\item Benchmark how computational source impacts PGS data query perfomance
-	\item Benchmark queries over single and multiple pod PGS data using existing LTQP algorithms
-	\item Develop novel algorithmic approach using pre-computed indexes and compare to LTQP algorithms
-	\item Integrate query functionality into a user interface (with example queries for non-experts)
-\end{enumerate}
-
-\textbf{Risks and Mitigation:} 
-\begin{itemize}
-	\item \textbf{Computational Load:} Various software packages will be used for brute force SAP detection. 
-	Both VITO and UGhent have access to the Flemish Supercomputing Centre for grid computing in case the I lack computational resources. 
-	\item \textbf{Dataset size:} If personal genome datasets are too large to store in a decentralized manner with acceptable query performance. 
-	If this occurs, a shift towards more centralization will be investigated in the form of summaries[c], and more expressive query interfaces will be added to Solid data vaults[c]. 
-	The range of pods over which summaries and query interfaces are defined will be configurable, which means that the trade-off between centralization and decentralization can be tuned.
-	\item \textbf{No algorithm approach is performant:} If it is found that no studied or developed appraoch to query design and execution yields results that encourage practical usage, I will investigate the usage of existing VCF parsing algorithms for query result retrieval. Many VCF parsing algorithms are known to be highly performant. Such a solution would still utilize the other valuable privacy and data sharing advantages of the Solid pod PGS data storage framework and be an attractive option for product production.
-\end{itemize}
-
-
-\textbf{Work Package 6: Component consolidation and framework publishing}
-
-Should this should be a work package because it is kind of implied that this is a unified framework by the end ??
-- combine all the parts into a single framework with usage guidelines and documentation (possibly an MIT license?)
-
-
+Beacon API connection will be evaluated on functionality and integrate all previous work package components. 
+Similarly, evaluation of the web application from which a user can interact with the framework will also be based on functionality.
 
 \textbf{Planning:}
 My project consists of 5 work packages denoted as “WP”. 
@@ -504,9 +231,11 @@ This is allocated as the final 6-9 months of the Ph.D. project to make all prepa
 
 
 \section{4. Strategic dimension and application potential}
-\textit{Elaborate the strategic dimension of your research, with regard to the (long-term) potential for innovative applications. 
+\begin{comment}
+Elaborate the strategic dimension of your research, with regard to the (long-term) potential for innovative applications. 
 Substantiate the PhD project’s strategic focus on economically relevant innovations. Justify how the chosen research approach (if successful) is the appropriate one to achieve the anticipated application(s) (potentially long term).
-Elaborate the strategic importance of the potential applications to possible users (impact). Show how (if the project is successful) new products, services and/or processes may affect business of specific companies, a collective of companies and/or a sector and/or may be closely aligned with the Flemish science, technology and innovation transition priorities  (Flanders in transition. Priorities in Science, Technology and Innovation towards 2025) (socio-economic benefits). Societal impact should always be linked to a (in)direct (macro)economic benefit, e.g. cost reductions in health care, higher education level, environmental impact etc. should be positioned in an economic context.}
+Elaborate the strategic importance of the potential applications to possible users (impact). Show how (if the project is successful) new products, services and/or processes may affect business of specific companies, a collective of companies and/or a sector and/or may be closely aligned with the Flemish science, technology and innovation transition priorities  (Flanders in transition. Priorities in Science, Technology and Innovation towards 2025) (socio-economic benefits). Societal impact should always be linked to a (in)direct (macro)economic benefit, e.g. cost reductions in health care, higher education level, environmental impact etc. should be positioned in an economic context.
+\end{comment}
 
 The infrastructure for sharing data between healthcare institutions is rapidly expanding but running into significant challenges such as lack of data interoperability, privacy and consent issues, as well as legal and regulatory restrictions. 
 With the emergence of patient genomic data as a tool for clinicians, establishing the infrastructure for patient genomic data sharing is an economic niche that is largely unfilled. 
