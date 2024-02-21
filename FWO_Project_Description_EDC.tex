@@ -46,7 +46,7 @@
 ]{biblatex}
 \renewcommand\multicitedelim{\addcomma}
 % Custom author list length
-\addbibresource{references.bib}
+\addbibresource{EDC_references.bib}
 \renewcommand*\bibfont{\fontsize{10pt}{13pt}\selectfont}
 \bibitemsep 1pt plus 1pt minus 1pt
 % Slanted "et al."
@@ -58,8 +58,8 @@
 }{}{}
 % Underline my name
 \usepackage[normalem]{ulem}
-\def\firstname{Ruben}
-\def\lastname{Taelman}
+\def\firstname{Elias}
+\def\lastname{Crum}
 \renewcommand\mkbibnamegiven[1]{%
   \ifboolexpr{test {\ifdefequal\firstname\namepartgiven} and
               test {\ifdefequal\lastname\namepartfamily}}
@@ -83,7 +83,7 @@
 \newcommand{\contribution}[1]{\strong{\textcolor{RoyalBlue}{#1}}} % but a less ugly color?
 
 % Reviewing
-\input{reviewing}
+% \input{reviewing}
 
 % Graphics
 \usepackage[framemethod=TikZ]{mdframed}
@@ -112,11 +112,12 @@
 
 \paragraph{Decentralized Landscape}
 % decentralization to combat centralization (include examples?)
-Data decentralization initiatives [c] are working to reduce the data siloing caused by data centralization on the Web.
-A leading decentralized storage strategy are personal data vaults that offer user moderated access controls[c], data linking across vaults using the Resource Description Framework[c], and information extraction via querying using the SPARCL query language[c].
-The goals of this initiative is to give individual people control over their data, while increasing data sharability and reusability.
+Data decentralization initiatives~\cite{solid, mastodon, decentralizednanopubs} are working to reduce the data siloing caused by data centralization on the Web.
+A leading decentralized storage strategy is the use of personal data vaults.
+The Solid protocol in particular offers user-moderated access controls, data linking in and across vaults using the Resource Description Framework~\cite{spec:rdf}, represented as triples with universal semantics, built on Linked Data principles~\cite{linkeddata}, and information extraction via querying using the SPARQL query language~\cite{spec:sparqllang}.
 
-Implementations of this data storage and usage approach include [c].
+% something about remaining challenges related to implementation and computation not being a part of the storage infrastrcture
+
 
 
 \paragraph{Personal Genome Sequencing in Healthcare}
@@ -126,13 +127,13 @@ Implementations of this data storage and usage approach include [c].
 % cost decreasing measures (sharing/data linking/interoperability?) are hard due to privacy constraints (PGS data is sensitive)
 % centralized database technologies pit privacy and cost reduction as antagonists...
 
-Something to connect DNA sequencing and the Web...
-At the time of writing, there are multiple domains of clinical practice where patient PGS data is now used to inform medical decision making. 
+Around the same time that the World Wide Web was being established, DNA sequencing technologies were just starting to be applied to the human genome~\cite{hood_1987}.
+At the time of writing, there are now multiple domains of clinical practice where patient personal genome sequence (PGS) data are now used to inform medical decision making. 
 Examples include in drug development \cite{ko_new_2022}, cancer diagnosis and treatment \cite{mcleod_cancer_2013}, and rare genetic disease identification and treatment \cite{souche_recommendations_2022}.
 How this integration is deployed varies by clinical domain, but improved outcomes have generally been observed \cite{mathur_personalized_2017}.
 Despite great promise presented by various use cases, barriers to widespread adoption remain \cite{stefanicka-wojtas_barriers_2023}.
 
-One major barrier to scalability is presented by the costs of data generation and storage[c].
+One major barrier to scalability is presented by the costs of data generation and storage[c]. % may reframe this a bit
 The average human genome is slightly over 3 billion base pairs in length and during a whole genome sequencing workflow, various sequence formats that offer different sets of information are produced \cite{bagger_whole_2024}.
 Of these, Variant Call Format (VCF) files \cite{danecek_variant_2011} serve as the state-of-the-art for most clinical genomic applications and are typically between 100-1000s MB (0.1-1 GB) within computer memory. 
 
@@ -196,19 +197,21 @@ To realize such a framework, I will apply the technologies of five distinct area
 This ambition frames the central research question I aim to answer: Can combining the Solid specifications for data storage with other compatable cutting edge innovations for data policy, linking, and querying be instantiated and deployed as a framework that provides clear advantages over the existing PGS data storage protocols in health care?
 
 The core research question can be decomposed into four specific research questions.
-First, can the decentralized storage protocol Solid, with which there have been few implementations of large data storage[c], and no implementations of clinical genomic data storage, offer suitable storage infrastructure for this novel data. 
+First, can the decentralized storage protocol Solid, with which there have been few implementations of large data storage, % is this accurate?
+and no published implementations of clinical genomic data storage, offer suitable storage infrastructure for this novel data. 
 I hypothesize that the Solid protocol will be able to store clinical genomic data storage.
 
-Second, to offer usage advantages over existing systems, can the representation of PGS data using the Resource Description Framework (RDF)[c] as Linked Data[c] be accomplished? 
-A further aim within this objective is exploring if storage of PGS data as RDF using Header Disctionary Triples (HDT) format[c] provides similar levels of usability of genomic data while optimizing storage efficiency.
+Second, to offer usage advantages over existing systems, can the representation of PGS data using the Resource Description Framework (RDF) as Linked Data be accomplished? 
+A further aim within this objective is exploring if storage of PGS data as RDF using Header Dictionary Triples (HDT) format~\cite{spec:hdt} provides similar levels of usability of genomic data while optimizing storage efficiency.
 With the motivation of optimizing efficiency, I will also investigate the use of a bi-directional mapping index for the conversion between VCF and RDF.
 
 Third, because of the sensitive nature of PGS data, are Solid data policy specifications for securing the privacy of PGS data while also allowing for increased sharability for authenticated requests sufficient?
-Additional investigation into how pre-computed privacy-preserving summaries[c] of genomic data within patient pod ...
+Additional investigation into how pre-computed privacy-preserving summaries~\cite{taelman_privacyAgg_2020} of genomic data within patient pod ...
 
 Fourth, for the stored genomic data and linkages to be usable in clinical practice, a querying method is necessary.
 In a citizen-centric clinical data storage implmenetation, there are potentially thousands of heterogeneous, large sources to be queried over.
-It is an established challenge for federated decentralized querying in such environments[c], informing the question: can querying over these sources be achieved through the use of Link Traversal Query Processing algorithms that are modified to utilize pre-computed or on-the-fly generated indexes?
+It is an established challenge for federated decentralized querying in such environments, % know of any good citations for this?
+informing the question: can querying over these sources be achieved through the use of Link Traversal Query Processing algorithms that are modified to utilize pre-computed or on-the-fly generated indexes?
 
 Together, these objectives will serve as the components of an operational framework. 
 The framework, once produced, will be compared to existing strategies for storing and sharing PGS data to assess the efficacy of transitioning toward product production and specific clinical use case adaptation.
@@ -256,10 +259,10 @@ To implement a citizen-centric storage of PGS data, a decentralized storage stra
 % I will show that PGS data storage is possible, thereby shoing that large data storage in Solid is possible.
 % result will be the development of a workflow for creating, hosting, and uploading data into patient solid pods
 
-The decentralized storage technology I chose to use is Solid, because of its growing populatiry[c] and its support of specifications for data sharing over the web and granular provacy controls... (not sure if this is a good argument...)
+The decentralized storage technology I chose to use is Solid, because of its growing populatiry[c] and its support of specifications for data sharing over the web and granular provacy controls... %not sure if this is a good argument...
 
 Here, I will test the viability of Solid data pods for patient PGS data storage, thus, testing my hypothesis that Solid can support PGS data storage. 
-Using my experience with genomic data types and file representations, I will assemble a test dataset composed of publicly available genome files~\cite{noauthor_platinum_nodate, ...}. 
+Using my experience with genomic data types and file representations, I will assemble a test dataset composed of publicly available genome files~\cite{noauthor_platinum_nodate}. 
 These files will be used as representative "patient" PGS data for all future experimentation. 
 I will also create server-hosted Solid pods using the Community Solid Server (CSS) implementation of Solid~\cite{css}. 
 Each pod will be a storage container for a single individual\textquotesingle s PGS data. 
@@ -396,15 +399,15 @@ I will look to innovate and improve performance by combining existing algorithms
 
 \subsubsection{Risks}
 
-% benchmarks cannot be run because PGS data is too big
+benchmarks cannot be run because PGS data is too big
 
-% incorporating indexes in LTQP algos doesnt improve performance enough to be usable...
+incorporating indexes in LTQP algos doesnt improve performance enough to be usable...
 
 
 
 \newcommand\WPd{Querying PGS data over one and many data vaults}
 \subsection{Component~3: \WPd}
-\subsection{Work Package 5: Component consolidation and framework deployment}
+\subsection{Component consolidation and framework deployment}
 
 In an effort to improve data flows for research purposes, I intend to connect the proposed framework to the international Beacon initiative \cite{rambla_beacon_2022} to increase the availability of genomic data for researchers. 
 In this aim we will investigate the necessary requirements and infrastructure necessary to connect patient Solid pods, containing PGS data, as beacon endpoints that can be discoverable and queried via the Beacon API. 
@@ -426,7 +429,7 @@ Below Gantt-chart of the Ph.D. project on a quarterly basis.
 Each work package is split up into different tasks with a dedicated amount of time allocated to it. 
 This will allow for a good time and project management. 
 
-
+%have not gotten to editing this table yet
 \begin{adjustwidth}{0cm}{0cm}
 	\parindent 0pt
 	\newcommand\duration[1]{\hfill\emph{#1~months}}
@@ -462,33 +465,31 @@ WP2 is a suporting work package and WP4 will be completed by combining all other
 WP1 and WP3 are dependent, meaning that WP1 must be partially completed before WP3 can begin.
 Thus, these work packages are planned sequentially, which provides me with knowledge of how data storage architecture could be leveraged for WP3.
 
-%The tasks within each work package are listed in order of importance, to allow leaving out later tasks if problems would arise.
+The focus of WP1 is on storing and formatting PGS data.
+The development of a workflow for setting up Solid data vaults and getting PGS data into those vaults is the first step (Task 1.1).
+Once the PGS data is stored, investigation into data format conversion and data representation will be performed (Task 1.2).
 
-The focus of WP2 is on using structural information in data vaults for adaptive query planning.
-To ensure the resulting algorithms have a formal foundation,
-it is preceded by a theoretical study of adaptivity in link traversal (Task 1.1).
-Furthermore, to have a stable testing environment with structural properties,
-it is interwoven with the work on benchmarking (Task 1.2).
+For WP2, I will apply privacy protecting policies to stored PGS data and summaries of that data.
+This task will utilize the Solid protocol for data policies within data vaults (Task 2.1).
+For summaries stored in aggregators outside of data vaults I will investigate the use of strategies described by Taelman et al. (Task 2.2).
 
-For WP3, I~will adaptively incorporate heterogeneous query interfaces exposed by data vaults into LTQP.
-Similar as before, this will be preceded by a theoretical study of heterogeneous interfaces and adaptivity (Task 1.1).
-As these new algorithms also need a testing environment with simulated heterogeneous interfaces,
-the tasks of WP3 are again interwoven with benchmarking work (Task 1.2).
+In WP3, I will build on the work of WP1 and assess the query performance of LTQP algorithms on genomic data vaults.
+I will start by benchmarking existing LTQP algorithms in a formal benchmarking study.
+Then, I will develop modified LTQP algorithms that use genomic indexes and data vault summaries to improve query efficiency.
 
-After each task in WP2 and WP3, I will disseminate them (WP4) in high-impact journals and conferences.
-For this, I will focus on journals such as the Semantic Web Journal, the Journal of Web Semantics, and the VLDB Journal.
-Furthermore, I will target conferences such as the Web Conference, VLDB,
-the International Semantic Web Conference, and ACM SIGMOD/PODS.
+I will unify the three framework components into a web application (WP4) that will be deployed as a demonstration complete with documentation and a live presentation component. 
+Throughout the previous work packages, I aim to publish incremental findings in high-impact journals and conferences.
+For this, I will focus on journals such as the Semantic Web Journal, Journal of Healthcare Informatics Research, and the PLOS Digital Health Journal.
+Furthermore, I will target conferences such as the International Semantic Web Conference, the Semantic Web Applications and Tools 4 Health Care and Life Sciences conference, and the European Conference on Computational Biology.
 
 Aside from disseminating to the scientific community,
-I~will also community my research to the industrial community and wider public throughout the project (not included in the Gantt chart).
-I will do this via the Comunica Association, a non-profit network of organizations I have founded to make research software sustainable.
-Concretely, I~will write blog posts, livestream and publish videos.
-I~will also branch out to other venues such as De Dag van de Wetenschap and TEDxGhent.
+I will also community my research to the industrial community and wider public throughout the project (not included in the Gantt chart).
+Concretely, I will write blog posts, publish videos, and interact with the greater community via X.
 
 
 \bigskip
 
+% Have not gotten to fixing the Gantt chart up yet (I will transfer the on from the git repo to here)
 \noindent
 \begin{ganttchart}[
   x unit=11.4pt,
@@ -558,42 +559,74 @@ I~will also branch out to other venues such as De Dag van de Wetenschap and TEDx
 \section{Strategic dimension and application potential}
 % Aim for 1-2 page?
 \begin{comment}
-Elaborate the strategic dimension of your research, with regard to the (long-term) potential for innovative applications. 
-Substantiate the PhD project’s strategic focus on economically relevant innovations. Justify how the chosen research approach (if successful) is the appropriate one to achieve the anticipated application(s) (potentially long term).
-Elaborate the strategic importance of the potential applications to possible users (impact). Show how (if the project is successful) new products, services and/or processes may affect business of specific companies, a collective of companies and/or a sector and/or may be closely aligned with the Flemish science, technology and innovation transition priorities  (Flanders in transition. Priorities in Science, Technology and Innovation towards 2025) (socio-economic benefits). Societal impact should always be linked to a (in)direct (macro)economic benefit, e.g. cost reductions in health care, higher education level, environmental impact etc. should be positioned in an economic context.
+Elaborate the strategic dimension of your research, with regard to the 
+(long-term) potential for innovative applications. 
+Substantiate the PhD project’s strategic focus on economically relevant innovations. 
+
+Justify how the chosen research approach (if successful) is the appropriate one to achieve the anticipated application(s) (potentially long term).
+
+Elaborate the strategic importance of the potential applications to possible users (impact). 
+Show how (if the project is successful) new products, services and/or processes may affect business of specific companies, a collective of companies and/or a sector and/or may be closely aligned with the Flemish science, technology and innovation transition priorities  (Flanders in transition. Priorities in Science, Technology and Innovation towards 2025) (socio-economic benefits). 
+
+Societal impact should always be linked to a (in)direct (macro)economic benefit, e.g. cost reductions in health care, higher education level, environmental impact etc. should be positioned in an economic context.
 \end{comment}
 \smallskip
 
-The infrastructure for sharing data between healthcare institutions is rapidly expanding but running into significant challenges such as lack of data interoperability, privacy and consent issues, as well as legal and regulatory restrictions. 
-With the emergence of patient genomic data as a tool for clinicians, establishing the infrastructure for patient genomic data sharing is an economic niche that is largely unfilled. 
-There certainly exists a fledgling private genomic service industry dominated by companies such as 23andMe, Ancestry.com, sequencing.com, and others establishing that genomics data generation and storage holds importance to consumers for various personal and medical reasons. 
+% personalized medicine --> more sequences
+% sequences are expensive and sensitive
+% for there to be more personalized medicine, sequence generation and maintenance needs to decrease
+% sequence generation cost has been decreasing but storing it has not
+% therefore we have a problem to solve
+My Ph.D. project is strongly motivated by the potential economic and societal gains presented by personalized medicine. 
+For all existing and future applications of genetically-informed precision health, patient genome sequence data in some form will be required.
+In recent years, the cost of digital genome sequence generation has steadily decreased~\cite{wetterstrand_cost_2021}, but over that same time the cost of storing and maintaining the privacy of that data has not kept pace~\cite{}.
+Thus, unintended barriers to scaling current clinical genomic workflows as well as to researching new workflows have been observed.
+
+% there are different ways to solve the above problem but right now they cant happen (largely because of technological constraints)
+% my framework allows us to solve the posed privacy <--> sharing problems 
+% along with other cool features (connection to products purchased by the consumer / querying for clinicians) that could be built upon in the future
+% generally my project is saying "if we store this stuff in a new way there are so many new possibilities for applications"
+% this roughly equates to developing a new niche market (or even multiple niche markets)
+% examples include: personal genomic products that can use your WGS, data linking to ANY kind of medical data, potential for being financially compensated for allowing your genome to be used for research, etc...
+The the framework that will result from my Ph.D. will be uniquely positioned to compete with the current state-of-the-art intitiution-centric data storage systems due to the flexibility and cost efficiency it offers as a citizen-centric approach.
+The approach accomplishes this cost efficiency though infrastructure for privacy preserving patient genomic data sharing, data policy customization, and integrated data querying capabilities.
+Because most data is confined within a single health care institution, data sharing between institutions is an economic niche that is largely unfilled. 
+
+The private genomic service industry dominated by companies such as 23andMe, Ancestry.com, sequencing.com, and others establishes that genomics data generation and storage holds importance to consumers for various personal and medical reasons. 
 At the same time, hospital systems exclusively store and maintain all patient PGS data that is used for clinical applications. 
 There is notable nuance between these two sectors including different forms of genomic data being generated, stored, and used, differing legal oversight concerning commercial genomic data and health data, and formatting differences between the genomic data stored. 
 Regardless, in our modern age of big data, data duplication due to data siloing, energy waste due to computational demands during data regeneration, and intrinsic security concerns for modern data storage techniques are major economic inefficiencies of the current system. 
 
 A hypothetical company that, in coordination with policy makers and regulatory bodies, creates a scalable storage and data sharing infrastructure for genomic data, which could also grow to include all patient health data in time, stands to greatly increase the efficiency of PGS data usage in healthcare. 
+% boom Disruptive innovation. 
+% New market, data no longer needed to be maintained by hospitals, a new chance for establishing standardization, new market for health data applicaitons, etc.
 Such efficiency increases could help lower patient costs for specialized genetic tests, remove data management and administration from hospitals, thereby reducing costs, and establish a new market within which economic growth could result. 
 
+% one of the great advantages of my framework is that it allows for the separation of clinically relevant data from a single health care institution. 
+% doubtless, there will need to be regulatory presence in deploying a product version
+% but, that is sort of built into the current project
+% here I am presenting how the tools for the system COULD be put together and prove that within the constraints presented by health care data they CAN produce a functional system
+% if it is directly translated into a project GREAT, but the more realistic goal is to provoke other ideas that improve the presented system
+% the goal is to make more personalized medicine more doable, citizen-centric data control is the most attractive economic and ethical path toward that goal.
 My project presented above is designed to present a proof-of-concept framework, both providing and demonstrating the technological foundations for the storage of PGS data in Solid pods, the controlling of access to that data on a granular level, the ability for that data to be queried, and exhibiting the accessibility of the stored PGS data to users, web applications, and medical tools in formats that can be used by both those currently in use and applications developed in the future. 
-Such a framework will provide the outline of necessary implementation considerations from a technological perspective while also highlighting strengths and weaknesses of such a system that may be influential in attempts at scaling such an infrastructure. My project is also being undertaken parallelly with the Digital Twins of citizens/patients initiative that is happening at VITO in conjunction with the Flemish government and (?) for evolving the way medical data is stored to be increasingly citizen/patient centric. 
-This initiative along with the WE ARE project at VITO are both exploring the ways in which decentralized storage could be applied to sensitive data to improve the way that consent is given and requested for such data. 
+Such a framework will provide the outline of necessary implementation considerations from a technological perspective while also highlighting strengths and weaknesses of such a system that may be influential in attempts at scaling such an infrastructure. 
+My project is also being undertaken in parallel with the European Virtual Human Twin (EDITH)~\cite{edith} initiative that aims at evolving the way medical data is stored to be increasingly citizen/patient centric both within Flanders as well as the greater European Union. 
+The WE ARE project~\cite{weare} is another Flemish initiative exploring ways in which citizen-centric data stprage and ownership.
 
-Notably, the framework I am developing is intended to augment and contribute to advances in medical patient care by removing existing cost and architectural barriers to using PGS data more broadly in clinical practice. 
+
 In the short-term, the project is being developed to be integrated into ongoing research and product development at VITO Digital Precision Health. 
 Products aimed at improving the way drug prescription is practiced by using a genetic screening tool that leverages documented genetic predispositions to drug ineffectiveness are currently being developed to be connected to my framework of Solid pod stored PGS data. 
-Additionally, connection to other known and well-used workflows such as for NIPT and rare genetic disease screening is a primary goal for my project. 
+Additionally, connection to other known and widely-used workflows such as for NIPT and rare genetic disease screening is a primary goal for my project. 
 Genomic data interoperability is of utmost importance for clinical application and is therefore a cornerstone of my project. 
 
-Lastly, public perception is a crucial element to the economic growth of a product or sector. With personal data usage transparency as well as greater calls for digital data privacy protections becoming more important to the public, such considerations should also be priorities to how health data is managed. 
+Lastly, public perception is a crucial element to the economic growth of a product or sector. 
+With personal data usage transparency as well as greater calls for digital data privacy protections becoming more important to the public, such considerations should also be priorities to how health data is managed. 
 The existing system of genomic data storage for use in healthcare is prone to data leaks and heavily restricted patient transparency due to the central architecture of institution-centric data stores. 
 With my proposed framework, patients would be more intimately connected to their data, potentially even having a say over to whom and what their data is visible. 
 Such improved transparency, when paired with decreased risk of large-scale data leaks, is likely to be well-received by the general public. 
 Such public support could help drive such a framework adoption to a larger scale such as nationally or even to be the standard for a system like the EU. 
 This large scale goal, while nowhere near attainable in the near future, would present the greatest possible outcome for such a project and exhibit a somewhat unintuitive increase in greater genomic data privacy and shareability. 
 In this scenario, there is also room for healthy competition within such a niche as various pod providers could offer hospital systems and educational institutions different rates for data storage and associated computation.
-
-*** Disruptive Innovation --> Economic added value ***
-Especially specifically for Flanders
 
 
 \section{References}
