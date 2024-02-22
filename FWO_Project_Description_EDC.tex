@@ -196,22 +196,27 @@ My proposed research endeavors to fuse cutting edge semantic web technologies wi
 To realize such a framework, I will apply the technologies of five distinct areas of active research to a data ecosystem to which they have not been designed for.
 This ambition frames the central research question I aim to answer: Can combining the Solid specifications for data storage with other compatable cutting edge innovations for data policy, linking, and querying be instantiated and deployed as a framework that provides clear advantages over the existing PGS data storage protocols in health care?
 
-The core research question can be decomposed into four specific research questions.
-First, can the decentralized storage protocol Solid, with which there have been few implementations of large data storage, % is this accurate?
-and no published implementations of clinical genomic data storage, offer suitable storage infrastructure for this novel data. 
+The core research question can be decomposed into three specific research questions.
+First, can the decentralized storage protocol Solid, with which there have been few published implementations of large data storage, % is this accurate?
+and no published implementations of clinical genomic data storage, offer suitable storage infrastructure for this novel data? 
 I hypothesize that the Solid protocol will be able to store clinical genomic data storage.
-
-Second, to offer usage advantages over existing systems, can the representation of PGS data using the Resource Description Framework (RDF) as Linked Data be accomplished? 
-A further aim within this objective is exploring if storage of PGS data as RDF using Header Dictionary Triples (HDT) format~\cite{spec:hdt} provides similar levels of usability of genomic data while optimizing storage efficiency.
+Further, to offer usage advantages over existing systems, can the representation of PGS data using RDF as Linked Data be accomplished? 
+A further aim within this objective is exploring if storage of PGS data as RDF using Header Dictionary Triples (HDT) format~\cite{spec:hdt} provides similar levels of usability of genomic data with significantly decreased storage costs.
 With the motivation of optimizing efficiency, I will also investigate the use of a bi-directional mapping index for the conversion between VCF and RDF.
+For these aims, my background in genomics will be valuable, specifically when optimizing indexing and format conversion, because of my knowledge of genomic file anatomies and how data is semantically represented in genomics file formats.
 
-Third, because of the sensitive nature of PGS data, are Solid data policy specifications for securing the privacy of PGS data while also allowing for increased sharability for authenticated requests sufficient?
-Additional investigation into how pre-computed privacy-preserving summaries~\cite{taelman_privacyAgg_2020} of genomic data within patient pod ...
+Second, because of the sensitive nature of PGS data, do the specifications provided by Solid provide for enough flexible control of the privacy of PGS data while also allowing for increased authorized sharability?
+I aim to demonstrate possible configurations of Solid data vault privacy policies as well as offer a functionality within a web application for the alteration of these policies but authorized users.
+Additional investigation into how pre-computed privacy-preserving summaries of data vault contents outside of a patient data vault in an aggregator can be generated will be attempted using presviously descibed theoretical methods~\cite{taelman_privacyAgg_2020}.
+Within this component, I will also attempt to connect experimental patient data vaults to the Beacon federated network~\cite{rambla_beacon_2022}.
+Querying capabilites of the beacon will be assessed in a later work package.
+I am uniquely situated for assessing these privacy policies because of my past experience working in a clinical setting alongside physicians as well as my understanding of different sets of US and EU regulations mediating data privacy requirements.
 
-Fourth, for the stored genomic data and linkages to be usable in clinical practice, a querying method is necessary.
+Third, for the stored genomic data and linkages to be usable in clinical practice, a querying method is necessary.
 In a citizen-centric clinical data storage implmenetation, there are potentially thousands of heterogeneous, large sources to be queried over.
 It is an established challenge for federated decentralized querying in such environments, % know of any good citations for this?
 informing the question: can querying over these sources be achieved through the use of Link Traversal Query Processing algorithms that are modified to utilize pre-computed or on-the-fly generated indexes?
+I have experience with index guided genomic data parsing that will help guide developing and optimizing query algorithms that can efficiently handle the large data presented by genomic data. 
 
 Together, these objectives will serve as the components of an operational framework. 
 The framework, once produced, will be compared to existing strategies for storing and sharing PGS data to assess the efficacy of transitioning toward product production and specific clinical use case adaptation.
@@ -348,11 +353,23 @@ For large numbers of pods aggregators can be utilized to improve query speed and
 For private genomic data, aggregators accessible outside of patient data vaults would infringe on the privacy of PGS data stored within patient data vaults.
 By using a strategy that incorporates ...
 
+\newcommand\WPbc{Data vaults as Beacon endpoints}
+\subsubsection{Task~2.3: \WPbc}
+
+To contribute to research that continues the expansion of PGS for clinical practice, I will make patient data vaults discoverable as Beacon endpoints.
+The Beacon initiative is an attempt to increase the amount of genomic data available to researchers.
+The federated network allows for the querying of all participating insititution databases, which are displayed to a central API as servers, through local execution of the query and transmission of the anonymized result to the requester.
+Currently, all Beacon endpoints are centralized databases, thus establishing a workflow for the integration of decentralized data vaults would help the initiative expand with the industry past centralized storage strategies.
+I will first attempt to make the data vaults discoverable by the Beacon API, which will be a user-controlled opt-in data sharing option.
+Investigation into how Beacon queries will be executed will be performed in WP3.
+
+
 \subsubsection{Risks}
 Privacy is a tricky subject especially in terms of governance
 
 If these secure summaries cannot be ...
 
+If the beacon connection does not work ...
 
 \newcommand\WPc{Querying PGS data over one and many data vaults}
 \subsection{Component~3: \WPc}
@@ -387,14 +404,25 @@ Ideally, success will be determined by queries that return correct results in un
 In a clinical setting, time constraints are not as important as accuracy and reliability of results although excessive query times decrease the usefulness of such a tool for physicians in clinical practice.
 
 % novelty
-LTQP algorithms are an active area of active research, but most of the work done has been with generalized algorithms and ,amy datastores with small amounts of data.
-I aim to adapt this querying approach to the specific domain of genomic and health data which has not been attempted before. 
+%LTQP algorithms are an active area of active research, but most of the work done has been with generalized algorithms and ,amy datastores with small amounts of data.
+%I aim to adapt this querying approach to the specific domain of genomic and health data which has not been attempted before. 
 
 
 \newcommand\WPcb{Algorithm incorporation of PGS data indexes and data vault summaries}
 \subsubsection{Task~3.2: \WPcb}
 
 I will look to innovate and improve performance by combining existing algorithms with strategies that leverage the unique structure of PGS data such as the use of pre-computed indexes, like the one generated for RDF-VCF conversion, as a guide for faster query processing.
+% not totally sure how this will look...
+
+
+\newcommand\WPcc{Execution of Beacon queries over data vaults}
+\subsubsection{Task~3.3: \WPcc}
+
+I will assess how implementation of the algorithms developed and benchmarked for PGS data querying can be utilized for Beacon queries. 
+First, I will create an interface for communication between the Solid data vault(s) and the Beacon API. 
+Then, I will work to establish a methodology for converting a Beacon query into a SPARQL query that can be executed over patient data vaults.
+In this querying, only data vaults that have opted-in to sharing data with reserachers should be discoverable, therefore, utilization of privacy-preserving summaries in aggregators will be heavily relied on.
+
 
 
 \subsubsection{Risks}
