@@ -176,7 +176,7 @@ This data storage strategy has posed great challenges to the scaling of personal
 \paragraph{Project Motivation.}
 Despite there being no real solutions to the current antagonism between privacy and cost reduction for PGS data usage in healthcare, there is also a conspicuous gap in the current scientific discourse around the development and implementation of a proposed solution. 
 This gap underscores the necessity of my Ph.D.
-\contribution{I aim to improve the connectedness and shareability of genomic data storage(s), while preserving data privacy, through the integration of various domains of semantic web research into a novel, holistic framework designed for use in clinical practice.}
+\textbf{I aim to improve the connectedness and shareability of genomic data storage(s), while preserving data privacy, through the integration of various domains of semantic web research into a novel, holistic framework designed for use in clinical practice.}
 My Ph.D. will also aim to demonstrate the limitations of current state-of-the-art semantic web technologies in this novel application domain with the intention of driving innovation and discovering future research pursuits.
 
 
@@ -253,6 +253,8 @@ Then, I present my work plan.
 
 The foundation of my proposed framework is the data storage infrastructure.
 To implement a citizen-centric storage of PGS data, a decentralized storage strategy offers a maleable platform.
+
+%maybe put an additional task here for review paper composition??
 
 \newcommand\WPaa{Storing PGS data in Solid data vaults}
 \subsubsection{Task~1.1: \WPaa}
@@ -431,21 +433,12 @@ benchmarks cannot be run because PGS data is too big
 
 incorporating indexes in LTQP algos doesnt improve performance enough to be usable...
 
+beacon queries are not translatable to SPARQL or queries are too complex to be completed...
+
+\newcommand\WPd{Consolidation and framework deployment}
+\subsection{Component 4: \WPd}
 
 
-\newcommand\WPd{Querying PGS data over one and many data vaults}
-\subsection{Component~3: \WPd}
-\subsection{Component consolidation and framework deployment}
-
-In an effort to improve data flows for research purposes, I intend to connect the proposed framework to the international Beacon initiative \cite{rambla_beacon_2022} to increase the availability of genomic data for researchers. 
-In this aim we will investigate the necessary requirements and infrastructure necessary to connect patient Solid pods, containing PGS data, as beacon endpoints that can be discoverable and queried via the Beacon API. 
-The connection of a decentralized, citizen-centric storage framework to the Beacon network is novel in nature as all other existing endpoints are institution-centric relational databases maintained by hospitals or research institutions.
-
-All other functionalities will also be packaged into a web application with supporting documentation for final deployment and exhibition of how such a framework could function in clinical practice.
-This framework would be the first of its kind.
-
-Beacon API connection will be evaluated on functionality and integrate all previous work package components. 
-Similarly, evaluation of the web application from which a user can interact with the framework will also be based on functionality.
 
 \subsection{Work plan}
 \smallskip
@@ -462,24 +455,26 @@ This will allow for a good time and project management.
 	\parindent 0pt
 	\newcommand\duration[1]{\hfill\emph{#1~months}}
   
-	\textbf{WP1:      \WPa  \duration{10}}
+	\textbf{WP1:      \WPa  \duration{8}}
 	\begin{itemize}
 	  \item Task 1.1: \WPaa \duration{ 4}
-	  \item Task 1.2: \WPab \duration{ 6}
+	  \item Task 1.2: \WPab \duration{ 4}
 	\end{itemize}
 	\smallskip
   
-	\textbf{WP2:      \WPb  \duration{11}}
+	\textbf{WP2:      \WPb  \duration{10}}
 	\begin{itemize}
-	  \item Task 2.1: \WPba \duration{ 6}
-	  \item Task 2.2: \WPbb \duration{ 5}
+	  \item Task 2.1: \WPba \duration{ 2}
+	  \item Task 2.2: \WPbb \duration{ 4}
+	  \item Task 2.3: \WPbc \duration{ 4}
 	\end{itemize}
 	\smallskip
 	
-	\textbf{WP3:      \WPc  \duration{9}}
+	\textbf{WP3:      \WPc  \duration{20}}
 	\begin{itemize}
-	  \item Task 3.1: \WPca \duration{ 5}
-	  \item Task 3.2: \WPcb \duration{ 4}
+	  \item Task 3.1: \WPca \duration{ 4}
+	  \item Task 3.2: \WPcb \duration{ 12}
+	  \item Task 3.3: \WPcc \duration{ 4}
 	\end{itemize}
 	\smallskip
 	
@@ -517,7 +512,7 @@ Concretely, I will write blog posts, publish videos, and interact with the great
 
 \bigskip
 
-% Have not gotten to fixing the Gantt chart up yet (I will transfer the on from the git repo to here)
+% Have not gotten to fixing the Gantt chart up yet...
 \noindent
 \begin{ganttchart}[
   x unit=11.4pt,
