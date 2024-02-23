@@ -44,11 +44,17 @@
 	url = {https://www.w3.org/TR/2013/REC-sparql11-query-20130321/}
 }
 
-@TechReport{spec:hdt,
-	title = {Technical Specification – RDF HDT},
-	
-	url = {https://www.rdfhdt.org/technical-specification/}
+@article{hdt,
+author = {Javier D. Fernández and Miguel A. Martínez-Prieto and Claudio Gutiérrez and Axel Polleres and Mario Arias},
+title = {Binary RDF Representation for Publication and Exchange (HDT)},
+url = {http://www.websemanticsjournal.org/index.php/ps/article/view/328},
+journal={Web Semantics: Science, Services and Agents on the World Wide Web},
+volume={19},
+pages={22–41},
+year={2013},
+publisher={Elsevier}
 }
+
 
 @online{linkeddata,
 	title = {Linked Data},
@@ -186,7 +192,6 @@
 	journaltitle = {{BMC} Medical Genomics},
 	author = {Bagger, Frederik Otzen and Borgwardt, Line and Jespersen, Andreas Sand and Hansen, Anna Reimer and Bertelsen, Birgitte and Kodama, Miyako and Nielsen, Finn Cilius},
 	date = {2024-01-29},
-	keywords = {Clinical bioinformatics infrastructure, Functional variant testing, Variant filtering and interpretation, Whole genome sequencing},
 }
 
 @article{danecek_variant_2011,
@@ -322,13 +327,66 @@
 	urldate = {2024-02-12},
 }
 
+@TechReport{spec:sparqlprot,
+	title = {{SPARQL} 1.1 Protocol},
+	author = {Feigenbaum, Lee and Todd Williams, Gregory and Grant Clark, Kendall and Torres, Elias},
+	type = "Rec.",
+	institution = "W3C",
+	month = mar,
+	year = {2013},
+	url = {https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/}
+}
 
+@inproceedings{sparqlqueryoptimization,
+	title={Foundations of {SPARQL} query optimization},
+	author={Schmidt, Michael and Meier, Michael and Lausen, Georg},
+	booktitle={Proceedings of the 13th International Conference on Database Theory},
+	pages={4--33},
+	year={2010},
+	organization={ACM}
+}
+@inproceedings{hibiscus,
+	title={Hibiscus: Hypergraph-based Source Selection for {SPARQL} Endpoint Federation},
+	author={Saleem, Muhammad and Ngomo, Axel-Cyrille Ngonga},
+	booktitle={European semantic web conference},
+	pages={176--191},
+	year={2014},
+	organization={Springer}
+}
 
+@article{tpf,
+	title={Triple Pattern Fragments: a low-cost Knowledge Graph Interface for the Web},
+	author={Verborgh, Ruben and Vander Sande, Miel and Hartig, Olaf and Van Herwegen, Joachim and De Vocht, Laurens and De Meester, Ben and Haesendonck, Gerald and Colpaert, Pieter},
+	journal={Journal of Web Semantics},
+	volume={37},
+	pages={184--206},
+	year={2016},
+	publisher={Elsevier}
+}
 
+@article{adaptive_book,
+	title={Adaptive query processing},
+	author={Deshpande, Amol and Ives, Zachary and Raman, Vijayshankar}, %  and others
+	journal={Foundations and Trends{\textregistered}}, %  in Databases
+	volume.bak={1},
+	number.bak={1},
+	pages.bak={1--140},
+	year={2007},
+	publisher.bak={Now Publishers, Inc.}
+}
 
-
-
-
+@inproceedings{dang_fedshop_2023,
+	location = {Berlin, Heidelberg},
+	title = {{FedShop}: A Benchmark for Testing the Scalability of {SPARQL} Federation Engines},
+	isbn = {978-3-031-47242-8},
+	doi = {10.1007/978-3-031-47243-5_16},
+	shorttitle = {{FedShop}},
+	pages = {285--301},
+	booktitle = {The Semantic Web – {ISWC} 2023: 22nd International Semantic Web Conference, Athens, Greece, November 6–10, 2023, Proceedings, Part {II}},
+	publisher = {Springer-Verlag},
+	author = {Dang, Minh-Hoang and Aimonier-Davat, Julien and Molli, Pascal and Hartig, Olaf and Skaf-Molli, Hala and Le Crom, Yotlan},
+	date = {2023-11-06},
+}
 
 @legislation{EHDS_2022,
 	title = {Proposal for a {REGULATION} {OF} {THE} {EUROPEAN} {PARLIAMENT} {AND} {OF} {THE} {COUNCIL} on the European Health Data Space},
@@ -337,11 +395,61 @@
 	date = {2022},
 }
 
+@online{1000_genomes,
+	title = {1000 Genomes {\textbar} A Deep Catalog of Human Genetic Variation},
+	url = {https://www.internationalgenome.org/home},
+	urldate = {2024-02-23},
+}
 
+@online{css,
+	title = {{CommunitySolidServer}/{CommunitySolidServer}: An open and modular implementation of the Solid specifications},
+	url = {https://github.com/CommunitySolidServer/CommunitySolidServer},
+	urldate = {2024-02-12},
+}
 
+@article{pastorino_benefits_2019,
+	title = {Benefits and challenges of Big Data in healthcare: an overview of the European initiatives},
+	volume = {29},
+	issn = {1101-1262},
+	doi = {10.1093/eurpub/ckz168},
+	shorttitle = {Benefits and challenges of Big Data in healthcare},
+	pages = {23--27},
+	issue = {Suppl 3},
+	journaltitle = {Eur J Public Health},
+	author = {Pastorino, Roberta and De Vito, Corrado and Migliara, Giuseppe and Glocker, Katrin and Binenbaum, Ilona and Ricciardi, Walter and Boccia, Stefania},
+	date = {2019-10},
+	pmid = {31738444},
+	pmcid = {PMC6859509},
+}
 
+@online{rdf_serializations,
+	title = {Resource Description Framework ({RDF}) Serialization {\textbar} {LINCS}},
+	url = {https://lincsproject.ca/docs/terms/resource-description-framework-serialization},
+	urldate = {2024-02-23},
+	langid = {english},
+}
 
+@article{yang_seqminer2_2020,
+	title = {Seqminer2: an efficient tool to query and retrieve genotypes for statistical genetics analyses from biobank scale sequence dataset},
+	volume = {36},
+	issn = {1367-4803},
+	doi = {10.1093/bioinformatics/btaa628},
+	shorttitle = {Seqminer2},
+	pages = {4951--4954},
+	number = {19},
+	journaltitle = {Bioinformatics},
+	author = {Yang, Lina and Jiang, Shuang and Jiang, Bibo and Liu, Dajiang J and Zhan, Xiaowei},
+	date = {2020-08-05},
+	pmid = {32756942},
+	pmcid = {PMC8453228},
+}
 
+@article{berners-lee_linked_2009,
+	title = {Linked Data},
+	url = {https://www.w3.org/DesignIssues/LinkedData.html},
+	author = {Berners-Lee, Timothy},
+	date = {2009},
+}
 
 
 
@@ -1224,13 +1332,6 @@ Publisher: Nature Publishing Group},
 	date = {2020-04-23},
 	langid = {english},
 	file = {Full Text:C\:\\Users\\CRUME\\Zotero\\storage\\QKY294HD\\Cipriani et al. - 2020 - An Improved Phenotype-Driven Tool for Rare Mendeli.pdf:application/pdf},
-}
-
-@article{berners-lee_linked_2009,
-	title = {Linked Data},
-	url = {https://www.w3.org/DesignIssues/LinkedData.html},
-	author = {Berners-Lee, Timothy},
-	date = {2009},
 }
 
 @article{ayaz_fast_2021,
