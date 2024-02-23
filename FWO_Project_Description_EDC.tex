@@ -119,7 +119,6 @@ The Solid protocol in particular offers user-moderated access controls, data lin
 % something about remaining challenges related to implementation and computation not being a part of the storage infrastrcture
 
 
-
 \paragraph{Personal Genome Sequencing in Healthcare}
 % why could genome sequencing benefit from decentralization
 % current centralization limits scalability --> due to costs
@@ -164,6 +163,7 @@ Adaptation of Solid decentralized technology to clinical genomics does not come 
 Serious challenges are posed by the large size of genomic data, the compatibility between the different currant and proposed data storage architectures for applications and tools, and the lack of existing infrastructure for implementation of a decentralized storage framework. %check this later 
 At the same time, these challenges also offer an unstudied frontier of decentalized web technology where technological progress could provide significant impact. %same here
 
+
 \paragraph{Decentralized Data Querying} 
 % Implementation challenge:
 % Solid --> no way to discover data (because no computation)
@@ -203,7 +203,6 @@ This gap underscores the necessity of my Ph.D.
 % make this more concrete
 integration of various domains of semantic web research into a novel, holistic framework designed for use in clinical practice.}
 My Ph.D. will also aim to demonstrate the limitations of current state-of-the-art semantic web technologies in this novel application domain with the intention of driving innovation and discovering future research pursuits.
-
 
 
 \section{Scientific research objective(s)}
@@ -433,18 +432,32 @@ The federated querting algorithms utilizing indezes and summaries proposed are n
 
 
 \subsubsection{Risks}
+Task 3.1 presents the risk that benchmarks cannot be run because PGS data is too big for LTQP algorithms to execute. 
+If these issues arise, I will assess the execution of simplier queries and how much ...
 
-benchmarks cannot be run because PGS data is too big
+Another risk is associated with the generation of secure summaries in Task 3.2. 
+If I cannot .... 
 
-If these secure summaries cannot be made ...
+Lastly, there is a risk presented by Task 3.3, I cannot devise solutions to incorporating indexes and/or summaries in LTQP algos and/or these algorithm modification do not improve performance enough to be usable.
+...
 
-incorporating indexes and/or summaries in LTQP algos doesnt improve performance enough to be usable...
-
-
-\newcommand\WPd{Consolidation and framework deployment}
+\newcommand\WPd{Ph.D. Finalization}
 \subsection{Component 4: \WPd}
+\newcommand\WPda{Framework consolidation and deployment}
+\subsubsection{Task~4.1: \WPda}
+The three components will be combined into a functional framework. 
+The framework will include a web application that offers a central location for the functionalities discussed above.
+The framework will be deployed and demonstrated as it could be used in clinical practice.
 
-The three components will be combined into a .....
+
+\newcommand\WPdb{Ph.D. dissertation composition and defense}
+\subsubsection{Task~4.2: \WPdb}
+The findings and results will be packaged into a Ph.D. dissertation and defense.
+
+
+\subsubsection{Risks}
+The main concern is that some of the functionalities or components of previous work packages will not be able to be integrated together into a single web application. 
+If necessary, different applications will be created to accomidate any components that do not fit into the planned unified web application.
 
 
 \subsection{Work plan}
@@ -472,15 +485,19 @@ This will allow for a good time and project management.
 	\textbf{WP2:      \WPb  \duration{8}}
 	\smallskip
 	
-	\textbf{WP3:      \WPc  \duration{26}}
+	\textbf{WP3:      \WPc  \duration{30}}
 	\begin{itemize}
 	  \item Task 3.1: \WPca \duration{ 6}
-	  \item Task 3.2: \WPcb \duration{ 6}
-	  \item Task 3.3: \WPcc \duration{ 14}
+	  \item Task 3.2: \WPcb \duration{ 10}
+	  \item Task 3.3: \WPcc \duration{ 12}
 	\end{itemize}
 	\smallskip
 	
-	\textbf{WP4:      \WPd  \duration{ 6}}
+	\textbf{WP4:      \WPd  \duration{ 12}}
+  \begin{itemize}
+	  \item Task 4.1: \WPda \duration{ 6}
+	  \item Task 4.2: \WPdb \duration{ 9}
+	\end{itemize}
 \end{adjustwidth}
 
 \noindent
@@ -514,10 +531,9 @@ Concretely, I will write blog posts, publish videos, and interact with the great
 
 \bigskip
 
-% Have not gotten to fixing the Gantt chart up yet...
 \noindent
 \begin{ganttchart}[
-  x unit=11.4pt,
+  x unit=8.5pt,
   y unit title=12pt,
   y unit chart=11pt,
   bar height=1,
@@ -529,55 +545,43 @@ Concretely, I will write blog posts, publish videos, and interact with the great
   hgrid style/.style=black!50,
   bar label font=\it,
   title label font=\bf,
-]{1}{36}
+]{1}{48}
   \gantttitle{2023}{ 2}
   \gantttitle{2024}{12}
   \gantttitle{2025}{12}
-  \gantttitle{2026}{10}
+  \gantttitle{2026}{12}
+  \gantttitle{2027}{10}
   \\
   \ganttset{title label font={}}
   \gantttitle{Q4}{2}
   \gantttitle{Q1}{3}\gantttitle{Q2}{3}\gantttitle{Q3}{3}\gantttitle{Q4}{3}
   \gantttitle{Q1}{3}\gantttitle{Q2}{3}\gantttitle{Q3}{3}\gantttitle{Q4}{3}
-  \gantttitle{Q1}{3}\gantttitle{Q2}{3}\gantttitle{Q3}{3}
+  \gantttitle{Q1}{3}\gantttitle{Q2}{3}\gantttitle{Q3}{3}\gantttitle{Q4}{3}
+  \gantttitle{Q1}{3}\gantttitle{Q2}{3}\gantttitle{Q3}{3}\gantttitle{Q4}{1}
   \\
-  
-  \ganttgroup{WP1}{ 1}{13}\\
+  \ganttgroup{WP1}{ 1}{8}\\
   \ganttset{bar/.append style={fill={rgb,255:red,220;green, 35;blue,  0}}}
-  \ganttbar{T1.1}{1}{2}
-  \ganttbar{    }{20}{21}
+  \ganttbar{T1.1}{1}{ 4}
   \\
-  \ganttbar{T1.2}{3}{3}
-  \ganttbar{    }{7}{7}
-  \ganttbar{    }{15}{15}
-  \ganttbar{    }{22}{22}
-  \ganttbar{    }{26}{26}
-  \ganttbar{    }{32}{32}
+  \ganttbar{T1.2}{3}{ 6}
   \\[grid]
-
-  \ganttgroup{WP2}{ 1}{16}\\
   \ganttset{bar/.append style={fill={rgb,255:red, 87;green,157;blue, 28}}}
-  \ganttbar{T2.1}{4}{6}
-  \ganttbar{    }{8}{10}
-  \\
-  \ganttbar{T2.2}{12}{14}
-  \ganttbar{    }{16}{17}
+  \ganttbar{\bf WP2}{7}{12}
   \\[grid]
-
-  \ganttgroup{WP3}{ 1}{10}\\
+  \ganttgroup{WP3}{ 13}{38}\\
   \ganttset{bar/.append style={fill={rgb,255:red,  0;green,132;blue,209}}}
-  \ganttbar{T3.1}{23}{25}
-  \ganttbar{    }{27}{28}
+  \ganttbar{T3.1}{13}{16}
+  \ganttbar{    }{36}{37}
   \\
-  \ganttbar{T3.2}{30}{31}
-  \ganttbar{    }{33}{34}
+  \ganttbar{T3.2}{17}{22}
+  \\
+  \ganttbar{T3.3}{23}{35}
   \\[grid]
-
+  \ganttgroup{WP4}{37}{47}\\
   \ganttset{bar/.append style={fill={rgb,255:red,255;green,149;blue, 14}}}
-  \ganttbar{\bf WP4}{11}{11}
-  \ganttbar{       }{18}{19}
-  \ganttbar{       }{29}{29}
-  \ganttbar{       }{35}{36}
+  \ganttbar{T4.1}{38}{43}
+  \\
+  \ganttbar{T4.2}{41}{48}
 \end{ganttchart}
 
 
@@ -604,7 +608,7 @@ Societal impact should always be linked to a (in)direct (macro)economic benefit,
 % therefore we have a problem to solve
 My Ph.D. project is strongly motivated by the potential economic and societal gains presented by personalized medicine. 
 For all existing and future applications of genetically-informed precision health, patient genome sequence data in some form will be required.
-In recent years, the cost of digital genome sequence generation has steadily decreased~\cite{wetterstrand_cost_2021}, but over that same time the cost of storing and maintaining the privacy of that data has not kept pace~\cite{}.
+In recent years, the cost of digital genome sequence generation has steadily decreased~\cite{wetterstrand_cost_2021}, but over that same time the cost of storing and maintaining the privacy of that data has not kept pace~\cite{storage_costs}.
 Thus, unintended barriers to scaling current clinical genomic workflows as well as to researching new workflows have been observed.
 
 % there are different ways to solve the above problem but right now they cant happen (largely because of technological constraints)
@@ -636,7 +640,7 @@ Such efficiency increases could help lower patient costs for specialized genetic
 My project presented above is designed to present a proof-of-concept framework, both providing and demonstrating the technological foundations for the storage of PGS data in Solid pods, the controlling of access to that data on a granular level, the ability for that data to be queried, and exhibiting the accessibility of the stored PGS data to users, web applications, and medical tools in formats that can be used by both those currently in use and applications developed in the future. 
 Such a framework will provide the outline of necessary implementation considerations from a technological perspective while also highlighting strengths and weaknesses of such a system that may be influential in attempts at scaling such an infrastructure. 
 My project is also being undertaken in parallel with the European Virtual Human Twin (EDITH)~\cite{edith} initiative that aims at evolving the way medical data is stored to be increasingly citizen/patient centric both within Flanders as well as the greater European Union. 
-The WE ARE project~\cite{weare} is another Flemish initiative exploring ways in which citizen-centric data stprage and ownership.
+The WE ARE project~\cite{we_are} is another Flemish initiative exploring ways in which citizen-centric data stprage and ownership.
 
 
 In the short-term, the project is being developed to be integrated into ongoing research and product development at VITO Digital Precision Health. 
