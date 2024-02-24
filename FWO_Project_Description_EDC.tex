@@ -113,10 +113,9 @@
 \paragraph{Decentralized Landscape}
 % decentralization to combat centralization (include examples?)
 Data decentralization initiatives~\cite{solid, mastodon, decentralizednanopubs} are working to reduce the data siloing caused by data centralization on the Web.
-A leading decentralized storage strategy is the use of personal data vaults.
+A leading decentralized storage strategy is the use of \textbf{personal data vaults}.
 The Solid protocol in particular offers user-moderated access controls, data linking in and across vaults using the Resource Description Framework (RDF)~\cite{spec:rdf}, represented as triples with universal semantics, built on Linked Data principles~\cite{linkeddata}, and information extraction via querying using the SPARQL query language~\cite{spec:sparqllang}.
-
-% something about remaining challenges related to implementation and computation not being a part of the storage infrastrcture
+Implementations of Solid for purposes of ... (would like 2-3 of the highest profile Solid projects, any ideas?)
 
 
 \paragraph{Personal Genome Sequencing in Healthcare}
@@ -126,42 +125,45 @@ The Solid protocol in particular offers user-moderated access controls, data lin
 % cost decreasing measures (sharing/data linking/interoperability?) are hard due to privacy constraints (PGS data is sensitive)
 % centralized database technologies pit privacy and cost reduction as antagonists...
 
-Around the same time that the World Wide Web was being established, DNA sequencing technologies were just starting to be applied to the human genome~\cite{hood_1987}.
-At the time of writing, there are now multiple domains of clinical practice where patient personal genome sequence (PGS) data are now used to inform medical decision making. 
+Around the same time that the World Wide Web was being established, DNA sequencing technologies were just being applied to the human genome~\cite{hood_1987}.
+At the time of writing, there are now multiple domains of clinical practice where patient \textbf{personal genome sequence (PGS) data are now used to inform medical decision making}. 
 Examples include in drug development~\cite{ko_new_2022}, cancer diagnosis and treatment~\cite{mcleod_cancer_2013}, and rare genetic disease identification and treatment~\cite{souche_recommendations_2022}.
 How this integration is deployed varies by clinical domain, but improved outcomes have generally been observed~\cite{mathur_personalized_2017}.
 Despite great promise presented by various use cases, barriers to widespread adoption remain~\cite{stefanicka-wojtas_barriers_2023}.
 
-One major barrier to scalability is presented by the costs of data generation and storage~\cite{genomics_cost_2023}.
+\textbf{One major barrier to scalability is presented by the costs of PGS data generation and storage}~\cite{genomics_cost_2023}.
 The average human genome is slightly over 3 billion base pairs in length and during a whole genome sequencing workflow, various sequence formats that offer different sets of information are produced~\cite{bagger_whole_2024}.
-Of these, Variant Call Format (VCF) files~\cite{danecek_variant_2011} serve as the state-of-the-art for most clinical genomic applications and are typically between 100-1000s MBs within computer memory. 
-Beyond just the costs of first time generation and storage, it is not uncommon to regenerate results and sequences if a patient moves to a different healthcare institution~\cite{that one citiation}.
+Of these, Variant Call Format (VCF) files~\cite{danecek_variant_2011} serve as the state-of-the-art for most clinical genomic applications and are \textbf{typically between 100-1000s MBs} within computer memory. 
+Because of their large size, there are existing state-of-the-art methods for compressing~\cite{vcf_compression_2022} and parsing~\cite{yang_seqminer2_2020} these files using indexes.
 
-The costs of producing and maintaining these data are further increased by the privacy protections needed for PGS data~\cite{GDPR_2016}.
-With the enlarged threat of hacking, phishing, and login credential compromisation that is only increasing~\cite{noauthor_ransomware_nodate}, hospitals and health care institutions have taken steps to enact tighter restrictions on data access and increase their cyber security budget to handle security threats and audits.
+The costs of producing and maintaining these data are further increased by the \textbf{privacy protections needed for PGS data}~\cite{GDPR_2016}.
+With the enlarged threat of hacking, phishing, and login credential compromisation that is only increasing~\cite{ransomware}, health care institutions have taken steps to enact tighter restrictions on data access and increase cyber security budgets.
+Because of this data siloing, there is \textbf{little to no data sharing between health care institutions}. 
+If a patient moves hospitals, it is common for PGS data and genomic tests to be regenerated and indefinetly stored in that new location because of the lack of data sharing infrastructure.
+To reduce costs and improve the scalability of PGS usage in clinical practice, alternative methods of data storage and privacy protection that allow for improved data sharing are merited.
+\emph{I will establish user-friendly methods for the management and protection of stored PGS data while also making it possible to share that data without compromising its privacy.}
 
 
-\paragraph{PGS data sharing in academic research}
-Because hospital systems have a wealth of clinically relevant data, but that data is largely inaccessible outside of those institutions, research motivated initiatives working to increase the accessibility of that data have gained traction recently~\cite{data_sharing_2019}.
-Practically, this has led to the development of infrastructure that allows for sharing of genome data between institutions, creating federated centralized databases. 
-Among the largest and most prevalent in Europe is GA4GH Beacons~\cite{rambla_beacon_2022}. 
-Despite this step towards increased sharing and cost reduction, advancements in state-of-the-art infrastructure and standards are not directly translatable to clinical practice. 
+% \paragraph{PGS data sharing in academic research}
+% Because hospital systems have a wealth of clinically relevant data, but that data is largely inaccessible outside of those institutions, research motivated initiatives working to increase the accessibility of that data have gained traction recently~\cite{data_sharing_2019}.
+% Practically, this has led to the development of infrastructure that allows for sharing of genome data between institutions, creating federated centralized databases. 
+% Among the largest and most prevalent in Europe is GA4GH Beacons~\cite{rambla_beacon_2022}. 
+% Despite this step towards increased sharing and cost reduction, advancements in state-of-the-art infrastructure and standards are not directly translatable to clinical practice. 
 
 
 \paragraph{Decentralized PGS data storage}
-A possible solution to the challenges faced is through reorganization of how data is stored and discovered. 
-The citizen-centric model places the patient at the center, and is not an entirely novel concept~\cite{brands_patient-centered_2022}.
-Within the current system, a citizen-centric model is difficult to implement due to technological challenges presented by centralized databases.
-The Solid protocol~\cite{solid}, a decentralized data storage approach, is composed of specifications more conducive to construction of a citizen-centrica data storage strategy for clinical data.
-Specifically, Solid offers the ability to granularize data privacy, allow authorized data access over the web, and represent stored data as Linked Data, all features that can work to remove some of the antagonism between cost reduction and privacy preservation.
+The \textbf{citizen-centric model} places the patient at the center of their data, and is not an entirely novel concept~\cite{brands_patient-centered_2022}.
+Within the current system, a citizen-centric model is difficult to implement due to technological challenges presented by centralized, relational databases.
+The \textbf{Solid protocol}~\cite{solid}, a decentralized data storage approach, is composed of specifications \textbf{more conducive to construction of a citizen-centric data storage strategy} for clinical data.
+Specifically, Solid offers the ability to \textbf{granularize data privacy policies}, allow \textbf{authorized data access over the web}, and represent stored data as \textbf{Linked Data}~\cite{linkeddata}, all features that can work to remove some of the antagonism between cost reduction and privacy preservation.
 In recent years, there have been initiatives for representing biological data as RDF \cite{sib_rdf_2024}, specifically extending into clinical biology recently~\cite{sphn_rdf_2023}. 
-While there is little research into the benefits of representing genomics data as RDF, past studies have shown that linked data integration into clinical practice results in improved outcomes~\cite{farinelli_linked_2015}.
-Furthermore, using Solid pods for data storage also makes it possible for non-linked data stored in the pod, such as test result files, to be linked to RDF data, improving data connectivity.
-As of yet, decentralized storage technologies have not meaningfully expanded to use in clinical practice.
-If they did, things like data sharing, reduced data duplication, and increased data privacy controls could contribute to the PGS cost reductions and improved scalability.
+While there is little research into the benefits of representing genomic data as RDF, past studies have shown that \textbf{linked data integration into clinical practice results in improved outcomes}~\cite{farinelli_linked_2015}.
+Furthermore, using Solid Pods for data storage also makes it possible for non-linked data, such as test result files, to be linked to RDF data, improving data connectivity.
+As of yet, \textbf{decentralized storage technologies} have not meaningfully been used in clinical practice.
+If implemented, they could provide improved data sharing, reduced data duplication, and increased data privacy controls that could \textbf{contribute to clinical PGS cost reductions and improved scalability}.
 Adaptation of Solid decentralized technology to clinical genomics does not come without challenges.
-Serious challenges are posed by the large size of genomic data, the compatibility between the different currant and proposed data storage architectures for applications and tools, and the lack of existing infrastructure for implementation of a decentralized storage framework. %check this later 
-At the same time, these challenges also offer an unstudied frontier of decentalized web technology where technological progress could provide significant impact. %same here
+Serious challenges are posed by the large size of genomic data, the interoperability of future storage technologies with current applications and tools, and the lack of existing infrastructure for implementation of a decentralized storage framework.  
+To drive innovation in the field of health data storage,~\emph{I will create and implement workflows for creating, hosting, and using Solid Pods for the storage of patient genomic and clinically relevant data.}
 
 
 \paragraph{Decentralized Data Querying} 
@@ -171,38 +173,33 @@ At the same time, these challenges also offer an unstudied frontier of decentali
 % decentalized data storages, such as Solid, are not intrinsically endowed with having access to computation to perform querying
 % So, query engines are used to perform queries over this data.
 
-One main challenge presented by using Solid personal data vaults is that these decentralized storage structures do not intrinsically have access to computation. 
-Thus, to read data within a Solid pod, a query engine is needed to provide the computational infrastructure for accessing and parsing stored data.
-Query engine implementations within Solid is an ongoing area of research, and one popular framework for research-based implementions is provided by Comunica~\cite{comunica}.
+A challenge of Solid personal data vaults is that they do not intrinsically have access to computation. 
+Thus, \textbf{to read data within a Solid pod, a query engine is needed for accessing and parsing stored data}.
+Query engine implementations within Solid are an ongoing area of research, and one framework for research-based implementions is provided by Comunica~\cite{comunica}.
 
-% something about implementing this ??
-
-Alongside the implementation challenges, there are also algorithmic challenges presented by querying genomic data vaults.
+There are also \textbf{algorithmic challenges presented by querying genomic data vaults}.
 The processing of queries can be characterized by two stages, the planning and the execution. 
 The traditional strategy followed a sequential optimize-then-execute approach, where query planning is done first based on pre-existing dataset statistics then the produced plan guides execution. 
 For cases where there are not dataset statistics available, adaptive processing has been presented as a solution, where planning and execution are recursively performed throughout the querying process~\cite{adaptive_book}.
 
-SPARQL endpoints~\cite{spec:sparqlprot}, large centralized well-indexed databases, represent an examples of environments where query planning and execution are guided by indexes to improve performance~\cite{sparqlqueryoptimization}.
+SPARQL endpoints~\cite{spec:sparqlprot}, large centralized well-indexed databases, represent examples of environments where query planning and execution are guided by indexes to improve performance~\cite{sparqlqueryoptimization}.
 Federated querying algorithms~\cite{hibiscus,tpf} build on those approaches for querying over multiple, but not a large number of, SPARQL endpoints.
 
 For querying decentralized ecosystems, challenges are presented by the larger number of sources and inconsistency of indexes or statistics about those sources available prior to execution.
-Due to these constraints, recent work producing Link Traversal Query Processing algorithms has established new approaches for federated querying in these decenralized environments~\cite{taelman_LTQP_2023}.
-The established algorithms assume conditions where the many sources contain small amounts of data, different than those presented by patient genome pods.
-In the case of genomic data pods, querying will be performed over a potentially large number of data pods containing large amounts of linked data, a situation not extensively investigated. 
-In this context, it is likely that existing LTQP algorithms and query planning strategies will require innovation. 
-%I will statement ...
+Due to these constraints, recent work presenting Link Traversal Query Processing (LTQP) algorithms has established new approaches for federated querying in these decenralized environments~\cite{taelman_LTQP_2023}.
+For additional efficiency and specialized use cases, the use of aggregators that store summaries representing data types or other statistics about sources has also been proposed~\cite{VandenbrandeAggregatorsTR, taelman_privacyAgg_2020}.
 
+The established LTQP algorithms assume conditions where \textit{many sources contain small amounts of data}, which is different than those presented by patient genome pods.
+In the case of genomic data pods, querying will be performed over \textit{a potentially large number of data pods containing large amounts of linked data}, a situation not extensively investigated. 
+\textbf{In this context, it is likely that existing LTQP algorithms and query planning strategies will require innovation.} 
+\emph{I will develop new LTQP algorithms that are capable of querying deventralized genomic data vaults through the use of genome indexes and data vault summaries.}
 
-\paragraph{Technological innovation merit}
-
-% need to talk about implementation into something maybe??
-
-Despite there being no real solutions to the current antagonism between privacy and cost reduction for PGS data usage in healthcare, there is also a conspicuous gap in the current scientific discourse around the development and implementation of a proposed solution. 
+\paragraph{Towards clinical implementation}
+Despite there being no real solutions to the current antagonism between privacy and cost reduction for PGS data usage in health care, there is also a conspicuous gap in the current scientific discourse around the development and implementation of a proposed solution. 
 This gap underscores the necessity of my Ph.D.
-\textbf{I aim to improve the connectedness and shareability of genomic data storage(s), while preserving data privacy, through the 
-% make this more concrete
-integration of various domains of semantic web research into a novel, holistic framework designed for use in clinical practice.}
-My Ph.D. will also aim to demonstrate the limitations of current state-of-the-art semantic web technologies in this novel application domain with the intention of driving innovation and discovering future research pursuits.
+I aim to improve the \textbf{connectedness and shareability of genomic data storage(s), while preserving data privacy}, through the integration of cutting edge of semantic web research in the domains of \textbf{data storage, policies, and querying}.
+\emph{I will accomplish this by creating a novel, holistic framework that is implemented as a web application, complete with guides and documentation to foster usability, for use in clinical practice.}
+Through this framework, I will also demonstrate the limitations of current state-of-the-art semantic web technologies in this novel application domain to drive innovation and uncover future research pursuits.
 
 
 \section{Scientific research objective(s)}
@@ -217,36 +214,34 @@ Discuss in detail the results (or partial results) that you aim to achieve, such
 
 \noindent
 My proposed research endeavors to combine cutting edge decentralized storage technology with semantic data representation and federated querying technologies into a novel proof-of-concept PGS data storage and querying framework for use in clinical practice. 
-To create such a framework, I will combine technologies from different distinct areas of information systems research and apply them to a data ecosystem that poses novel challenges.
-This ambition frames the central research question I aim to answer: \textbf{Can combining the Solid specifications for data storage with other compatable cutting edge innovations for data policy, linking, and querying be instantiated and deployed as a framework that provides clear advantages over the existing PGS data storage protocols in health care?}
+To create such a framework, I will combine technologies from different distinct areas of semantic web research and apply them to a data ecosystem that poses novel challenges.
+This ambition frames the central research question I aim to answer: \textbf{Can combining the Solid specifications for data storage with other compatable cutting edge innovations in data policy, linking, and querying be instantiated and deployed as a framework that provides clear advantages over the existing PGS data storage protocols in health care?}
 
 The core research question can be decomposed into four more specific research questions.
-First, can the decentralized storage protocol Solid~\cite{solid}
-offer suitable infrastructure for PGS data? 
+\textit{First, can the decentralized storage protocol Solid}~\cite{solid} \textit{offer suitable infrastructure for PGS data?} 
 I hypothesize that the Solid protocol will be able to store clinical genomic data.
-Further, I aim to establish Solid also offers usage advantages over existing systems through the representation of PGS data using RDF as Linked Data~\cite{berners-lee_linked_2009}.
-A further aim within this objective is exploring if storage of PGS data as RDF using Header Dictionary Triples (HDT) format~\cite{hdt} provides similar levels of usability of genomic data with significantly decreased storage costs.
-To ensure the widest range of connection capabilities while optimizing efficiency, I will also investigate the use of a bi-directional mapping index for the conversion between native genomic VCF files and RDF representations.
+Further, I aim to establish Solid also offers usage advantages over existing systems through the representation of \textbf{PGS data using RDF as Linked Data}~\cite{berners-lee_linked_2009}.
+A further aim within this objective is exploring if storage of PGS data as RDF using \textbf{Header Dictionary Triples (HDT) format}~\cite{hdt} provides similar levels of usability of genomic data with significantly \textbf{decreased storage costs}.
+To ensure the widest range of connection capabilities while optimizing efficiency, I will also investigate the use of a \textbf{bi-directional mapping index} for the conversion between native genomic VCF files and RDF representations.
 For these aims, my background knowledge of genomic file anatomies and how data is semantically represented in genomics file formats will be valuable, specifically when optimizing indexing and format conversion strategies.
 
-Second, because of the sensitive nature of PGS data, do the specifications provided by Solid provide for adequate control of PGS data privacy while also allowing for increased authorized sharability?
-I aim to demonstrate possible configurations of Solid data vault privacy policies as well as offer a functionality within a web application for the alteration of these policies by authorized users.
+Second, because of the sensitive nature of PGS data, \textit{do the specifications provided by Solid provide for adequate control of PGS data privacy while also allowing for increased authorized sharability?}
+I aim to demonstrate possible configurations of Solid data vault privacy policies as well as offer a functionality within a \textbf{web application for the alteration of these policies} by authorized users.
 I am uniquely situated for assessing these privacy policies because of my past experience working in a clinical setting alongside physicians as well as my understanding of different sets of US and EU regulations mediating data privacy requirements.
 
 Third, for the stored genomic data and linkages to be usable in clinical practice, a querying method is necessary.
 In a citizen-centric clinical data storage implementation, there could be potentially thousands of large sources to be queried over.
 Performant federated decentralized querying in such environments is an established challenge~\cite{dang_fedshop_2023}.
-Therefore, can querying over these sources be achieved through the use of LTQP algorithms?
-I anticipate that current generalized LTQP algorithms will not be able to perfrom well over large genomic data.
+Therefore, \textit{can querying over these sources be achieved through the use of LTQP algorithms?}
+\textbf{I anticipate that current generalized LTQP algorithms will not be able to perfrom well over large genomic data}.
 Thus, I will investigate two strategies for improving the performance of query processing.
-(A) I will investigate the use of summaries of patient data vault contents, genereated prior to query execution and stored in an aggregator.
+(A) I will investigate the \textbf{use of summaries} of patient data vault contents, stored outside of data vaults in aggregators, to modify query planning strategies in LTQP algorithms.
 Because of the privacy considerations inherint with patient data vault contents, I will follow presviously descibed theoretical methods to maintain data privacy in these summaries~\cite{taelman_privacyAgg_2020}.
-(B) I will develop LTQP algorithms that are modified to utilize previously generated genomic data mapping indexes for within-vault querying.
-% more maybe?
+(B) I will develop LTQP algorithms that \textbf{integrate genomic data indexes} for within-vault querying.
 I have experience with index guided genomic data parsing which will help inform developing and optimizing query processing algorithms to incorporate these guides. 
 
-Together, these components will be combined into an operational framework in the fourth component. 
-The driving question being, can these three different groups of features be combined into a cohesive web application and deployed together?
+Together, these components will be \textbf{combined into an operational framework} in the fourth component. 
+The driving question being, \textit{can these three different groups of features be combined into a cohesive web application and deployed together?}
 The framework, once produced, will be compared to existing strategies for storing and sharing PGS data to assess the efficacy of transitioning toward product production and specific clinical use case adaptation.
 The proposed scientific approach also aims to test the application of numerous fields of semantic web research to a clinical knowledge domain. 
 In the process, insight into how unique challenges introduced by clinical constraints will provide future areas of research, both applied and fundamental.
@@ -254,7 +249,7 @@ In the process, insight into how unique challenges introduced by clinical constr
 \newpage
 
 \section{Research methodology and work plan}
-% --- aim for 4 pages (WP1: 1; WP2: 1,5; WP3: 1,5) ---
+% --- aim for 4 pages ---
 
 \begin{comment}
 Elaborate the different envisaged steps (experiments/activities) in your research, and motivate strategic choices in view of reaching the objectives. 
@@ -304,31 +299,31 @@ I will also create server-hosted Solid pods using the Community Solid Server (CS
 The use of the CSS for Solid pod hosting for research purposes is state-of-the-art, but there have been no published experiments documenting the use of CSS pod instances for storing PGS data, which are much larger than in past Solid experimentation.
 Each pod will be a storage container for a single individual\textquotesingle s PGS data. 
 I will upload a single PGS file, a VCF file, into one "patient\textquotesingle s" pod to test basic functionality of a Solid pod for hosting large genomic data. 
-The result of this task will be the \textbf{development and documentation of a workflow for creating, hosting, and uploading PGS data into patient solid pods}.
+The result of this task will be the \textbf{development and documentation of a workflow for creating, hosting, and uploading PGS data into patient solid data vaults}.
 
 
 \newcommand\WPab{Representing PGS data as Linked Data using RDF}
 \subsubsection{Task~1.2: \WPab}
 
-To improve data storage efficiency and future application potential, I will convert PGS data from VCF to RDF allowing for linking of other medically relevant data to patient genomic data within a patient\textquotesingle s pod and outside of it.
+To improve data storage efficiency and future application potential, I will \textbf{convert PGS data from VCF to RDF} allowing for linking of other medically relevant data to patient genomic data within a patient\textquotesingle s pod and outside of it.
 This aim will address well documented current challenges in medicial record utilization relating to scatteredness of pertinent clinical information~\cite{pastorino_benefits_2019}.
 To convert PGS data from VCF to RDF, we will investigate a format translation process using the SPHN RDF ontology~\cite{van_der_horst_bridging_2023}. 
-For this translation process, we will experiment with different approaches, such as a bi-directional mapping index, for efficient reversal of conversion to ensure the conversion process can be reversed for connecting to existing clinical workflows that request VCF format inputs. 
+For this translation process, I will experiment with using a bi-directional mapping index for efficient reversal of conversion to ensure connection to existing clinical workflows that request VCF format inputs. 
 Direct conversion between VCF and RDF will be evaluated in terms of computational overhead, conversion time, and memory usage.
-The same evaluations will be performed use the generation and use of an intermediate mapping index file. 
+Evaluations detailing the use of an intermediate mapping index file will also be done and compared to direct VCF to RDF conversion. 
 These comparisons will be documented in a formal benchmarking study.
 Because representation of VCF files in RDF has not been heavily studied, these will be the first published experiments of their kind.
 
 Data that is serialized as RDF can be represented in a number of formats in computer memory~\cite{rdf_serializations}.
-To minimize the storage costs of large PGS data, I will utilize HDT format to compress the PGS data while retaining the ability to query and index it~\cite{hdt}.
+To minimize the storage costs of large PGS data, I will utilize \textbf{HDT format to compress the PGS data} while retaining the ability to query and index it~\cite{hdt}.
 This approach has not be applied to genomic data before.
 
-I then intend to demonstrate the linking of part of a patient\textquotesingle s genome to
-(A) other data within the patient\textquotesingle s pod, 
-(B) data in a public database outside of a patient\textquotesingle s pod, and
-(C) data from another patient\textquotesingle s pod.
+I then intend to demonstrate the \textbf{linking of part of a patient\textquotesingle s genome to}
+\textbf{(A)} other data within the patient\textquotesingle s pod, 
+\textbf{(B)} data in a public database outside of a patient\textquotesingle s pod, and
+\textbf{(C)} data from another patient\textquotesingle s pod.
 In real-world implementations, it is questionable whether linkages over multiple patient data pods is feasable due to privacy concerns.
-Even if implemented, I hypothesize there would be low connectivity between patient data vaults, which will be reflected in the demonstrations above. (<-- important to querying later but don't really know if here is a good place to introduce this)
+Regardless, I hypothesize there to be low connectivity between patient data vaults, which will be reflected in experimental implementations. (<-- important to querying later but don't really know if here is a good place to introduce this)
 The power of linking the VCF data to other clinically relevant data will be during querying, which will be performed in Component 3.
 While Linked Data is state-of-the-art, these concepts have not yet been applied to clinical genomic data.
 
@@ -346,9 +341,8 @@ If this ontology is insufficient, I will work with members of the IDLab at UGhen
 \newcommand\WPb{PGS data privacy policies}
 \subsection{Component~2: \WPb}
 
-A large advantage of the Solid decentralized data storage protocol over current institution-centric methods of data storage are the more flexible methods of creating, modifying, and enforcing data access policies. 
-
-I will experiment with the design and implementation of multiple levels of authorization as well as methods that allow for dynamic control over data discoverability, read/write access, and data access consent requests within a patient\textquotesingle s Solid pod, made possible by the Solid specification. 
+A large advantage of the Solid decentralized data storage protocol over current institution-centric methods of data storage is the more flexible methods of creating, modifying, and enforcing data access policies. 
+I will experiment with the \textbf{design and implementation of multiple levels of authorization as well as methods that allow for dynamic control over data discoverability, read/write access, and data access consent requests} within a patient\textquotesingle s Solid pod, made possible by the Solid specification. 
 I will develop and test three functionalities for privacy modifications.
 (1) registration of a pod to an individual patient,
 (2) submission of a request to access stored data from a data requester, the notification of the patient, and the consent or denial by the patient, and
@@ -358,7 +352,6 @@ To utilize these methods, various levels of access to pod read and write privile
 Attaching differing levels of authorization to data will be assessed by creating various profiles that reflect clinical roles and access levels and attempting to access data via user-mediated, application requesting, and querying approaches. 
 Assigning the above permissions within Solid is an open area of research and there are currently state-of-the-art protocols implemented in the CSS that allow their implementation~\cite{css}.
 The described access schema has not been attempted in the presented level of detail for clinical genomic data.
-
 
 \subsubsection{Risks}
 If the above proposed schema for privacy policies cannot be achieved, a simplier and more generalized schema will be devised and implemented.
@@ -376,7 +369,7 @@ Techniques for federated SPARQL querying over decentralized environments with a 
 Personal genomic data vaults for clinical practice present a third querying landscape consisting of a \emph{large number of large data sources}.
 One advantage presented by the PGS data stored in the proposed manner is that assumptions about the data contained within patient data vaults can be made based on the conserved function of vaults.
 This homogeneity of data will be leveraged to inform query algorithm planning.
-Concretely, I will assess and improve LTQP algorithms for genomic data vaults.
+Concretely, \textbf{I will assess and improve LTQP algorithms for genomic data vaults}.
 Novel improvements to existing algorithms will be attempted by using within patient vault PGS data indexes and outside patient vault privacy preserving summaries.
 Benchmarking studies will assess the performance of these algorithms among various possible clinical usecases.
 
@@ -390,13 +383,13 @@ Query execution requires a source for computation which is not currently provide
 I will implement an instance of Comunica~\cite{comunica} to perform the queries.
 Because Comunica is open-source and intended for research purposes, it will enable experimentation with modified query processing algorithms. 
 
-For actual benchmarks, I will assemble a suit of represetative patient genomic data vaults (should i include a number/details?).
+For actual benchmarks, \textbf{I will assemble a suit of represetative patient genomic data vaults} (<-- should i include a number/details?).
 Query functionality will be evaluated using query execution time and computational load metrics as well as a query results assessment. 
 Query results will additionally establish the functionality of data linkages (Task 1.2).
 LTQP algorithms are an active area of active research, but most of the work done has been with generalized algorithms and datastores with small amounts of data~\cite{taelman_LTQP_2023}.
 I aim to adapt this querying approach to the specific domain of genomic and health data which has not been attempted before. 
 
-Benchmarking will be initially performed for existing LTQP algorithms~\cite{taelman_LTQP_2023}.
+Benchmarking will be \textbf{initially performed for existing LTQP algorithms}~\cite{taelman_LTQP_2023}.
 Ideally, success will be determined by queries that return results verified by a truth-set in under 10 minutes for user queries and potentially longer for application queries. (Not sure how I feel about this.)
 In a clinical setting, time constraints are not as important as accuracy and reliability of results although excessive query times decrease the usefulness of such a tool for physicians in clinical practice, motivating the assessment criteria above.
 
@@ -404,20 +397,19 @@ In a clinical setting, time constraints are not as important as accuracy and rel
 \newcommand\WPcb{Privacy-preserving data vault summaries}
 \subsubsection{Task~3.2: \WPcb}
 
-It is unlikely that existing LTQP algorithms perform suffficiently for genomic data vaults due to their large size and low connectivity to other patient data vaults.
-Therefore, I will experiment with the generation of data vault summaries, stored in aggregators, that do not compromise the privacy of patient data. 
+It is \textbf{unlikely that existing LTQP algorithms perform well} for genomic data vaults due to their large size and low connectivity to other patient data vaults.
+Therefore, I will experiment with the generation of \textbf{data vault summaries, stored in aggregators, that do not compromise the privacy of patient data}. 
 To implement these privacy preserving summaries, I will first assemble within-data vault summaries with designated access controls.
 These summaries may be generated using some of the data from genomic bi-directional mapping indexes (Task 1.2).
-Then one or multiple aggregator(s) will assemble multi-vault summaries that are stored outside the data vaults using a summary combination algorithm~\cite{taelman_privacyAgg_2020}.
+Then, one or multiple aggregator(s) will assemble multi-vault summaries that are stored outside the data vaults using a summary combination algorithm~\cite{taelman_privacyAgg_2020}.
+These summaries are intended to be used by modified LTQP algorithms (Task 3.3) to improve query processing time and efficiency. 
 A practical implementation of the described methods has not yet been published.
-
-(not sure but I feel like I need more here...)
 
 
 \newcommand\WPcc{Algorithm incorporation of PGS data indexes and data vault summaries}
 \subsubsection{Task~3.3: \WPcc}
 
-For the optimization of LTQP algorithm performance over PGS data vaults, I will look to improve existing algorithms by incorporating previously generated aggregator summaries (Task 3.2) and genome data indexes (Task 1.2).
+For the optimization of LTQP algorithm performance over PGS data vaults, I will look to improve existing algorithms by \textbf{incorporating previously generated aggregator summaries (Task 3.2) and genome data indexes (Task 1.2)}.
 I hypothesize the summaries will be specifically useful for query planning because they can help scope the number of data vaults that need to be queried among other benefits. 
 Alongside the use of summaries, I also will experiment with the use of within data vault indexes for the querying of genomic data specifically. 
 There are well established VCF file parsing tools that allow for highly performant parsing of VCF data via the use of an indexing strategy~\cite{yang_seqminer2_2020}. 
@@ -428,47 +420,43 @@ The algorithms described above will be benchmarked using the same benchmarking s
 I will additionally benchmark the query times of a single data vault PGS to existing tools VCF files parsing tools on the bases of speed, computational load, and result correctness.
 
 The federated querting algorithms utilizing indezes and summaries proposed are novel in nature and have not been developed before. 
-(maybe another sentence here)
-
 
 \subsubsection{Risks}
-Task 3.1 presents the risk that benchmarks cannot be run because PGS data is too big for LTQP algorithms to execute. 
-If these issues arise, I will assess the execution of simplier queries and how much ...
+Task 3.1 presents the risk that PGS data are too large for LTQP algorithms to execute over. 
+If these issues arise, I will assess the execution of simpler queries as well as the execution of multiple, sequential queries over a subset of the genome data vaults.
 
 Another risk is associated with the generation of secure summaries in Task 3.2. 
-If I cannot .... 
+If these summaries cannot be created in a way that adheres to the privacy demands of PGS data, I will investigate the use of other, more secure methods.
+Another option that may be explored is the creation of aggregator data vaults, with privacy protections, where summaries can be stored to improve privacy protections.
 
-Lastly, there is a risk presented by Task 3.3, I cannot devise solutions to incorporating indexes and/or summaries in LTQP algos and/or these algorithm modification do not improve performance enough to be usable.
-...
+Lastly, there is a risk that I cannot devise solutions to incorporating indexes and/or summaries in LTQP algorithms and/or these algorithm modification do not improve performance enough to be usable in Task 3.3.
+I will initially investigate how imposing limits on query complexity and reducing the number of data vaults that are included in the possible query space could improve performance.
+If there are still issues, I will investigate the implementation of algorithms utilized by centralized SPARQL endpoints that are known to be able to query large sets of data. 
+
 
 \newcommand\WPd{Ph.D. Finalization}
 \subsection{Component 4: \WPd}
 \newcommand\WPda{Framework consolidation and deployment}
 \subsubsection{Task~4.1: \WPda}
 The three components will be combined into a functional framework. 
-The framework will include a web application that offers a central location for the functionalities discussed above.
+The framework will include a \textbf{web application that offers a central location for accessing the functionalities discussed above}.
 The framework will be deployed and demonstrated as it could be used in clinical practice.
-
 
 \newcommand\WPdb{Ph.D. dissertation composition and defense}
 \subsubsection{Task~4.2: \WPdb}
-The findings and results will be packaged into a Ph.D. dissertation and defense.
-
+The findings and results will be packaged into a \textbf{Ph.D. dissertation and defense}.
 
 \subsubsection{Risks}
 The main concern is that some of the functionalities or components of previous work packages will not be able to be integrated together into a single web application. 
-If necessary, different applications will be created to accomidate any components that do not fit into the planned unified web application.
+If necessary, different applications will be created to accommodate any components that do not fit into the planned unified web application.
 
-
+\newpage
 \subsection{Work plan}
 \smallskip
 
 \noindent
-My project consists of 4 work packages. 
-This will be bundled into a Ph.D. dissertation for a final thesis defense.
-Below Gantt-chart of the Ph.D. project on a quarterly basis.  
-Each work package is split up into different tasks with a dedicated amount of time allocated to it. 
-This will allow for a good time and project management. 
+My project consists of 4 work packages that correspond with the componenets presented above. 
+
 
 %have not gotten to editing this table yet
 \begin{adjustwidth}{0cm}{0cm}
@@ -503,7 +491,7 @@ This will allow for a good time and project management.
 \noindent
 I will undertake work packages and tasks as shown below in a Gantt chart.
 The primary work packages of my Ph.D. are WP1 and WP3.
-WP2 is a suporting work package and WP4 will be completed by combining all other work packages.
+WP2 is a supporting work package and WP4 will be completed by combining all other work packages.
 WP1 and WP3 are dependent, meaning that WP1 must be partially completed before WP3 can begin.
 Thus, these work packages are planned sequentially, which provides me with knowledge of how data storage architecture could be leveraged for WP3.
 
@@ -511,25 +499,16 @@ The focus of WP1 is on storing and formatting PGS data.
 The development of a workflow for setting up Solid data vaults and getting PGS data into those vaults is the first step (Task 1.1).
 Once the PGS data is stored, investigation into data format conversion and data representation will be performed (Task 1.2).
 
-For WP2, I will apply privacy protecting policies to stored PGS data and summaries of that data.
-This task will utilize the Solid protocol for data policies within data vaults (Component 2).
+For WP2, I will apply privacy protecting policies to stored PGS data using the Solid protocol (Component 2).
 
 In WP3, I will build on the work of WP1 and assess the query performance of LTQP algorithms on genomic data vaults.
 I will start by benchmarking existing LTQP algorithms in a formal benchmarking study (Task 3.1).
-Then, I will develop modified LTQP algorithms that use genomic indexes and data vault summaries to improve query efficiency (Task 3.2).
-To further optimize query performance, I will experiment with the production of privacy preserving summaries stored in aggregators outside of data vaults (Task 3.3).
+To optimize query performance, I will experiment with the production of privacy preserving summaries stored in aggregators outside of data vaults (Task 3.2).
+Then, I will develop modified LTQP algorithms that use genomic indexes and data vault summaries to improve query efficiency (Task 3.3).
 
-I will unify the three framework components into a web application (WP4) that will be deployed as a demonstration complete with documentation and a live presentation component. 
-Throughout the previous work packages, I aim to publish incremental findings in high-impact journals and conferences.
-For this, I will focus on journals such as the Semantic Web Journal, Journal of Healthcare Informatics Research, and the PLOS Digital Health Journal.
-Furthermore, I will target conferences such as the International Semantic Web Conference, the Semantic Web Applications and Tools 4 Health Care and Life Sciences conference, and the European Conference on Computational Biology.
-
-Aside from disseminating to the scientific community,
-I will also community my research to the industrial community and wider public throughout the project (not included in the Gantt chart).
-Concretely, I will write blog posts, publish videos, and interact with the greater community via X.
-
-
-\bigskip
+I will unify the three framework components into a web application (Task 4.1) that will be deployed as a demonstration complete with documentation and user guides. 
+Throughout the previous work packages, I aim to publish incremental findings in high-impact journals, such as the Semantic Web Journal and Journal of Healthcare Informatics Research, and conferences, such as the International Semantic Web Conference and the European Conference on Computational Biology.
+The completed Ph.D. will be combined into a dissertation and defended in Fall 2027 (Task 4.2).
 
 \noindent
 \begin{ganttchart}[
@@ -617,7 +596,7 @@ Thus, unintended barriers to scaling current clinical genomic workflows as well 
 % generally my project is saying "if we store this stuff in a new way there are so many new possibilities for applications"
 % this roughly equates to developing a new niche market (or even multiple niche markets)
 % examples include: personal genomic products that can use your WGS, data linking to ANY kind of medical data, potential for being financially compensated for allowing your genome to be used for research, etc...
-The the framework that will result from my Ph.D. will be uniquely positioned to compete with the current state-of-the-art intitiution-centric data storage systems due to the flexibility and cost efficiency it offers as a citizen-centric approach.
+The framework that will result from my Ph.D. will be uniquely positioned to compete with the current state-of-the-art intitiution-centric data storage systems due to the flexibility and cost efficiency it offers as a citizen-centric approach.
 The approach accomplishes this cost efficiency though infrastructure for privacy preserving patient genomic data sharing, data policy customization, and integrated data querying capabilities.
 Because most data is confined within a single health care institution, data sharing between institutions is an economic niche that is largely unfilled. 
 
