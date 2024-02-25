@@ -1,0 +1,33 @@
+Title (en):
+PErsonal GeNome QUery IN clinical practice (PENGQUIN)
+
+Abstract (en):
+Medical care is becoming increasingly personalized through the use of patient genetic information. 
+At present, data useful for clinical care, including genomic data, are commonly diffuse, organized arbitrarily, and confined within in data silos. 
+Coupled with stringent privacy regulations, high storage costs, and severely limited data sharing infrastructure, the scalability of personalized clinical strategies is considerably constrained.
+
+My proposed PhD aims to improve the connectivity and shareability of genomic data storage(s), while preserving data privacy, to decrease the costs of patient genome data use in clinical practice. all through the implementation of a citizen-centric storage framework. 
+I propose a citizen-centric storage framework that integrates insights from various semantic web domains research into a novel, practical solution for clinical use.
+
+Specifically, I will (a) store patient geomic data using Solid pods, (b) represent personal genome sequence data using RDF as Linked Data, (c) apply policies to stored data, and (d) develop innovative link traversal queries for data retrieval.
+
+Through this research, I aim to provide a comprehensive framework, complemented by a user-friendly web application, to facilitate practical adoption in clinical settings. 
+Ultimately, this PhD seeks to provide the proof-of-concept for an innovative, streamlined product for clinical genome data storage, paving the way for scalable personalized medicine.
+
+Keywords (en):
+Solid \ Semantic Genome Data \ Querying \ Genomic Data Privacy
+
+Title (nl):
+Patiëntgenoomquery in klinische praktijk
+
+Abstract (nl):
+Medische zorg wordt steeds persoonlijker door het gebruik van genetische informatie van patiënten. Op dit moment zijn klinische gegevens, waaronder genomische data, vaak verspreid, willekeurig georganiseerd en opgeslagen in datasilo's. Dit, samen met strenge privacyregels, hoge opslagkosten en beperkte infrastructuur voor gegevensdeling, beperkt aanzienlijk de schaalbaarheid van gepersonaliseerde klinische strategieën.
+
+Mijn voorgestelde doctoraat streeft ernaar de connectiviteit en deelbaarheid van de opslag van genomische gegevens te verbeteren, terwijl de gegevensprivacy behouden blijft, om zo de kosten van het gebruik van patiëntgenoomgegevens in de klinische praktijk te verlagen. Dit gebeurt door de implementatie van een op burgers gericht opslagkader dat inzichten uit verschillende onderzoeksgebieden van het semantische web integreert tot een praktische oplossing voor klinisch gebruik.
+
+Concreet zal ik (a) patiëntgenomische gegevens opslaan met behulp van Solid-pods, (b) persoonlijke genoomsequentiegegevens voorstellen met behulp van RDF als gelinkte gegevens, (c) beleid toepassen op opgeslagen gegevens, en (d) innovatieve link-traversiequeries ontwikkelen voor gegevensherstel.
+
+Met dit onderzoek beoog ik een allesomvattend kader te bieden, aangevuld met een gebruiksvriendelijke webtoepassing, om praktische acceptatie in klinische settings te vergemakkelijken. Uiteindelijk streeft dit doctoraat ernaar het proof-of-concept te bieden voor een innovatief, gestroomlijnd product voor de opslag van klinische genomische gegevens, en zo de weg vrij te maken voor schaalbare gepersonaliseerde geneeskunde.
+
+Keywords (nl):
+Solid / Semantische Genoomgegevens / Opvragen / Privacy van genomische gegevens
