@@ -115,7 +115,7 @@
 Data decentralization initiatives~\cite{solid, mastodon, decentralizednanopubs} are working to reduce the data siloing caused by data centralization on the Web.
 A leading decentralized storage strategy is the use of \textbf{personal data vaults}.
 The Solid protocol in particular offers user-moderated access controls, data linking in and across vaults using the Resource Description Framework (RDF)~\cite{spec:rdf}, represented as triples with universal semantics, built on Linked Data principles~\cite{linkeddata}, and information extraction via querying using the SPARQL query language~\cite{spec:sparqllang}.
-Implementations of Solid for purposes of ... (would like 2-3 of the highest profile Solid projects, any ideas?)
+Implementations of Solid for industry use are emerging~\cite{athumi}, but other challenges presented by data querying infrastructure and governance remain.
 
 
 \paragraph{Personal Genome Sequencing in Healthcare}
@@ -322,8 +322,6 @@ I then intend to demonstrate the \textbf{linking of part of a patient\textquotes
 \textbf{(A)} other data within the patient\textquotesingle s pod, 
 \textbf{(B)} data in a public database outside of a patient\textquotesingle s pod, and
 \textbf{(C)} data from another patient\textquotesingle s pod.
-In real-world implementations, it is questionable whether linkages over multiple patient data pods is feasable due to privacy concerns.
-Regardless, I hypothesize there to be low connectivity between patient data vaults, which will be reflected in experimental implementations. (<-- important to querying later but don't really know if here is a good place to introduce this)
 The power of linking the VCF data to other clinically relevant data will be during querying, which will be performed in Component 3.
 While Linked Data is state-of-the-art, these concepts have not yet been applied to clinical genomic data.
 
@@ -341,6 +339,8 @@ If this ontology is insufficient, I will work with members of the IDLab at UGhen
 \newcommand\WPb{PGS data privacy policies}
 \subsection{Component~2: \WPb}
 
+\newcommand\WPba{Implementing data policies}
+\subsubsection{Task~2: \WPba}
 A large advantage of the Solid decentralized data storage protocol over current institution-centric methods of data storage is the more flexible methods of creating, modifying, and enforcing data access policies. 
 I will experiment with the \textbf{design and implementation of multiple levels of authorization as well as methods that allow for dynamic control over data discoverability, read/write access, and data access consent requests} within a patient\textquotesingle s Solid pod, made possible by the Solid specification. 
 I will develop and test three functionalities for privacy modifications.
@@ -383,16 +383,17 @@ Query execution requires a source for computation which is not currently provide
 I will implement an instance of Comunica~\cite{comunica} to perform the queries.
 Because Comunica is open-source and intended for research purposes, it will enable experimentation with modified query processing algorithms. 
 
-For actual benchmarks, \textbf{I will assemble a suit of represetative patient genomic data vaults} (<-- should i include a number/details?).
+For actual benchmarks, \textbf{I will assemble a suit of represetative patient genomic data vaults}.
+I will first assemble a test set of 10 patient data vaults to test basic functionalities, then two additional test sets of 100 patient data vaults and 1000 patient data vaults to represent real-world use cases where it is assumed that many pateints\textquotesingle data can be stored by my framework.
 Query functionality will be evaluated using query execution time and computational load metrics as well as a query results assessment. 
 Query results will additionally establish the functionality of data linkages (Task 1.2).
 LTQP algorithms are an active area of active research, but most of the work done has been with generalized algorithms and datastores with small amounts of data~\cite{taelman_LTQP_2023}.
 I aim to adapt this querying approach to the specific domain of genomic and health data which has not been attempted before. 
 
 Benchmarking will be \textbf{initially performed for existing LTQP algorithms}~\cite{taelman_LTQP_2023}.
-Ideally, success will be determined by queries that return results verified by a truth-set in under 10 minutes for user queries and potentially longer for application queries. (Not sure how I feel about this.)
-In a clinical setting, time constraints are not as important as accuracy and reliability of results although excessive query times decrease the usefulness of such a tool for physicians in clinical practice, motivating the assessment criteria above.
-
+Initially, success will be determined by queries that return correct results verified by a truth-set.
+In a clinical setting, time constraints are not as important as accuracy and reliability of results, motivating our primary assessment criteria.
+Because excessive query times may decrease the usefulness of such a tool for physicians in clinical practice, I will also assess the time it takes for queries to execute and attempt to minimize this time in the following tasks.
 
 \newcommand\WPcb{Privacy-preserving data vault summaries}
 \subsubsection{Task~3.2: \WPcb}
@@ -403,7 +404,7 @@ To implement these privacy preserving summaries, I will first assemble within-da
 These summaries may be generated using some of the data from genomic bi-directional mapping indexes (Task 1.2).
 Then, one or multiple aggregator(s) will assemble multi-vault summaries that are stored outside the data vaults using a summary combination algorithm~\cite{taelman_privacyAgg_2020}.
 These summaries are intended to be used by modified LTQP algorithms (Task 3.3) to improve query processing time and efficiency. 
-A practical implementation of the described methods has not yet been published.
+The described privacy preserving summaries have only been proposed in theory and the proposed implementation will be the first of its kind.
 
 
 \newcommand\WPcc{Algorithm incorporation of PGS data indexes and data vault summaries}
@@ -414,7 +415,8 @@ I hypothesize the summaries will be specifically useful for query planning becau
 Alongside the use of summaries, I also will experiment with the use of within data vault indexes for the querying of genomic data specifically. 
 There are well established VCF file parsing tools that allow for highly performant parsing of VCF data via the use of an indexing strategy~\cite{yang_seqminer2_2020}. 
 I indend to implement a similar strategy by using a pre-computed genome index (Task 1.2) to improve the performance of genome-specific queries. 
-(note really sure how this will look...)
+Combining the two together, a dynamic algorithmic approach that allows for summaries and genome indexes to inform query rewriting at differnt points during query compilation and execution will be examined.  
+
 
 The algorithms described above will be benchmarked using the same benchmarking set and evaluation criteria as generic LTQP algorithms (Task 3.1). 
 I will additionally benchmark the query times of a single data vault PGS to existing tools VCF files parsing tools on the bases of speed, computational load, and result correctness.
@@ -463,21 +465,24 @@ My project consists of 4 work packages that correspond with the componenets pres
 	\parindent 0pt
 	\newcommand\duration[1]{\hfill\emph{#1~months}}
   
-	\textbf{WP1:      \WPa  \duration{6}}
+	\textbf{WP1:      \WPa  \duration{10}}
 	\begin{itemize}
 	  \item Task 1.1: \WPaa \duration{ 4}
-	  \item Task 1.2: \WPab \duration{ 4}
+	  \item Task 1.2: \WPab \duration{ 6}
 	\end{itemize}
 	\smallskip
   
-	\textbf{WP2:      \WPb  \duration{6}}
-	\smallskip
+	\textbf{WP2:      \WPb  \duration{8}}
+	\begin{itemize}
+	  \item Task 2: \WPba \duration{ 8}
+	\end{itemize}
+  \smallskip
 	
-	\textbf{WP3:      \WPc  \duration{25}}
+	\textbf{WP3:      \WPc  \duration{18}}
 	\begin{itemize}
 	  \item Task 3.1: \WPca \duration{ 6}
 	  \item Task 3.2: \WPcb \duration{ 6}
-	  \item Task 3.3: \WPcc \duration{ 13}
+	  \item Task 3.3: \WPcc \duration{ 12}
 	\end{itemize}
 	\smallskip
 	
@@ -542,17 +547,17 @@ The completed Ph.D. will be combined into a dissertation and defended in Fall 20
   \ganttset{bar/.append style={fill={rgb,255:red,220;green, 35;blue,  0}}}
   \ganttbar{T1.1}{1}{ 4}
   \\
-  \ganttbar{T1.2}{3}{ 6}
+  \ganttbar{T1.2}{5}{ 10}
   \\[grid]
   \ganttset{bar/.append style={fill={rgb,255:red, 87;green,157;blue, 28}}}
-  \ganttbar{\bf WP2}{7}{12}
+  \ganttbar{\bf WP2}{11}{18}
   \\[grid]
-  \ganttgroup{WP3}{ 13}{38}\\
+  \ganttgroup{WP3}{ 19}{36}\\
   \ganttset{bar/.append style={fill={rgb,255:red,  0;green,132;blue,209}}}
-  \ganttbar{T3.1}{13}{16}
-  \ganttbar{    }{36}{37}
+  \ganttbar{T3.1}{19}{21}
+  \ganttbar{    }{35}{37}
   \\
-  \ganttbar{T3.2}{17}{22}
+  \ganttbar{T3.2}{21}{26}
   \\
   \ganttbar{T3.3}{23}{35}
   \\[grid]
