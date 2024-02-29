@@ -1,3 +1,1 @@
-The most updated file (and the one that should be used for review) is "FWO_Project_Description_EDC.tex"
-
-Work is ongoing but it seems to be coming along ...
+Final versions of files are present here.
