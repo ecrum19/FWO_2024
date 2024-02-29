@@ -18,7 +18,7 @@ Keywords (en):
 Solid \ Semantic Genome Data \ Federated Querying \ Data Privacy
 
 Title (nl):
-Patiëntgenoomquery in klinische praktijk
+PErsooNlijk Genoom beVRaging IN klinische praktijken (PENGVIN)
 
 Abstract (nl):
 Medische zorg wordt steeds persoonlijker door het gebruik van genetische informatie van patiënten. Op dit moment zijn klinische gegevens, waaronder genomische data, vaak verspreid, willekeurig georganiseerd en opgeslagen in datasilo's. Samen met strenge privacyregels, hoge opslagkosten en beperkte infrastructuur voor gegevensdeling, beperkt de schaalbaarheid van gepersonaliseerde klinische strategieën.
