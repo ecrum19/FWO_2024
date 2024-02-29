@@ -494,7 +494,7 @@ My project consists of 4 work packages that correspond with the componenets pres
 \end{adjustwidth}
 
 \noindent
-I will undertake work packages and tasks as shown below in a Gantt chart.
+A Gantt chart details when tasks will be undertaken.
 The primary work packages of my Ph.D. are WP1 and WP3.
 WP2 is a supporting work package and WP4 will be completed by combining all other work packages.
 WP1 and WP3 are dependent, meaning that WP1 must be partially completed before WP3 can begin.
@@ -504,10 +504,10 @@ The focus of WP1 is on storing and formatting PGS data.
 The development of a workflow for setting up Solid data vaults and getting PGS data into those vaults is the first step (Task 1.1).
 Once the PGS data is stored, investigation into data format conversion and data representation will be performed (Task 1.2).
 
-For WP2, I will apply privacy protecting policies to stored PGS data using the Solid protocol (Component 2).
+For WP2, I will apply privacy protecting policies to stored PGS data using the Solid protocol (Task 2).
 
 In WP3, I will build on the work of WP1 and assess the query performance of LTQP algorithms on genomic data vaults.
-I will start by benchmarking existing LTQP algorithms in a formal benchmarking study (Task 3.1).
+I will start by benchmarking existing LTQP algorithms (Task 3.1).
 To optimize query performance, I will experiment with the production of privacy preserving summaries stored in aggregators outside of data vaults (Task 3.2).
 Then, I will develop modified LTQP algorithms that use genomic indexes and data vault summaries to improve query efficiency (Task 3.3).
 
@@ -603,14 +603,15 @@ Thus, unintended barriers to scaling current clinical genomic workflows as well 
 % examples include: personal genomic products that can use your WGS, data linking to ANY kind of medical data, potential for being financially compensated for allowing your genome to be used for research, etc...
 The framework that will result from my Ph.D. will be uniquely positioned to compete with the current state-of-the-art intitiution-centric data storage systems due to the flexibility and cost efficiency it offers as a citizen-centric approach.
 The approach accomplishes this cost efficiency though infrastructure for privacy preserving patient genomic data sharing, data policy customization, and integrated data querying capabilities.
-Because most data is confined within a single health care institution, data sharing between institutions is an economic niche that is largely unfilled. 
+More generally, here I propose a way to separate genome data hosting and sharing from its applications to encourage more cost efficiency.
+Because most data is predominantly confined within a single health care institution, data sharing between institutions is an economic niche that is largely unfilled. 
 
 The private genomic service industry dominated by companies such as 23andMe, Ancestry.com, sequencing.com, and others establishes that genomics data generation and storage holds importance to consumers for various personal and medical reasons. 
 At the same time, hospital systems exclusively store and maintain all patient PGS data that is used for clinical applications. 
 There is notable nuance between these two sectors including different forms of genomic data being generated, stored, and used, differing legal oversight concerning commercial genomic data and health data, and formatting differences between the genomic data stored. 
 Regardless, in our modern age of big data, data duplication due to data siloing, energy waste due to computational demands during data regeneration, and intrinsic security concerns for modern data storage techniques are major economic inefficiencies of the current system. 
 
-A hypothetical company that, in coordination with policy makers and regulatory bodies, creates a scalable storage and data sharing infrastructure for genomic data, which could also grow to include all patient health data in time, stands to greatly increase the efficiency of PGS data usage in healthcare. 
+An organization company that, in coordination with policy makers and regulatory bodies, creates a scalable storage and data sharing infrastructure for genomic data, which could also grow to include all patient health data in time, stands to greatly increase the efficiency of PGS data usage in healthcare. 
 % boom Disruptive innovation. 
 % New market, data no longer needed to be maintained by hospitals, a new chance for establishing standardization, new market for health data applicaitons, etc.
 Such efficiency increases could help lower patient costs for specialized genetic tests, remove data management and administration from hospitals, thereby reducing costs, and establish a new market within which economic growth could result. 
@@ -621,18 +622,17 @@ Such efficiency increases could help lower patient costs for specialized genetic
 % here I am presenting how the tools for the system COULD be put together and prove that within the constraints presented by health care data they CAN produce a functional system
 % if it is directly translated into a project GREAT, but the more realistic goal is to provoke other ideas that improve the presented system
 % the goal is to make more personalized medicine more doable, citizen-centric data control is the most attractive economic and ethical path toward that goal.
-My project presented above is designed to present a proof-of-concept framework, both providing and demonstrating the technological foundations for the storage of PGS data in Solid pods, the controlling of access to that data on a granular level, the ability for that data to be queried, and exhibiting the accessibility of the stored PGS data to users, web applications, and medical tools in formats that can be used by both those currently in use and applications developed in the future. 
+My project is designed to present a proof-of-concept framework, both providing and demonstrating the technological foundations for the storage of PGS data in Solid pods, the controlling of access to that data on a granular level, the ability for that data to be queried, and exhibiting the accessibility of the stored PGS data to users, web applications, and medical tools in formats that can be used by both those currently in use and applications developed in the future. 
 Such a framework will provide the outline of necessary implementation considerations from a technological perspective while also highlighting strengths and weaknesses of such a system that may be influential in attempts at scaling such an infrastructure. 
-My project is also being undertaken in parallel with the European Virtual Human Twin (EDITH)~\cite{edith} initiative that aims at evolving the way medical data is stored to be increasingly citizen/patient centric both within Flanders as well as the greater European Union. 
-The WE ARE project~\cite{we_are} is another Flemish initiative exploring ways in which citizen-centric data stprage and ownership.
+My project is also being undertaken in parallel with the European Virtual Human Twin (EDITH)~\cite{edith} initiative and The European Health Data Space (EHDS) that aim at evolving the way medical data is stored to be increasingly citizen/patient centric both within Flanders as well as the greater European Union. 
+The WE ARE project~\cite{we_are} is another Flemish initiative exploring the development product-level applications on top of citizen-centric data storage in Solid pods.
+To be compliant with, and hopefully to compliment, these initiatives, all data stored in my framework will be formatted according to FAIR data principles~\cite{FAIR}. 
 
+In the short-term, the project is being developed to be integrated into ongoing research and product development at VITO in the department of Digital Precision Health. 
+One specific use case of my framework is its integration into a pharmacogenomics tool for the identification of documented adverse drug reactions from a VCF genomic input file.
+My framework would provide the file storage infrastructure for inputs and outputs as well as potentially other functionalities, such as representation fo the output as data linked to the area of the patients genome an adverse reaction is found. 
+Additionally, my framework has potential to store or link data used for other known and widely-used clinical genomics workflows such as for NIPT and rare genetic disease screening. 
 
-In the short-term, the project is being developed to be integrated into ongoing research and product development at VITO Digital Precision Health. 
-Products aimed at improving the way drug prescription is practiced by using a genetic screening tool that leverages documented genetic predispositions to drug ineffectiveness are currently being developed to be connected to my framework of Solid pod stored PGS data. 
-Additionally, connection to other known and widely-used workflows such as for NIPT and rare genetic disease screening is a primary goal for my project. 
-Genomic data interoperability is of utmost importance for clinical application and is therefore a cornerstone of my project. 
-
-The European Health Data Space (EHDS) aims to establish a reliable, interoperable, and secure environment for health data for all EU citizens~\cite{EHDS_2022}
 
 Lastly, public perception is a crucial element to the economic growth of a product or sector. 
 With personal data usage transparency as well as greater calls for digital data privacy protections becoming more important to the public, such considerations should also be priorities to how health data is managed. 

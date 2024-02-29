@@ -15,19 +15,16 @@ Through this research, I aim to provide a comprehensive framework, complemented 
 Ultimately, this PhD seeks to provide the proof-of-concept for an innovative, streamlined product for clinical genome data storage, paving the way for scalable personalized medicine.
 
 Keywords (en):
-Solid \ Semantic Genome Data \ Querying \ Genomic Data Privacy
+Solid \ Semantic Genome Data \ Federated Querying \ Data Privacy
 
 Title (nl):
 Patiëntgenoomquery in klinische praktijk
 
 Abstract (nl):
-Medische zorg wordt steeds persoonlijker door het gebruik van genetische informatie van patiënten. Op dit moment zijn klinische gegevens, waaronder genomische data, vaak verspreid, willekeurig georganiseerd en opgeslagen in datasilo's. Dit, samen met strenge privacyregels, hoge opslagkosten en beperkte infrastructuur voor gegevensdeling, beperkt aanzienlijk de schaalbaarheid van gepersonaliseerde klinische strategieën.
-
-Mijn voorgestelde doctoraat streeft ernaar de connectiviteit en deelbaarheid van de opslag van genomische gegevens te verbeteren, terwijl de gegevensprivacy behouden blijft, om zo de kosten van het gebruik van patiëntgenoomgegevens in de klinische praktijk te verlagen. Dit gebeurt door de implementatie van een op burgers gericht opslagkader dat inzichten uit verschillende onderzoeksgebieden van het semantische web integreert tot een praktische oplossing voor klinisch gebruik.
-
-Concreet zal ik (a) patiëntgenomische gegevens opslaan met behulp van Solid-pods, (b) persoonlijke genoomsequentiegegevens voorstellen met behulp van RDF als gelinkte gegevens, (c) beleid toepassen op opgeslagen gegevens, en (d) innovatieve link-traversiequeries ontwikkelen voor gegevensherstel.
-
-Met dit onderzoek beoog ik een allesomvattend kader te bieden, aangevuld met een gebruiksvriendelijke webtoepassing, om praktische acceptatie in klinische settings te vergemakkelijken. Uiteindelijk streeft dit doctoraat ernaar het proof-of-concept te bieden voor een innovatief, gestroomlijnd product voor de opslag van klinische genomische gegevens, en zo de weg vrij te maken voor schaalbare gepersonaliseerde geneeskunde.
+Medische zorg wordt steeds persoonlijker door het gebruik van genetische informatie van patiënten. Op dit moment zijn klinische gegevens, waaronder genomische data, vaak verspreid, willekeurig georganiseerd en opgeslagen in datasilo's. Samen met strenge privacyregels, hoge opslagkosten en beperkte infrastructuur voor gegevensdeling, beperkt de schaalbaarheid van gepersonaliseerde klinische strategieën.
+Mijn voorgestelde doctoraat streeft ernaar de deelbaarheid van de opslag van genomische gegevens te verbeteren, terwijl de gegevensprivacy behouden blijft, om de kosten van het gebruik van patiëntgenoomgegevens in de klinische praktijk te verlagen. Dit door de implementatie van een op burgers gericht opslagkader dat inzichten uit verschillende onderzoeksgebieden van het semantische web integreert tot een praktische oplossing voor klinisch gebruik.
+Concreet zal ik (a) patiëntgenomische gegevens opslaan via Solid-pods, (b) persoonlijke genoomsequentiegegevens voorstellen met behulp van RDF als gelinkte gegevens, (c) beleid toepassen op opgeslagen gegevens, en (d) innovatieve link-traversiequeries ontwikkelen voor gegevensherstel.
+Met dit onderzoek beoog ik een allesomvattend kader te bieden, aangevuld met een gebruiksvriendelijke webtoepassing, om praktische acceptatie in klinische settings te vergemakkelijken. Uiteindelijk streeft dit doctoraat naar een proof-of-concept voor de opslag van klinische genomische gegevens, en de weg vrij te maken voor gepersonaliseerde geneeskunde.
 
 Keywords (nl):
-Solid / Semantische Genoomgegevens / Opvragen / Privacy van genomische gegevens
+Solid / Gefedereerd bevragen / Gegevensprivacy
