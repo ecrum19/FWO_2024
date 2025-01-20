@@ -1,0 +1,225 @@
+FWO Pitch:
+
+Intro -- PENGQUIN
+
+-'Genetics plays a role, to a greater or lesser extent, in all diseases.' - Jackson et al. 2018.
+-Over the past two decades, scientists have been working to figure out how to use the human genome to mitigate, identify, and treat disease
+-My project is the next step, how do we scale the many findings to medical practice in general?
+
+
+S1:
+-Experience in volunteering and working in Medicine, academic background in bioinformatics (specifically healthcare inspired genomics)
+-Resounding question I had -- we know so much about genetics, genomics, and healthcare, why is genomics not used more in clinical practice??
+
+
+S2:
+-Multiple examples of genomics use in healthcare (but still in fledgling stages)
+-Genomics market expected to grow ~12x in the next 10 years
+-One major challenge to implementation is the genome data itself -- specifically how it is stored and used
+-Currently, institution that generates data owns the data and makes it challenging for anyone outside that institution to access it (data silo)
+	--> Leads to common instances of data regeneration, duplication, and inaccessibility - i.e. inefficiency and unnecessarily high costs
+
+-Why does the siloing happen? Why is it a problem?
+
+
+S3:
+-Genome data is expensive to generate (~300-500 EUR), it is large (~200GB raw)
+-Other important factors 
+	-- highly identifiable (Sensitive Data GDPR)
+	-- using the data is inefficient (large, flat textual files)
+	-- "ownership" and control of the data is precarious
+
+Because of these unique challenges presented by genomic data, PENGQUIN sets out to approach many of these problems from a new perspective
+
+
+S4:
+-Specifically, I aim to 
+	-- improve access and "ownership" of the data to patients through a patient-centered data vault storage approach
+	-- improve data usage efficiency through a novel genomic data representation approach
+	-- show that efficiency is increased through querying of patient data vaults
+	-- make the storage + querying framework work with existing services/applications
+
+-Integrate the aims above into a proof-of-concept framework and user-facing web application (Genome Pods -- "product")
+
+
+S5:
+-The project may seem like quite the undertaking, but two crucial informatics-based research questions form the core questions of PENGQUIN
+	1. How can usage efficiency of genomic data be improved through semantic representation (RDF) + Data Linking
+		-RDF representation of VCF data has not be completely been done for my use-case
+		-Thus, work into how to extend existing ontologies and how to automate the conversion process need to be made
+
+		-For linking, developing an pattern-matching / data discovery algorithm for recognizing and making Links needs to be developed
+		-This will be assessed using a gold-standard hand-curated truth set that is assembled with help from VITO pharmacogenomics colleagues
+		-I will also be looking to generalize the algorithms as much as possible for translation to other domains
+
+	2. How can these efficiency gains be reflected in data querying and higher-level medical question asking
+		-Problem is many, large data stores to be queried
+		-Aim to use extra-datastore summaries (that preserve privacy) and inter-datastore indexes to improve performance
+		-The goal is to answer medically relevant queries in minutes over 100s-1000s of patient datastores
+
+	Transition: These novel algorithms will provide the functional backbone for the Genome Pods proof-of-concept product and help drive innovation in the space of personal genomic data storage, representation, and querying.
+
+S6:
+-Through PENGQUIN, I aim to drive innovation in scalable personal genome data storage, representation, and usage.
+-Ultimately helping us combat disease through adding tools to a physician's toolbox in a more efficient way
+
+
+
+
+
+
+
+Feedback:
+
+When explaining Research aims:
+	1. Make it apparent that 
+		-the algorithm you are developing does not exist 
+		-is about optimizing for automation of Data Linkages
+		-will be semi-generalizable
+		-will be developed with input from domain experts (pharmacogenomics)
+
+	2. Emphasize that 
+		-the BIG, MANY problem will be approached using indexing + summaries
+		-stay away from privacy	
+
+
+Be able to answer questions: 
+	*Why use linked data for genomics??
+		-efficiently discover storage locations + updated versions of data
+		-answer complex questions via efficient queries
+	*How does AI contribute or potentially contribute to your project?
+
+	*Privacy is an important part of your project, what are you doing to ensure privacy is protected?
+		-Not a RESEARCH objective because there is significant work into data policy definition and enforcement (via ODRL [Open Digital Rights Language]) in a KNoWS research group led by Beatriz Estevez. I plan to implement a version of their work into my framework in the future to address privacy requirements for Genome data.
+
+		-Additionally, a RESEARCH objective that I have centers around privacy-preserving data source summaries (aggregators) that guide query planning and execution.
+
+	*Why are you using Solid?
+		-There are advantages to using Solid protocol implementations like CSS for an environment to experiment and implement my aims
+		-Additionally, there is substantial work and funding into connections to Genome Pods from SolidLab at Ghent University
+
+	*What about OntoForce or another company taking this idea? What makes your project unique?
+		-The decentralized aspect of the patient pods + the experimental nature of querying data
+
+	*What companies would be interested in this as a product?
+		-Aim is to make the project into a product that could be the basis for a company (and then offer the service to be used by hospitals)
+		-Currently VITO plans to pursue this product production, but FWO would allow for it to be a larger Flemish project
+	
+	*Why FWO if you are already funded by VITO?
+		-Would allow me more freedom in Research pursuits, with less pressure on the "product" development 
+		-Also, would allow more flexibility in terms of research question evolution (especially on the querying aims)
+
+
+
+Faculty feedback:
+
+Stay more still (dont stomp foot dumbass), eye contact -- dont look at floor + computer
+
+need story-line better
+
+be deliberate with your words
+
+need a better conclusion slide (something better to elicit questions)
+
+make research slide better, need to practice it more
+
+
+
+
+-- Need a conclusion --> what am I getting out of this??
+
+-- Middle --> what is the research design (maybe include WPs) // lost a bit - why we are doing this?
+	-need to articule the institution-centric part on s3 (when talking)?
+	-maybe attach WPs to Research Challenges slide
+
+-- shorter personal bit
+
+-- think about topic connection + story progression
+
+- Questions: 
+	*what part may take the longest, what will you do if you encounter problems?
+	
+	*How are you going to continue to grow and learn about things in your project?
+		-Cote d'azure univeristy prof Fabien Gandon
+		-Profs + co-workers
+
+
+
+
+Last Feedback from RubenV:
+
+Usefulness of project if company does something similar?
+	A: Novelty of approach + the research aspects that are cutting edge and not directly profitable / implementable
+
+Emphasize the fact that this is building + contributing to a larger healthcare ECOSYSTEM, I am not replacing things, simply ADDING to the existing infrastructure to encourage optimization
+
+
+*** They are judging you as a CANDIDATE -- So, show them that you are passionate, capable, AND aware of the/your limitations ***
+	
+
+
+Preparation notes: 
+-5 real practice runs with pitch and questions (2x UGent Advisors, 1x UGent colleagues, 1x UGent Faculty, 1x VITO colleagues)
+-Extensive pitch rehersal on my own
+-Extensive question prep
+
+
+
+
+
+
+Post-interview impressions:
+-4 questions from an online Jury member (who read my proposal)
+	-question about RDF VCF file (this has kind-of been done so what is unique in your project?)
+	-Privacy question
+	-Limitations / Risks question
+	-Where data was coming from + how I planned to make it representative of real-world data (test results, etc.)
+
+-1 question from jury member about why I am qualified for this project (because my background is in Bioinformatics and not web dev)
+
+-1 question about the "research" parts of my project and specifically how these have economical relevance
+	-follow-up about what specific economical value could be gleaned from this work
+
+-1 question regarding what SPECIFICALLY about my data linking algorithm was novel and research-based (tough question)
+
+-1 question about how exactly how I planned to do the privacy-preserving aggregation for querying (and how I forsee this improving "performance") (tough question)
+-1 question that was a follow-up to previous about my specific use-case example, because this will impact how the summaries are designed and how function (also tough question)
+
+-1 question about ontology development (from someone who read my proposal), what makes you think you will be qualified to do this? Will this take too much time?
+	- Also had a question about how I panned on assessing success/performance (and strategies I would employ if I encounter difficulties beyond limiting the number of vaults I would query at one time)
+
+-----
+
+The pitch went quite well, I was okay on time, and there was obvious engagement from the jury members during the pitch
+
+I think I answered questions okay, certainly there were some that I could have done better with 
+	-technical ones about the algorithms
+	-ontology one was a bit long winded
+	-I could have explained the usecases a little better
+	-I stumbled a little over the privacy question (which was first) but I thought I recovered well and did not get too flustered
+
+I thought I handed the test data question, the economic significance question, and the question about my qualification fairly well
+
+
+Overall, probably a little over half of the committee asked questions
+Most committee members were engaged with the presentation itself
+
+I did not get terribly stuck at any point (only instances were with a couple questions from one jury member that I could not verbally understand super great)
+	Both of these questions were about quite technical aspects of my data linking algorithmic approach + privacy preserving summary generation strategy
+
+
+Overall, I would give myself a B grade. Good pitch, generally good question handling, but there were points where I could have been more concise and specific
+
+
+As for the experience, it was quite seamless. A little daunting when you enter the room and there are all the people there. But, there is not really time to get too nervious as you just right into the presentation os that is nice. Plenty of space in the room, the screen was a good size, the pointer worked properly. The computer with the presentation was not in a distracting position. The room was organized in a "U" which made engaging with the crowd quite easy. I was quite close to all the jury members so I did not feel I needed to talk too loud and I could hear all answers easily. Most questions were well stated and understood. One jury member spoke a little softly and in heavily accented english so I needed to ask for a repeat of two questions he asked. The online questions were a bit interesting because I felt the urge to answer to the screen and not the room but all in all it was not too distracting. Having the supplementary slides was really nice and I used two of them (Genomic test data slide, proposed product development slide). Really glad I read through my proposal directly before the pitch as I could refer to specific strategies I wrote about when responding to jury members that had obviously read my proposal to prepare questions. 
+
+I was mostly prepared for all questions that were asked. In prep I went through extensive questioning from advisors and colleagues which was extremely valuable. Most questions were project and applicant specific. There were no vague or general questions (to the extent of catching me off guard).
+
+The jury members were a bit of a mixed bag during the pitch and questions. 3 of them did not look very engaged and were on their computers most of the time. Most of the others maintained eye contact, gave nods of heads, and other visual feedback that they were following along. 
+
+
+
+
+
+
+

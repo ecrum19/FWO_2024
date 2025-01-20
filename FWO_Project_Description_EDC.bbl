@@ -1,0 +1,2037 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \datalist[entry]{none/global//global/global}
+    \entry{solid}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=ce9d3e5464179ac02bede75af1cf7165}{%
+           family={Mansour},
+           familyi={M\bibinitperiod},
+           given={Essam},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0b835fe468b288f93f5eab08dbf9d1e5}{%
+           family={Sambra},
+           familyi={S\bibinitperiod},
+           given={Andrei\bibnamedelima Vlad},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=955b9ab6acdca3a77736cb5b535033c4}{%
+           family={Hawke},
+           familyi={H\bibinitperiod},
+           given={Sandro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e7454bd7d750765ba4152264d92fa06d}{%
+           family={Zereba},
+           familyi={Z\bibinitperiod},
+           given={Maged},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dd5fd8155532a0e1c87df1b41bbfd8ab}{%
+           family={Capadisli},
+           familyi={C\bibinitperiod},
+           given={Sarven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cc802c08a52c763aba733737d4994e73}{%
+           family={Ghanem},
+           familyi={G\bibinitperiod},
+           given={Abdurrahman},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d329d2093a27d7c3b76d2df869370332}{%
+           family={Aboulnaga},
+           familyi={A\bibinitperiod},
+           given={Ashraf},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d469e0df304c98f67b55d087ea6187a1}{%
+           family={Berners-Lee},
+           familyi={B\bibinithyphendelim L\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e46fbf32d0c94be589c78f138c3904e}
+      \strng{fullhash}{9e46fbf32d0c94be589c78f138c3904e}
+      \strng{bibnamehash}{9e46fbf32d0c94be589c78f138c3904e}
+      \strng{authorbibnamehash}{9e46fbf32d0c94be589c78f138c3904e}
+      \strng{authornamehash}{9e46fbf32d0c94be589c78f138c3904e}
+      \strng{authorfullhash}{9e46fbf32d0c94be589c78f138c3904e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 25th International Conference Companion on World Wide Web}
+      \field{title}{A Demonstration of the {Solid} platform for Social Web Applications}
+      \field{year}{2016}
+      \field{pages}{223\bibrangedash 226}
+      \range{pages}{4}
+    \endentry
+    \entry{mastodon}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c2f50d05d92880f383ef37d481f32175}{%
+           family={Zignani},
+           familyi={Z\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d4472e5cb1659e4b958d81b8d838f96f}{%
+           family={Gaito},
+           familyi={G\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f91268bcfdf3f3b1974e98248ed13734}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Gian\bibnamedelima Paolo},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e12eff7d147ad609e77791a88d11add1}
+      \strng{fullhash}{e12eff7d147ad609e77791a88d11add1}
+      \strng{bibnamehash}{e12eff7d147ad609e77791a88d11add1}
+      \strng{authorbibnamehash}{e12eff7d147ad609e77791a88d11add1}
+      \strng{authornamehash}{e12eff7d147ad609e77791a88d11add1}
+      \strng{authorfullhash}{e12eff7d147ad609e77791a88d11add1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Twelfth International AAAI Conference on Web and Social Media}
+      \field{title}{Follow the \enquote{Mastodon}: Structure and Evolution of a Decentralized Online Social Network}
+      \field{year}{2018}
+    \endentry
+    \entry{decentralizednanopubs}{article}{}
+      \name{author}{6}{}{%
+        {{hash=74d3522e91542051f26a4f98e94e2dc2}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f9a485a3b7f133ec13b1eba6b475851f}{%
+           family={Taelman},
+           familyi={T\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=af2b205f2a775851ebbcf17ba53c29ac}{%
+           family={Emonet},
+           familyi={E\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f6e22527486504455fe978e5c557b41b}{%
+           family={Antonatos},
+           familyi={A\bibinitperiod},
+           given={Haris},
+           giveni={H\bibinitperiod}}}%
+        {{hash=522402a070f60aa5efffa4307bfa94c5}{%
+           family={Soiland-Reyes},
+           familyi={S\bibinithyphendelim R\bibinitperiod},
+           given={Stian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=93badcbcd9ff0747849763affb474199}{%
+           family={Dumontier},
+           familyi={D\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bc89ac48d20ecd9c2f45cad0f77c193}
+      \strng{fullhash}{5bc89ac48d20ecd9c2f45cad0f77c193}
+      \strng{bibnamehash}{5bc89ac48d20ecd9c2f45cad0f77c193}
+      \strng{authorbibnamehash}{5bc89ac48d20ecd9c2f45cad0f77c193}
+      \strng{authornamehash}{5bc89ac48d20ecd9c2f45cad0f77c193}
+      \strng{authorfullhash}{5bc89ac48d20ecd9c2f45cad0f77c193}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PeerJ Computer Science}
+      \field{month}{3}
+      \field{title}{Semantic micro-contributions with decentralized nanopublication services}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.7717/peerj-cs.387
+      \endverb
+    \endentry
+    \entry{spec:rdf}{report}{}
+      \name{author}{3}{}{%
+        {{hash=ff065518eacac535eec041c322c21896}{%
+           family={Cyganiak},
+           familyi={C\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ad0aae768a1174aba9738b6d2719985b}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d91ccb882c2defa0b7d5801d3486fe95}{%
+           family={Lanthaler},
+           familyi={L\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {W3C}%
+      }
+      \strng{namehash}{6150123d390d138e88985af00327f937}
+      \strng{fullhash}{6150123d390d138e88985af00327f937}
+      \strng{bibnamehash}{6150123d390d138e88985af00327f937}
+      \strng{authorbibnamehash}{6150123d390d138e88985af00327f937}
+      \strng{authornamehash}{6150123d390d138e88985af00327f937}
+      \strng{authorfullhash}{6150123d390d138e88985af00327f937}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{RDF 1.1: Concepts and Abstract Syntax}
+      \field{type}{Recommendation}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/
+      \endverb
+    \endentry
+    \entry{linkeddata}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d469e0df304c98f67b55d087ea6187a1}{%
+           family={Berners-Lee},
+           familyi={B\bibinithyphendelim L\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{d469e0df304c98f67b55d087ea6187a1}
+      \strng{fullhash}{d469e0df304c98f67b55d087ea6187a1}
+      \strng{bibnamehash}{d469e0df304c98f67b55d087ea6187a1}
+      \strng{authorbibnamehash}{d469e0df304c98f67b55d087ea6187a1}
+      \strng{authornamehash}{d469e0df304c98f67b55d087ea6187a1}
+      \strng{authorfullhash}{d469e0df304c98f67b55d087ea6187a1}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Design Issues}
+      \field{title}{Linked Data}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://www.w3.org/DesignIssues/LinkedData.html
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/DesignIssues/LinkedData.html
+      \endverb
+    \endentry
+    \entry{spec:sparqllang}{report}{}
+      \name{author}{3}{}{%
+        {{hash=dad88e15878a9c1b972860de786ecb0f}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b0f2e76dd842dc9052f49422b3cc10e6}{%
+           family={Seaborne},
+           familyi={S\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=be64499247ac1c766030e23529596f0e}{%
+           family={Prud'hommeaux},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {W3C}%
+      }
+      \strng{namehash}{9caf0a87957bf3995b2f6d51c7b6b125}
+      \strng{fullhash}{9caf0a87957bf3995b2f6d51c7b6b125}
+      \strng{bibnamehash}{9caf0a87957bf3995b2f6d51c7b6b125}
+      \strng{authorbibnamehash}{9caf0a87957bf3995b2f6d51c7b6b125}
+      \strng{authornamehash}{9caf0a87957bf3995b2f6d51c7b6b125}
+      \strng{authorfullhash}{9caf0a87957bf3995b2f6d51c7b6b125}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{{SPARQL} 1.1 Query Language}
+      \field{type}{Recommendation}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/2013/REC-sparql11-query-20130321/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/2013/REC-sparql11-query-20130321/
+      \endverb
+    \endentry
+    \entry{hood_1987}{article}{}
+      \name{author}{3}{}{%
+        {{hash=481a5fc5e097e794e37919ef0689de62}{%
+           family={Hood},
+           familyi={H\bibinitperiod},
+           given={L.\bibnamedelimi E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ca6a121efe54eab11f8addc5346d889a}{%
+           family={Hunkapiller},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ffdab7cf4d42406a26f88e2b4c27d60b}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{32b9de070d2bf9b391e42a85ae9a7b64}
+      \strng{fullhash}{32b9de070d2bf9b391e42a85ae9a7b64}
+      \strng{bibnamehash}{32b9de070d2bf9b391e42a85ae9a7b64}
+      \strng{authorbibnamehash}{32b9de070d2bf9b391e42a85ae9a7b64}
+      \strng{authornamehash}{32b9de070d2bf9b391e42a85ae9a7b64}
+      \strng{authorfullhash}{32b9de070d2bf9b391e42a85ae9a7b64}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0888-7543}
+      \field{journaltitle}{Genomics}
+      \field{month}{11}
+      \field{number}{3}
+      \field{title}{Automated {DNA} sequencing and analysis of the human genome}
+      \field{volume}{1}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \field{pages}{201\bibrangedash 212}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/0888-7543(87)90046-2
+      \endverb
+    \endentry
+    \entry{ko_new_2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cb177911812ba73eb270c46283643660}{%
+           family={Ko},
+           familyi={K\bibinitperiod},
+           given={Young\bibnamedelima Kyung},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=72966558c0394bf2c2fb268f1355723d}{%
+           family={Gim},
+           familyi={G\bibinitperiod},
+           given={Jeong-An},
+           giveni={J\bibinithyphendelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c10fc375af6d9a6674a207d7caaab25}
+      \strng{fullhash}{7c10fc375af6d9a6674a207d7caaab25}
+      \strng{bibnamehash}{7c10fc375af6d9a6674a207d7caaab25}
+      \strng{authorbibnamehash}{7c10fc375af6d9a6674a207d7caaab25}
+      \strng{authornamehash}{7c10fc375af6d9a6674a207d7caaab25}
+      \strng{authorfullhash}{7c10fc375af6d9a6674a207d7caaab25}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{issn}{1999-4923}
+      \field{journaltitle}{Pharmaceutics}
+      \field{month}{7}
+      \field{number}{8}
+      \field{shortjournal}{Pharmaceutics}
+      \field{title}{New Drug Development and Clinical Trial Design by Applying Genomic Information Management}
+      \field{volume}{14}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{1539}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/pharmaceutics14081539
+      \endverb
+    \endentry
+    \entry{mcleod_cancer_2013}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fa023e4a90313f56575e601678ddd47c}{%
+           family={{McLeod}},
+           familyi={M\bibinitperiod},
+           given={H.\bibnamedelimi L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa023e4a90313f56575e601678ddd47c}
+      \strng{fullhash}{fa023e4a90313f56575e601678ddd47c}
+      \strng{bibnamehash}{fa023e4a90313f56575e601678ddd47c}
+      \strng{authorbibnamehash}{fa023e4a90313f56575e601678ddd47c}
+      \strng{authornamehash}{fa023e4a90313f56575e601678ddd47c}
+      \strng{authorfullhash}{fa023e4a90313f56575e601678ddd47c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{29}
+      \field{issn}{0036-8075, 1095-9203}
+      \field{journaltitle}{Science}
+      \field{month}{3}
+      \field{number}{6127}
+      \field{shortjournal}{Science}
+      \field{shorttitle}{Cancer Pharmacogenomics}
+      \field{title}{Cancer Pharmacogenomics: Early Promise, But Concerted Effort Needed}
+      \field{volume}{339}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{1563\bibrangedash 1566}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1234139
+      \endverb
+    \endentry
+    \entry{souche_recommendations_2022}{article}{}
+      \name{author}{31}{}{%
+        {{hash=31546220970efa3bb5cc596f04e6310e}{%
+           family={Souche},
+           familyi={S\bibinitperiod},
+           given={Erika},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3e03fc0eeaae6b59b2edfb264d5a4d27}{%
+           family={Beltran},
+           familyi={B\bibinitperiod},
+           given={Sergi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c2c17911010dad0c0dd559d5336102db}{%
+           family={Brosens},
+           familyi={B\bibinitperiod},
+           given={Erwin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7a70be2e15fc60643a9f0c965a9b83be}{%
+           family={Belmont},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=6afc30f9543ea4b54fc54d68aab1f01d}{%
+           family={Fossum},
+           familyi={F\bibinitperiod},
+           given={Magdalena},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8e1e6068ba8063d870b9c92b07cccd0a}{%
+           family={Riess},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6dfa5f41c254754256f4976f72df47a7}{%
+           family={Gilissen},
+           familyi={G\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a0b68d66959640255788f1492071976a}{%
+           family={Ardeshirdavani},
+           familyi={A\bibinitperiod},
+           given={Amin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ac10644cff2041cb3ca2e64164b9e46c}{%
+           family={Houge},
+           familyi={H\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6e3cf443dd547788f791b12ebb7fb2a2}{%
+           family={Van\bibnamedelima Gijn},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Marielle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bc2202ea49c5b83791e0d6419cf7c8c3}{%
+           family={Clayton-Smith},
+           familyi={C\bibinithyphendelim S\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod}}}%
+        {{hash=49083d71d9d418797ee92704cc548a55}{%
+           family={Synofzik},
+           familyi={S\bibinitperiod},
+           given={Matthis},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8b31488e9696dd7c8fa6ffafbe61ca05}{%
+           family={De\bibnamedelima Leeuw},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f55f08d44c4ebc68d291f2a6aa758b0d}{%
+           family={Deans},
+           familyi={D\bibinitperiod},
+           given={Zandra\bibnamedelima C.},
+           giveni={Z\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1f870f7fa7a63ff85f814ed125bcd5af}{%
+           family={Dincer},
+           familyi={D\bibinitperiod},
+           given={Yasemin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9b47b4044e04738c588ea3652f8993c0}{%
+           family={Eck},
+           familyi={E\bibinitperiod},
+           given={Sebastian\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=d20084d56df0bf92e54bf3c26d6bb27e}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Crabben},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Saskia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7752e99e1d425641a51056fb63c3ec4e}{%
+           family={Balasubramanian},
+           familyi={B\bibinitperiod},
+           given={Meena},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88b622f70335083958d0d9371b751114}{%
+           family={Graessner},
+           familyi={G\bibinitperiod},
+           given={Holm},
+           giveni={H\bibinitperiod}}}%
+        {{hash=379e8db35785ea22547a6cad6cc6265c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=344f5d7de69db2c0f434ea10d9636855}{%
+           family={Firth},
+           familyi={F\bibinitperiod},
+           given={Helen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=79874a80cf872e56e7cb07e16e3e331f}{%
+           family={Ferlini},
+           familyi={F\bibinitperiod},
+           given={Alessandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=56d420c2a0c9cc229380c0d7257c8b64}{%
+           family={Nabbout},
+           familyi={N\bibinitperiod},
+           given={Rima},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4118ebc5557251db0b4598908046a715}{%
+           family={De\bibnamedelima Baere},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Elfride},
+           giveni={E\bibinitperiod}}}%
+        {{hash=af7e5e85cf8711fd638d92e5f4e5c61a}{%
+           family={Liehr},
+           familyi={L\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=56d81e0bcfa37ebed173aa682a0df721}{%
+           family={Macek},
+           familyi={M\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bdf315ccba4f6f67cbd5c02b91fc1537}{%
+           family={Matthijs},
+           familyi={M\bibinitperiod},
+           given={Gert},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f761df1f1b32df1ed1fcd1d4cbb0118d}{%
+           family={Scheffer},
+           familyi={S\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4ce64ae5e107d07220ea66dfb5d7bd00}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0b929bbf43df31df42cea5caaa71148d}{%
+           family={Yntema},
+           familyi={Y\bibinitperiod},
+           given={Helger\bibnamedelima G.},
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=c6ccc27e6ea1bcd2b10ce7a9509c86de}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Marjan\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{62da21b387530e4c3b3e2b4141190f5c}
+      \strng{fullhash}{62da21b387530e4c3b3e2b4141190f5c}
+      \strng{bibnamehash}{62da21b387530e4c3b3e2b4141190f5c}
+      \strng{authorbibnamehash}{62da21b387530e4c3b3e2b4141190f5c}
+      \strng{authornamehash}{62da21b387530e4c3b3e2b4141190f5c}
+      \strng{authorfullhash}{62da21b387530e4c3b3e2b4141190f5c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1018-4813, 1476-5438}
+      \field{journaltitle}{European Journal of Human Genetics}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Eur J Hum Genet}
+      \field{title}{Recommendations for whole genome sequencing in diagnostics for rare diseases}
+      \field{volume}{30}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{1017\bibrangedash 1021}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/s41431-022-01113-x
+      \endverb
+    \endentry
+    \entry{mathur_personalized_2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6a6fd7aad915c3eb1daaf039c8826b42}{%
+           family={Mathur},
+           familyi={M\bibinitperiod},
+           given={Sunil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=31ce4b4aed5e67abad760bf3bb3a6817}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0b012318cf4402faf855a9d1b3b1c96}
+      \strng{fullhash}{b0b012318cf4402faf855a9d1b3b1c96}
+      \strng{bibnamehash}{b0b012318cf4402faf855a9d1b3b1c96}
+      \strng{authorbibnamehash}{b0b012318cf4402faf855a9d1b3b1c96}
+      \strng{authornamehash}{b0b012318cf4402faf855a9d1b3b1c96}
+      \strng{authorfullhash}{b0b012318cf4402faf855a9d1b3b1c96}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2049-9434, 2049-9442}
+      \field{journaltitle}{Biomedical Reports}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Personalized medicine could transform healthcare}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{3\bibrangedash 5}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.3892/br.2017.922
+      \endverb
+    \endentry
+    \entry{stefanicka-wojtas_barriers_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=47c6950848620a4f118d02deed7ed5ae}{%
+           family={Stefanicka-Wojtas},
+           familyi={S\bibinithyphendelim W\bibinitperiod},
+           given={Dorota},
+           giveni={D\bibinitperiod}}}%
+        {{hash=118845f470d4b10d685353f6be750a53}{%
+           family={Kurpas},
+           familyi={K\bibinitperiod},
+           given={Donata},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c3b4e7f1bd3ec920104f79a0aa84929}
+      \strng{fullhash}{2c3b4e7f1bd3ec920104f79a0aa84929}
+      \strng{bibnamehash}{2c3b4e7f1bd3ec920104f79a0aa84929}
+      \strng{authorbibnamehash}{2c3b4e7f1bd3ec920104f79a0aa84929}
+      \strng{authornamehash}{2c3b4e7f1bd3ec920104f79a0aa84929}
+      \strng{authorfullhash}{2c3b4e7f1bd3ec920104f79a0aa84929}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{issn}{2075-4426}
+      \field{journaltitle}{J Pers Med}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Barriers and Facilitators to the Implementation of Personalised Medicine across Europe}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{203}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/jpm13020203
+      \endverb
+    \endentry
+    \entry{genomics_cost_2023}{article}{}
+      \name{author}{6}{}{%
+        {{hash=f6b71003005e6627ba976f0071901192}{%
+           family={Alarcón\bibnamedelima Garavito},
+           familyi={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Germán\bibnamedelima Andrés},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=60d5d9ef22e7c537ce7b52af9987ba9b}{%
+           family={Moniz},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=543385da243e287c13f7e393304e6f91}{%
+           family={Déom},
+           familyi={D\bibinitperiod},
+           given={Noémie},
+           giveni={N\bibinitperiod}}}%
+        {{hash=04b4d410104f45b659d70846518f6a5a}{%
+           family={Redin},
+           familyi={R\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2c7d53ef377b21bae31254451e15b205}{%
+           family={Pichini},
+           familyi={P\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+        {{hash=53e55e98116a8458e9ba9a69f9c757c5}{%
+           family={Vindrola-Padros},
+           familyi={V\bibinithyphendelim P\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5e76ffc5472a32a4a372759935e079d}
+      \strng{fullhash}{c5e76ffc5472a32a4a372759935e079d}
+      \strng{bibnamehash}{c5e76ffc5472a32a4a372759935e079d}
+      \strng{authorbibnamehash}{c5e76ffc5472a32a4a372759935e079d}
+      \strng{authornamehash}{c5e76ffc5472a32a4a372759935e079d}
+      \strng{authorfullhash}{c5e76ffc5472a32a4a372759935e079d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1018-4813}
+      \field{journaltitle}{Eur J Hum Genet}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shorttitle}{The implementation of large-scale genomic screening or diagnostic programmes}
+      \field{title}{The implementation of large-scale genomic screening or diagnostic programmes: A rapid evidence review}
+      \field{volume}{31}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{282\bibrangedash 295}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1038/s41431-022-01259-8
+      \endverb
+    \endentry
+    \entry{bagger_whole_2024}{article}{}
+      \name{author}{7}{}{%
+        {{hash=5354fc4a2b07f65c2a1b4e4a396d4d03}{%
+           family={Bagger},
+           familyi={B\bibinitperiod},
+           given={Frederik\bibnamedelima Otzen},
+           giveni={F\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=a63690ca9a1a78e633585380d941cf82}{%
+           family={Borgwardt},
+           familyi={B\bibinitperiod},
+           given={Line},
+           giveni={L\bibinitperiod}}}%
+        {{hash=155b857892fe3c9451646ddf7c78a849}{%
+           family={Jespersen},
+           familyi={J\bibinitperiod},
+           given={Andreas\bibnamedelima Sand},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ba9da2acd62c4f1bf81418398c9482a6}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Anna\bibnamedelima Reimer},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=392f58ee516189dd7c715ee99ee2386e}{%
+           family={Bertelsen},
+           familyi={B\bibinitperiod},
+           given={Birgitte},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1ad1155322139ea71311054e8a4d776b}{%
+           family={Kodama},
+           familyi={K\bibinitperiod},
+           given={Miyako},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e3927386d676cb8a6174b09b4fd524eb}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Finn\bibnamedelima Cilius},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6b162e025d9df62280cf5b9cd3650c7}
+      \strng{fullhash}{e6b162e025d9df62280cf5b9cd3650c7}
+      \strng{bibnamehash}{e6b162e025d9df62280cf5b9cd3650c7}
+      \strng{authorbibnamehash}{e6b162e025d9df62280cf5b9cd3650c7}
+      \strng{authornamehash}{e6b162e025d9df62280cf5b9cd3650c7}
+      \strng{authorfullhash}{e6b162e025d9df62280cf5b9cd3650c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{29}
+      \field{issn}{1755-8794}
+      \field{journaltitle}{{BMC} Medical Genomics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Whole genome sequencing in clinical practice}
+      \field{volume}{17}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{39}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12920-024-01795-w
+      \endverb
+    \endentry
+    \entry{danecek_variant_2011}{article}{}
+      \name{author}{13}{}{%
+        {{hash=d88c1b79e00da9e80637f97e15ad1ce6}{%
+           family={Danecek},
+           familyi={D\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ed22aae1eecb03031944c475e8529a63}{%
+           family={Auton},
+           familyi={A\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8adf88b4bd2c9785ddad5bfa05221f24}{%
+           family={Abecasis},
+           familyi={A\bibinitperiod},
+           given={Goncalo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8a2bde17dca2baf6623771747b342348}{%
+           family={Albers},
+           familyi={A\bibinitperiod},
+           given={Cornelis\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b87616973e0b048c3beb6624e96e5d73}{%
+           family={Banks},
+           familyi={B\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a7ce1d2bf17f8517d6f394471447a37a}{%
+           family={DePristo},
+           familyi={D\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6833bc58b260283a2abfd64a064a7c77}{%
+           family={Handsaker},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=0d41f0b6ee7d2960b3eab2779e4dadb5}{%
+           family={Lunter},
+           familyi={L\bibinitperiod},
+           given={Gerton},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bd3025d4de53f5a7ffd28a9f2b4cb0d0}{%
+           family={Marth},
+           familyi={M\bibinitperiod},
+           given={Gabor\bibnamedelima T.},
+           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=f2c3de84a1548d29dbab5b5fa0fefb4d}{%
+           family={Sherry},
+           familyi={S\bibinitperiod},
+           given={Stephen\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=26eddb5b50d498d6fbe63b58febda369}{%
+           family={McVean},
+           familyi={M\bibinitperiod},
+           given={Gilean},
+           giveni={G\bibinitperiod}}}%
+        {{hash=517afe729b2eb59735ba80628d943bb0}{%
+           family={Durbin},
+           familyi={D\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b21e9aed6656ae0f46a3b0e335211eff}{%
+           family={{1000 Genomes Project Analysis Group}},
+           familyi={1\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff7a7bc761be590350066fbfa536135d}
+      \strng{fullhash}{ff7a7bc761be590350066fbfa536135d}
+      \strng{bibnamehash}{ff7a7bc761be590350066fbfa536135d}
+      \strng{authorbibnamehash}{ff7a7bc761be590350066fbfa536135d}
+      \strng{authornamehash}{ff7a7bc761be590350066fbfa536135d}
+      \strng{authorfullhash}{ff7a7bc761be590350066fbfa536135d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1367-4811, 1367-4803}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{8}
+      \field{number}{15}
+      \field{title}{The variant call format and {VCFtools}}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{volume}{27}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2156\bibrangedash 2158}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btr330
+      \endverb
+    \endentry
+    \entry{vcf_compression_2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=28e71521491b0dc77af653b314a010fa}{%
+           family={Wertenbroek},
+           familyi={W\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+        {{hash=34f36bbdfc4f9ee49fe8d0fc644b202f}{%
+           family={Rubinacci},
+           familyi={R\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c7143cee17696a58049c71ba662ddc0a}{%
+           family={Xenarios},
+           familyi={X\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c6b141d145843f492e8a48e26df2ce46}{%
+           family={Thoma},
+           familyi={T\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3a5c1808dd5f1501e9000c2d0d1af696}{%
+           family={Delaneau},
+           familyi={D\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3339b2af5c124974f9e30b6733a8266}
+      \strng{fullhash}{b3339b2af5c124974f9e30b6733a8266}
+      \strng{bibnamehash}{b3339b2af5c124974f9e30b6733a8266}
+      \strng{authorbibnamehash}{b3339b2af5c124974f9e30b6733a8266}
+      \strng{authornamehash}{b3339b2af5c124974f9e30b6733a8266}
+      \strng{authorfullhash}{b3339b2af5c124974f9e30b6733a8266}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1367-4803}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{6}
+      \field{number}{15}
+      \field{title}{{XSI}—a genotype compression tool for compressive genomics in large biobanks}
+      \field{volume}{38}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{3778\bibrangedash 3784}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btac413
+      \endverb
+    \endentry
+    \entry{yang_seqminer2_2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e445829f60641b5acf13444775fb3786}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lina},
+           giveni={L\bibinitperiod}}}%
+        {{hash=04b4e0457e6d4264a652be5c2f897f6d}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=96c02199c6f92b5ab29b31da23e85694}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Bibo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=602d27b6150ac0235a71c7d47b5d9749}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Dajiang\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4bf3f947876e3256fd59b3c7f9c68280}{%
+           family={Zhan},
+           familyi={Z\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{eecfce614dc1937024b264daad673581}
+      \strng{fullhash}{eecfce614dc1937024b264daad673581}
+      \strng{bibnamehash}{eecfce614dc1937024b264daad673581}
+      \strng{authorbibnamehash}{eecfce614dc1937024b264daad673581}
+      \strng{authornamehash}{eecfce614dc1937024b264daad673581}
+      \strng{authorfullhash}{eecfce614dc1937024b264daad673581}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{5}
+      \field{issn}{1367-4803}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{8}
+      \field{number}{19}
+      \field{shorttitle}{Seqminer2}
+      \field{title}{Seqminer2: an efficient tool to query and retrieve genotypes for statistical genetics analyses from biobank scale sequence dataset}
+      \field{volume}{36}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{4951\bibrangedash 4954}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btaa628
+      \endverb
+    \endentry
+    \entry{GDPR_2016}{legislation}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{month}{5}
+      \field{title}{Regulation ({EU}) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/{EC} (General Data Protection Regulation)}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 88}
+      \range{pages}{88}
+    \endentry
+    \entry{brands_patient-centered_2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=3232138451b00d6723a694518ef86b7a}{%
+           family={Brands},
+           familyi={B\bibinitperiod},
+           given={Martijn\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=17f59554d858a7561e49d71d7ff58607}{%
+           family={Gouw},
+           familyi={G\bibinitperiod},
+           given={Samantha\bibnamedelima C},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=0d5fe4d61aa7c37ce8fee7cf3b373946}{%
+           family={Beestrum},
+           familyi={B\bibinitperiod},
+           given={Molly},
+           giveni={M\bibinitperiod}}}%
+        {{hash=78cba6cd104db14fa0f1315eb6d8aa15}{%
+           family={Cronin},
+           familyi={C\bibinitperiod},
+           given={Robert\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c640d310c24d73716c47274ab6fe8718}{%
+           family={Fijnvandraat},
+           familyi={F\bibinitperiod},
+           given={Karin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=671a04e239c98dd9c2f306d575d0049e}{%
+           family={Badawy},
+           familyi={B\bibinitperiod},
+           given={Sherif\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a583a505d8976e5e9faf683c36817887}
+      \strng{fullhash}{a583a505d8976e5e9faf683c36817887}
+      \strng{bibnamehash}{a583a505d8976e5e9faf683c36817887}
+      \strng{authorbibnamehash}{a583a505d8976e5e9faf683c36817887}
+      \strng{authornamehash}{a583a505d8976e5e9faf683c36817887}
+      \strng{authorfullhash}{a583a505d8976e5e9faf683c36817887}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{22}
+      \field{issn}{1439-4456}
+      \field{journaltitle}{J Med Internet Res}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shorttitle}{Patient-Centered Digital Health Records and Their Effects on Health Outcomes}
+      \field{title}{Patient-Centered Digital Health Records and Their Effects on Health Outcomes: Systematic Review}
+      \field{volume}{24}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{e43086}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2196/43086
+      \endverb
+    \endentry
+    \entry{sib_rdf_2024}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f9101349cbbb2a0538d1ffe10922d017}{%
+           family={{SIB Swiss Institute of Bioinformatics RDF Group Members}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9101349cbbb2a0538d1ffe10922d017}
+      \strng{fullhash}{f9101349cbbb2a0538d1ffe10922d017}
+      \strng{bibnamehash}{f9101349cbbb2a0538d1ffe10922d017}
+      \strng{authorbibnamehash}{f9101349cbbb2a0538d1ffe10922d017}
+      \strng{authornamehash}{f9101349cbbb2a0538d1ffe10922d017}
+      \strng{authorfullhash}{f9101349cbbb2a0538d1ffe10922d017}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{issn}{0305-1048}
+      \field{issue}{D1}
+      \field{journaltitle}{Nucleic Acids Research}
+      \field{month}{1}
+      \field{shortjournal}{Nucleic Acids Research}
+      \field{title}{The {SIB} Swiss Institute of Bioinformatics Semantic Web of data}
+      \field{volume}{52}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{D44\bibrangedash D51}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/nar/gkad902
+      \endverb
+    \endentry
+    \entry{sphn_rdf_2023}{report}{}
+      \name{author}{9}{}{%
+        {{hash=20b8724af7e2aac0a944bf5c06b01456}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Horst},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Eelke},
+           giveni={E\bibinitperiod}}}%
+        {{hash=82b8b97dbb0b2f52de1cfd3846edc36f}{%
+           family={Unni},
+           familyi={U\bibinitperiod},
+           given={Deepak},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9aab8742183672f922c2c634460b2af9}{%
+           family={Kopmels},
+           familyi={K\bibinitperiod},
+           given={Femke},
+           giveni={F\bibinitperiod}}}%
+        {{hash=39f760bccbdddd4ebea7c27c6c541964}{%
+           family={Armida},
+           familyi={A\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7e231236442bbda9a789debd9b328772}{%
+           family={Touré},
+           familyi={T\bibinitperiod},
+           given={Vasundra},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6a051f9d736445facf13a7feb5475624}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Wouter},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ff0916ae24a22a3fc432837b98b2c5ee}{%
+           family={Crameri},
+           familyi={C\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=52ddc0274c5ee70fc1a8bf7b9aee8e8d}{%
+           family={Cirillo},
+           familyi={C\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=dd38aea6962c72f4c08371dbbcaeb8de}{%
+           family={Österle},
+           familyi={Ö\bibinitperiod},
+           given={Sabine},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Medicine}%
+        {Pharmacology}%
+      }
+      \strng{namehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{fullhash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{bibnamehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{authorbibnamehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{authornamehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{authorfullhash}{b4413b48ac535cb364a010b93c16d2f7}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{6}
+      \field{month}{12}
+      \field{shorttitle}{Bridging Clinical and Genomic Knowledge}
+      \field{title}{Bridging Clinical and Genomic Knowledge: An Extension of the {SPHN} {RDF} Schema for Seamless Integration and {FAIRification} of Omics Data}
+      \field{type}{preprint}
+      \field{urlday}{22}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.20944/preprints202312.0373.v1
+      \endverb
+    \endentry
+    \entry{farinelli_linked_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c03fb6c3d57b9ba20dbafccfe0e5fbe0}{%
+           family={Farinelli},
+           familyi={F\bibinitperiod},
+           given={Fernanda},
+           giveni={F\bibinitperiod}}}%
+        {{hash=97f7e304ddf015020d2b8f3d9a15f4ba}{%
+           family={Barcellos\bibnamedelimb de\bibnamedelima Almeida},
+           familyi={B\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Maurício},
+           giveni={M\bibinitperiod}}}%
+        {{hash=adc798c11da5c3999e5eed6006efb342}{%
+           family={Linhares\bibnamedelimb de\bibnamedelima Souza},
+           familyi={L\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Yóris},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e56235bc4a494397594648f40ddfa9e}
+      \strng{fullhash}{8e56235bc4a494397594648f40ddfa9e}
+      \strng{bibnamehash}{8e56235bc4a494397594648f40ddfa9e}
+      \strng{authorbibnamehash}{8e56235bc4a494397594648f40ddfa9e}
+      \strng{authornamehash}{8e56235bc4a494397594648f40ddfa9e}
+      \strng{authorfullhash}{8e56235bc4a494397594648f40ddfa9e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1879-8365}
+      \field{journaltitle}{Stud Health Technol Inform}
+      \field{shorttitle}{Linked Health Data}
+      \field{title}{Linked Health Data: how linked data can help provide better health decisions}
+      \field{volume}{216}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{1122}
+      \range{pages}{1}
+    \endentry
+    \entry{comunica}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Comunica – A knowledge graph querying framework}
+      \field{titleaddon}{Comunica – A knowledge graph querying framework}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://comunica.dev/
+      \endverb
+      \verb{url}
+      \verb https://comunica.dev/
+      \endverb
+    \endentry
+    \entry{adaptive_book}{article}{}
+      \name{author}{3}{}{%
+        {{hash=eb03784b6804005bd3f2a7e0aa45b70a}{%
+           family={Deshpande},
+           familyi={D\bibinitperiod},
+           given={Amol},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8c3266870a0b29bf735fa3ec4bb5739d}{%
+           family={Ives},
+           familyi={I\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f2dc22c07ea67a7811230844120d1144}{%
+           family={Raman},
+           familyi={R\bibinitperiod},
+           given={Vijayshankar},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f015697c2084997cd139ea697b73a30}
+      \strng{fullhash}{6f015697c2084997cd139ea697b73a30}
+      \strng{bibnamehash}{6f015697c2084997cd139ea697b73a30}
+      \strng{authorbibnamehash}{6f015697c2084997cd139ea697b73a30}
+      \strng{authornamehash}{6f015697c2084997cd139ea697b73a30}
+      \strng{authorfullhash}{6f015697c2084997cd139ea697b73a30}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foundations and Trends{®}}
+      \field{title}{Adaptive query processing}
+      \field{year}{2007}
+    \endentry
+    \entry{spec:sparqlprot}{report}{}
+      \name{author}{4}{}{%
+        {{hash=f8dd0e2f716ed43efda2073d4e3577be}{%
+           family={Feigenbaum},
+           familyi={F\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1e21a44104297d3a6f484aa9e6f1a989}{%
+           family={Todd\bibnamedelima Williams},
+           familyi={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+        {{hash=02819c418a6ce33c4fd9cebfb55a2349}{%
+           family={Grant\bibnamedelima Clark},
+           familyi={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Kendall},
+           giveni={K\bibinitperiod}}}%
+        {{hash=98aeea4ed6f59bdbbde50a9367806378}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={Elias},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {W3C}%
+      }
+      \strng{namehash}{322f65950bb54b1f1f15c902e8f1e0b0}
+      \strng{fullhash}{322f65950bb54b1f1f15c902e8f1e0b0}
+      \strng{bibnamehash}{322f65950bb54b1f1f15c902e8f1e0b0}
+      \strng{authorbibnamehash}{322f65950bb54b1f1f15c902e8f1e0b0}
+      \strng{authornamehash}{322f65950bb54b1f1f15c902e8f1e0b0}
+      \strng{authorfullhash}{322f65950bb54b1f1f15c902e8f1e0b0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{{SPARQL} 1.1 Protocol}
+      \field{type}{Rec.}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/2013/REC-sparql11-protocol-20130321/
+      \endverb
+    \endentry
+    \entry{sparqlqueryoptimization}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=7047d212f80975d90e11f6931e965e13}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f52c1a7e4268a61272473c0e816dac99}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3219839db4fe80ba4ba35fa6aae531b6}{%
+           family={Lausen},
+           familyi={L\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{b5d0915cb34fb010ae49b429f282ed2d}
+      \strng{fullhash}{b5d0915cb34fb010ae49b429f282ed2d}
+      \strng{bibnamehash}{b5d0915cb34fb010ae49b429f282ed2d}
+      \strng{authorbibnamehash}{b5d0915cb34fb010ae49b429f282ed2d}
+      \strng{authornamehash}{b5d0915cb34fb010ae49b429f282ed2d}
+      \strng{authorfullhash}{b5d0915cb34fb010ae49b429f282ed2d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 13th International Conference on Database Theory}
+      \field{title}{Foundations of {SPARQL} query optimization}
+      \field{year}{2010}
+      \field{pages}{4\bibrangedash 33}
+      \range{pages}{30}
+    \endentry
+    \entry{hibiscus}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=d2274fbe986995b8ac0dabe2949b6c6f}{%
+           family={Saleem},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a53ea1e67bff64c9ebe4ffbf19a852d2}{%
+           family={Ngomo},
+           familyi={N\bibinitperiod},
+           given={Axel-Cyrille\bibnamedelima Ngonga},
+           giveni={A\bibinithyphendelim C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b6ef27a748ede5556da53e64bd91423f}
+      \strng{fullhash}{b6ef27a748ede5556da53e64bd91423f}
+      \strng{bibnamehash}{b6ef27a748ede5556da53e64bd91423f}
+      \strng{authorbibnamehash}{b6ef27a748ede5556da53e64bd91423f}
+      \strng{authornamehash}{b6ef27a748ede5556da53e64bd91423f}
+      \strng{authorfullhash}{b6ef27a748ede5556da53e64bd91423f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European semantic web conference}
+      \field{title}{Hibiscus: Hypergraph-based Source Selection for {SPARQL} Endpoint Federation}
+      \field{year}{2014}
+      \field{pages}{176\bibrangedash 191}
+      \range{pages}{16}
+    \endentry
+    \entry{tpf}{article}{}
+      \name{author}{8}{}{%
+        {{hash=f6f7b1f03b36b6df0b508d6e0e17c85d}{%
+           family={Verborgh},
+           familyi={V\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3d07782186d6043a469195fab09d6a9f}{%
+           family={Vander\bibnamedelima Sande},
+           familyi={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Miel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2076c60fe17dc3769696535197077f9a}{%
+           family={Hartig},
+           familyi={H\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=533a353a7d1659a3a4195efc41cee6be}{%
+           family={Van\bibnamedelima Herwegen},
+           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=11eb09586ca8ceee3276d390208bcdbc}{%
+           family={De\bibnamedelima Vocht},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Laurens},
+           giveni={L\bibinitperiod}}}%
+        {{hash=37ce7c6a5b8ff60b24d37de81d78f71f}{%
+           family={De\bibnamedelima Meester},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=25b01d411f688bc868fd2e065b47410a}{%
+           family={Haesendonck},
+           familyi={H\bibinitperiod},
+           given={Gerald},
+           giveni={G\bibinitperiod}}}%
+        {{hash=53f6105c441349d83d9fcbf7eb9640b5}{%
+           family={Colpaert},
+           familyi={C\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9afdb3a7bd0fd64599f7accf74269cf7}
+      \strng{fullhash}{9afdb3a7bd0fd64599f7accf74269cf7}
+      \strng{bibnamehash}{9afdb3a7bd0fd64599f7accf74269cf7}
+      \strng{authorbibnamehash}{9afdb3a7bd0fd64599f7accf74269cf7}
+      \strng{authornamehash}{9afdb3a7bd0fd64599f7accf74269cf7}
+      \strng{authorfullhash}{9afdb3a7bd0fd64599f7accf74269cf7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Web Semantics}
+      \field{title}{Triple Pattern Fragments: a low-cost Knowledge Graph Interface for the Web}
+      \field{volume}{37}
+      \field{year}{2016}
+      \field{pages}{184\bibrangedash 206}
+      \range{pages}{23}
+    \endentry
+    \entry{taelman_LTQP_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f9a485a3b7f133ec13b1eba6b475851f}{%
+           family={Taelman},
+           familyi={T\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f6f7b1f03b36b6df0b508d6e0e17c85d}{%
+           family={Verborgh},
+           familyi={V\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c794232c5519593635453da074d6dc81}
+      \strng{fullhash}{c794232c5519593635453da074d6dc81}
+      \strng{bibnamehash}{c794232c5519593635453da074d6dc81}
+      \strng{authorbibnamehash}{c794232c5519593635453da074d6dc81}
+      \strng{authornamehash}{c794232c5519593635453da074d6dc81}
+      \strng{authorfullhash}{c794232c5519593635453da074d6dc81}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Publisher: {arXiv} Version Number: 1}
+      \field{title}{Evaluation of Link Traversal Query Execution over Decentralized Environments with Structural Assumptions}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2302.06933
+      \endverb
+    \endentry
+    \entry{VandenbrandeAggregatorsTR}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=2e0db0ea2c93c88969e8e9d3adae4f8c}{%
+           family={Vandenbrande},
+           familyi={V\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e0db0ea2c93c88969e8e9d3adae4f8c}
+      \strng{fullhash}{2e0db0ea2c93c88969e8e9d3adae4f8c}
+      \strng{bibnamehash}{2e0db0ea2c93c88969e8e9d3adae4f8c}
+      \strng{authorbibnamehash}{2e0db0ea2c93c88969e8e9d3adae4f8c}
+      \strng{authornamehash}{2e0db0ea2c93c88969e8e9d3adae4f8c}
+      \strng{authorfullhash}{2e0db0ea2c93c88969e8e9d3adae4f8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International semantic web conference}
+      \field{title}{Aggregators to realize Scalable Querying across Decentralized Data Sources}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:265531325
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:265531325
+      \endverb
+    \endentry
+    \entry{taelman_privacyAgg_2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f9a485a3b7f133ec13b1eba6b475851f}{%
+           family={Taelman},
+           familyi={T\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e0d8a960eda803f468b7bfa8fec5e90a}{%
+           family={Steyskal},
+           familyi={S\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5ddbf3af24e3802f8842794c8c86b60c}{%
+           family={Kirrane},
+           familyi={K\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{444c9ecc9a9c41422cb34b2284310af3}
+      \strng{fullhash}{444c9ecc9a9c41422cb34b2284310af3}
+      \strng{bibnamehash}{444c9ecc9a9c41422cb34b2284310af3}
+      \strng{authorbibnamehash}{444c9ecc9a9c41422cb34b2284310af3}
+      \strng{authornamehash}{444c9ecc9a9c41422cb34b2284310af3}
+      \strng{authorfullhash}{444c9ecc9a9c41422cb34b2284310af3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{eprinttype}{arxiv}
+      \field{month}{8}
+      \field{number}{{arXiv}:2008.06265}
+      \field{title}{Towards Querying in Decentralized Environments with Privacy-Preserving Aggregation}
+      \field{urlday}{21}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2008.06265
+      \endverb
+      \verb{eprint}
+      \verb 2008.06265 [cs]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2008.06265
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2008.06265
+      \endverb
+      \keyw{Computer Science - Databases}
+    \endentry
+    \entry{berners-lee_linked_2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a66bc8445f9c3aca00eb9c7dfd6de4ed}{%
+           family={Berners-Lee},
+           familyi={B\bibinithyphendelim L\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{a66bc8445f9c3aca00eb9c7dfd6de4ed}
+      \strng{fullhash}{a66bc8445f9c3aca00eb9c7dfd6de4ed}
+      \strng{bibnamehash}{a66bc8445f9c3aca00eb9c7dfd6de4ed}
+      \strng{authorbibnamehash}{a66bc8445f9c3aca00eb9c7dfd6de4ed}
+      \strng{authornamehash}{a66bc8445f9c3aca00eb9c7dfd6de4ed}
+      \strng{authorfullhash}{a66bc8445f9c3aca00eb9c7dfd6de4ed}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Linked Data}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.w3.org/DesignIssues/LinkedData.html
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/DesignIssues/LinkedData.html
+      \endverb
+    \endentry
+    \entry{hdt}{article}{}
+      \name{author}{5}{}{%
+        {{hash=af36897217a5a1639c394e8f944d418d}{%
+           family={Fernández},
+           familyi={F\bibinitperiod},
+           given={Javier\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=72d63698e5940929001e08bf6faaea40}{%
+           family={Martínez-Prieto},
+           familyi={M\bibinithyphendelim P\bibinitperiod},
+           given={Miguel\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8b3a3f8c77ee42f87995f920fdde47a5}{%
+           family={Gutiérrez},
+           familyi={G\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a2be0ec850b04b1f5e9fe3aca6bf5226}{%
+           family={Polleres},
+           familyi={P\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e8b4ed2b55f54788c55ffc1f58795a80}{%
+           family={Arias},
+           familyi={A\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1434f7360e9663ec346785b892e1d3d7}
+      \strng{fullhash}{1434f7360e9663ec346785b892e1d3d7}
+      \strng{bibnamehash}{1434f7360e9663ec346785b892e1d3d7}
+      \strng{authorbibnamehash}{1434f7360e9663ec346785b892e1d3d7}
+      \strng{authornamehash}{1434f7360e9663ec346785b892e1d3d7}
+      \strng{authorfullhash}{1434f7360e9663ec346785b892e1d3d7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Web Semantics: Science, Services and Agents on the World Wide Web}
+      \field{title}{Binary RDF Representation for Publication and Exchange (HDT)}
+      \field{volume}{19}
+      \field{year}{2013}
+      \field{pages}{22\bibrangedash 41}
+      \range{pages}{20}
+      \verb{urlraw}
+      \verb http://www.websemanticsjournal.org/index.php/ps/article/view/328
+      \endverb
+      \verb{url}
+      \verb http://www.websemanticsjournal.org/index.php/ps/article/view/328
+      \endverb
+    \endentry
+    \entry{dang_fedshop_2023}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=fa071bb04ef27f941e1fdd7b05d97bc7}{%
+           family={Dang},
+           familyi={D\bibinitperiod},
+           given={Minh-Hoang},
+           giveni={M\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=d5d351427cb733da2a7c3022563350bc}{%
+           family={Aimonier-Davat},
+           familyi={A\bibinithyphendelim D\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b54f2aecb465a28cf47060c08312c998}{%
+           family={Molli},
+           familyi={M\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2076c60fe17dc3769696535197077f9a}{%
+           family={Hartig},
+           familyi={H\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=d92b1d9af7037e23f2d0e9bb28a95894}{%
+           family={Skaf-Molli},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Hala},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ea6a4e432dc992f15cc7d873f27a8578}{%
+           family={Le\bibnamedelima Crom},
+           familyi={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Yotlan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{1d993be40b97a934aff9a19ab81bbef6}
+      \strng{fullhash}{1d993be40b97a934aff9a19ab81bbef6}
+      \strng{bibnamehash}{1d993be40b97a934aff9a19ab81bbef6}
+      \strng{authorbibnamehash}{1d993be40b97a934aff9a19ab81bbef6}
+      \strng{authornamehash}{1d993be40b97a934aff9a19ab81bbef6}
+      \strng{authorfullhash}{1d993be40b97a934aff9a19ab81bbef6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{The Semantic Web – {ISWC} 2023: 22nd International Semantic Web Conference, Athens, Greece, November 6–10, 2023, Proceedings, Part {II}}
+      \field{day}{6}
+      \field{isbn}{978-3-031-47242-8}
+      \field{month}{11}
+      \field{shorttitle}{{FedShop}}
+      \field{title}{{FedShop}: A Benchmark for Testing the Scalability of {SPARQL} Federation Engines}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{285\bibrangedash 301}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-031-47243-5_16
+      \endverb
+    \endentry
+    \entry{platinum_genomes}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{Platinum Genomes}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://emea.illumina.com/platinumgenomes.html
+      \endverb
+      \verb{url}
+      \verb https://emea.illumina.com/platinumgenomes.html
+      \endverb
+    \endentry
+    \entry{1000_genomes}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{1000 Genomes {|} A Deep Catalog of Human Genetic Variation}
+      \field{urlday}{23}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.internationalgenome.org/home
+      \endverb
+      \verb{url}
+      \verb https://www.internationalgenome.org/home
+      \endverb
+    \endentry
+    \entry{css}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{{CommunitySolidServer}/{CommunitySolidServer}: An open and modular implementation of the Solid specifications}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/CommunitySolidServer/CommunitySolidServer
+      \endverb
+      \verb{url}
+      \verb https://github.com/CommunitySolidServer/CommunitySolidServer
+      \endverb
+    \endentry
+    \entry{pastorino_benefits_2019}{article}{}
+      \name{author}{7}{}{%
+        {{hash=30cdfc8f8f2557e9d87ead65ef4c7a8a}{%
+           family={Pastorino},
+           familyi={P\bibinitperiod},
+           given={Roberta},
+           giveni={R\bibinitperiod}}}%
+        {{hash=24dc0e8e76c9afe3f3f301609a823260}{%
+           family={De\bibnamedelima Vito},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Corrado},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d99e83d2ab99dfd13b778373ffb9247a}{%
+           family={Migliara},
+           familyi={M\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=697bb8b948c9db8f81a4390e12383b85}{%
+           family={Glocker},
+           familyi={G\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8b964d06f4b718e395fc82c5326d9fc4}{%
+           family={Binenbaum},
+           familyi={B\bibinitperiod},
+           given={Ilona},
+           giveni={I\bibinitperiod}}}%
+        {{hash=000c998c31edd72571603b6271ef4794}{%
+           family={Ricciardi},
+           familyi={R\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fb1b4b691cf78f9bc9c409f78e83cc34}{%
+           family={Boccia},
+           familyi={B\bibinitperiod},
+           given={Stefania},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e5161cb135237f9752fa6616d2a2a19}
+      \strng{fullhash}{2e5161cb135237f9752fa6616d2a2a19}
+      \strng{bibnamehash}{2e5161cb135237f9752fa6616d2a2a19}
+      \strng{authorbibnamehash}{2e5161cb135237f9752fa6616d2a2a19}
+      \strng{authornamehash}{2e5161cb135237f9752fa6616d2a2a19}
+      \strng{authorfullhash}{2e5161cb135237f9752fa6616d2a2a19}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1101-1262}
+      \field{issue}{Suppl 3}
+      \field{journaltitle}{Eur J Public Health}
+      \field{month}{10}
+      \field{shorttitle}{Benefits and challenges of Big Data in healthcare}
+      \field{title}{Benefits and challenges of Big Data in healthcare: an overview of the European initiatives}
+      \field{volume}{29}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{23\bibrangedash 27}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1093/eurpub/ckz168
+      \endverb
+    \endentry
+    \entry{van_der_horst_bridging_2023}{report}{}
+      \name{author}{9}{}{%
+        {{hash=20b8724af7e2aac0a944bf5c06b01456}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Horst},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Eelke},
+           giveni={E\bibinitperiod}}}%
+        {{hash=82b8b97dbb0b2f52de1cfd3846edc36f}{%
+           family={Unni},
+           familyi={U\bibinitperiod},
+           given={Deepak},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9aab8742183672f922c2c634460b2af9}{%
+           family={Kopmels},
+           familyi={K\bibinitperiod},
+           given={Femke},
+           giveni={F\bibinitperiod}}}%
+        {{hash=39f760bccbdddd4ebea7c27c6c541964}{%
+           family={Armida},
+           familyi={A\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7e231236442bbda9a789debd9b328772}{%
+           family={Touré},
+           familyi={T\bibinitperiod},
+           given={Vasundra},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6a051f9d736445facf13a7feb5475624}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Wouter},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ff0916ae24a22a3fc432837b98b2c5ee}{%
+           family={Crameri},
+           familyi={C\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=52ddc0274c5ee70fc1a8bf7b9aee8e8d}{%
+           family={Cirillo},
+           familyi={C\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=dd38aea6962c72f4c08371dbbcaeb8de}{%
+           family={Österle},
+           familyi={Ö\bibinitperiod},
+           given={Sabine},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Medicine}%
+        {Pharmacology}%
+      }
+      \strng{namehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{fullhash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{bibnamehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{authorbibnamehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{authornamehash}{b4413b48ac535cb364a010b93c16d2f7}
+      \strng{authorfullhash}{b4413b48ac535cb364a010b93c16d2f7}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{6}
+      \field{month}{12}
+      \field{shorttitle}{Bridging Clinical and Genomic Knowledge}
+      \field{title}{Bridging Clinical and Genomic Knowledge: An Extension of the {SPHN} {RDF} Schema for Seamless Integration and {FAIRification} of Omics Data}
+      \field{type}{preprint}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.20944/preprints202312.0373.v1
+      \endverb
+    \endentry
+    \entry{rdf_serializations}{online}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Resource Description Framework ({RDF}) Serialization {|} {LINCS}}
+      \field{urlday}{23}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lincsproject.ca/docs/terms/resource-description-framework-serialization
+      \endverb
+      \verb{url}
+      \verb https://lincsproject.ca/docs/terms/resource-description-framework-serialization
+      \endverb
+    \endentry
+    \entry{wetterstrand_cost_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4db059eb6c64db7c70433a1c05a3a662}{%
+           family={Wetterstrand},
+           familyi={W\bibinitperiod},
+           given={Kris\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4db059eb6c64db7c70433a1c05a3a662}
+      \strng{fullhash}{4db059eb6c64db7c70433a1c05a3a662}
+      \strng{bibnamehash}{4db059eb6c64db7c70433a1c05a3a662}
+      \strng{authorbibnamehash}{4db059eb6c64db7c70433a1c05a3a662}
+      \strng{authornamehash}{4db059eb6c64db7c70433a1c05a3a662}
+      \strng{authorfullhash}{4db059eb6c64db7c70433a1c05a3a662}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Estimated cost of sequencing the human genome over time since the Human Genome Project.}
+      \field{day}{1}
+      \field{month}{11}
+      \field{title}{The Cost of Sequencing a Human Genome}
+      \field{titleaddon}{Genome.gov}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
+      \endverb
+      \verb{url}
+      \verb https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
+      \endverb
+    \endentry
+    \entry{storage_costs}{online}{}
+      \name{author}{1}{}{%
+        {{hash=90472611e27fc2711d6447d8ecd70150}{%
+           family={McCallum},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{90472611e27fc2711d6447d8ecd70150}
+      \strng{fullhash}{90472611e27fc2711d6447d8ecd70150}
+      \strng{bibnamehash}{90472611e27fc2711d6447d8ecd70150}
+      \strng{authorbibnamehash}{90472611e27fc2711d6447d8ecd70150}
+      \strng{authornamehash}{90472611e27fc2711d6447d8ecd70150}
+      \strng{authorfullhash}{90472611e27fc2711d6447d8ecd70150}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Historical cost of computer memory and storage}
+      \field{titleaddon}{Our World in Data}
+      \field{urlday}{23}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ourworldindata.org/grapher/historical-cost-of-computer-memory-and-storage
+      \endverb
+      \verb{url}
+      \verb https://ourworldindata.org/grapher/historical-cost-of-computer-memory-and-storage
+      \endverb
+    \endentry
+    \entry{edith}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7e04ecd328a9c9497c5032ee1feee553}{%
+           family={Viceconti},
+           familyi={V\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=688b1150cc61c6ee245b3f0f8bb03cee}{%
+           family={De\bibnamedelima Vos},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9bbd86a50e1b5857825fa4c78976c92c}{%
+           family={Mellone},
+           familyi={M\bibinitperiod},
+           given={Sabato},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d7d5a469e6cacf7fd17b60a8ea17b99f}{%
+           family={Geris},
+           familyi={G\bibinitperiod},
+           given={Liesbet},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{26640b53a957c71cd3c5fe40c6077ff9}
+      \strng{fullhash}{26640b53a957c71cd3c5fe40c6077ff9}
+      \strng{bibnamehash}{26640b53a957c71cd3c5fe40c6077ff9}
+      \strng{authorbibnamehash}{26640b53a957c71cd3c5fe40c6077ff9}
+      \strng{authornamehash}{26640b53a957c71cd3c5fe40c6077ff9}
+      \strng{authorfullhash}{26640b53a957c71cd3c5fe40c6077ff9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{11}
+      \field{issn}{2168-2208}
+      \field{journaltitle}{{IEEE} J Biomed Health Inform}
+      \field{month}{10}
+      \field{shorttitle}{Position paper From the digital twins in healthcare to the Virtual Human Twin}
+      \field{title}{Position paper From the digital twins in healthcare to the Virtual Human Twin: a moon-shot project for digital health research}
+      \field{volume}{{PP}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1109/JBHI.2023.3323688
+      \endverb
+    \endentry
+    \entry{we_are}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{we are}
+      \field{urlday}{21}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://we-are-health.be/en
+      \endverb
+      \verb{url}
+      \verb https://we-are-health.be/en
+      \endverb
+    \endentry
+    \entry{EHDS_2022}{legislation}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Proposal for a {REGULATION} {OF} {THE} {EUROPEAN} {PARLIAMENT} {AND} {OF} {THE} {COUNCIL} on the European Health Data Space}
+      \field{urlday}{22}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0197
+      \endverb
+      \verb{url}
+      \verb https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0197
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{noauthor_ransomware_nodate}
+\endrefsection
+\endinput
+

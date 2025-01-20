@@ -233,7 +233,7 @@ Third, for the stored genomic data and linkages to be usable in clinical practic
 In a citizen-centric clinical data storage implementation, there could be potentially thousands of large sources to be queried over.
 Performant federated decentralized querying in such environments is an established challenge~\cite{dang_fedshop_2023}.
 Therefore, \textit{can querying over these sources be achieved through the use of LTQP algorithms?}
-\textbf{I anticipate that current generalized LTQP algorithms will not be able to perform well over large genomic data}.
+\textbf{I anticipate that current generalized LTQP algorithms will not be able to perfrom well over large genomic data}.
 Thus, I will investigate two strategies for improving the performance of query processing.
 (A) I will investigate the \textbf{use of summaries} of patient data vault contents, stored outside of data vaults in aggregators, to modify query planning strategies in LTQP algorithms.
 Because of the privacy considerations inherint with patient data vault contents, I will follow presviously descibed theoretical methods to maintain data privacy in these summaries~\cite{taelman_privacyAgg_2020}.
@@ -419,7 +419,7 @@ Combining the two together, a dynamic algorithmic approach that allows for summa
 
 
 The algorithms described above will be benchmarked using the same benchmarking set and evaluation criteria as generic LTQP algorithms (Task 3.1). 
-I will additionally benchmark the query times of a single data vault PGS to existing VCF file parsing tools on the bases of speed, computational load, and result correctness.
+I will additionally benchmark the query times of a single data vault PGS to existing tools VCF files parsing tools on the bases of speed, computational load, and result correctness.
 
 The federated querting algorithms utilizing indexes and summaries proposed are novel in nature and have not been developed before. 
 

@@ -3,13 +3,13 @@ PErsonal GeNome QUery IN clinical practice (PENGQUIN)
 
 Abstract (en):
 Medical care is becoming increasingly personalized through the use of patient genetic information. 
-At present, data useful for clinical care, including genomic data, are commonly diffuse, organized arbitrarily, and confined within in data silos. 
+At present, data useful for clinical care, including genomic data, are commonly diffuse, organized arbitrarily, and confined within data silos. 
 Coupled with stringent privacy regulations, high storage costs, and severely limited data sharing infrastructure, the scalability of personalized clinical strategies is considerably constrained.
 
-My proposed PhD aims to improve the connectivity and shareability of genomic data storage(s), while preserving data privacy, to decrease the costs of patient genome data use in clinical practice. all through the implementation of a citizen-centric storage framework. 
-I propose a citizen-centric storage framework that integrates insights from various semantic web domains research into a novel, practical solution for clinical use.
+My proposed PhD aims to improve the connectivity and shareability of genomic data storage(s), while preserving data privacy, to decrease the costs of patient genome data use in clinical practice through the implementation of a citizen-centric storage framework. 
+Such a citizen-centric storage framework will integrate insights from various semantic web domains research into a novel, practical solution for clinical use.
 
-Specifically, I will (a) store patient geomic data using Solid pods, (b) represent personal genome sequence data using RDF as Linked Data, (c) apply policies to stored data, and (d) develop innovative link traversal queries for data retrieval.
+Specifically, I will (a) store patient genomic data using Solid pods, (b) represent personal genome sequence data using RDF as Linked Data, (c) apply policies to stored data, and (d) develop innovative link traversal queries for data retrieval.
 
 Through this research, I aim to provide a comprehensive framework, complemented by a user-friendly web application, to facilitate practical adoption in clinical settings. 
 Ultimately, this PhD seeks to provide the proof-of-concept for an innovative, streamlined product for clinical genome data storage, paving the way for scalable personalized medicine.

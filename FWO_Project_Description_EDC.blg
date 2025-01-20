@@ -1,0 +1,19 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'FWO_Project_Description_EDC.blg'
+[100] biber-MSWIN64:340> INFO - === 
+[180] Biber.pm:419> INFO - Reading 'FWO_Project_Description_EDC.bcf'
+[292] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[295] Biber.pm:979> INFO - Found 46 citekeys in bib section 1
+[295] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[312] Biber.pm:4419> INFO - Processing section 1
+[322] Biber.pm:4610> INFO - Looking for bibtex file 'EDC_references.bib' for section 1
+[428] bibtex.pm:1713> INFO - LaTeX decoding ...
+[477] bibtex.pm:1519> INFO - Found BibTeX data source 'EDC_references.bib'
+[728] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[729] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[729] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[729] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[757] bbl.pm:660> INFO - Writing 'FWO_Project_Description_EDC.bbl' with encoding 'UTF-8'
+[802] bbl.pm:763> INFO - Output to FWO_Project_Description_EDC.bbl
+[803] Biber.pm:131> WARN - I didn't find a database entry for 'noauthor_ransomware_nodate' (section 1)
+[803] Biber.pm:133> INFO - WARNINGS: 1
